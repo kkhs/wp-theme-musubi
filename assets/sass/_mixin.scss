@@ -1,0 +1,304 @@
+// deboss line
+// top
+@mixin line-top($black: .1, $white: .5){
+border-top: 1px solid rgba(0, 0, 0, $black);
+@include box-shadow(rgba(255, 255, 255, $white) 0 1px 0 inset);
+}
+//* left */
+@mixin line-left($black: .1, $white: .5){
+border-left: 1px solid rgba(0, 0, 0, $black);
+@include box-shadow (rgba(255, 255, 255, $white) -1px 0 0);
+}
+//* right */
+@mixin line-right($black: .1, $white: .5){
+border-left: 1px solid rgba(0, 0, 0, $black);
+@include box-shadow(rgba(255, 255, 255, $white) -1px 0 0 inset);
+}
+//* bottom */
+@mixin line-bottom($black: .1, $white: .5){
+border-bottom: 1px solid rgba(0, 0, 0, $black);
+@include box-shadow(rgba(255, 255, 255, $white)0 1px 0);
+}
+
+//* text shadow */
+//* base 000 */
+@mixin ts-000($op : .2){
+text-shadow: 1px -1px rgba(0, 0, 0, $op);
+}
+//* base fff */
+@mixin ts-fff($op : .5){
+text-shadow: -1px 1px rgba(0, 0, 0, $op);
+}
+
+//* gradient background */
+//* light to dark 
+// ex: @include gradient-top-lighten(#222); */
+@mixin gradient-top-lighten($color : #666, $lighten: 5%){
+background-color: $color;
+@include filter-gradient(lighten($color, $lighten), $color,
+vertical);
+@include background-image(linear-gradient(lighten($color,
+$lighten) 0%, $color 100%));
+}
+//* dark to light
+// ex: @include gradient-top-lighten(#48B1F2); */
+@mixin gradient-top-darken($color : #666, $darken: 5%){
+background-color: $color;
+@include filter-gradient(darken($color, $darken), $color,
+vertical);
+@include background-image(linear-gradient(darken($color,
+$darken) 0%, $color 100%));
+}
+
+//* box-shadow 
+// ex: @include shadow-box(.3);*/
+@mixin shadow-box($shadow: 0.15) {
+@include box-shadow(rgba(0, 0, 0, $shadow) 0 0 2px);
+} 
+//* box-shadow(inset)
+// ex:@include rich-box(.1); */
+@mixin rich-box($shadow: .2){
+@include box-shadow(rgba(0, 0, 0, $shadow) 0 0 0 20px
+inset);
+}
+//* deboos-box
+// ex: @include deboss-box(.15, .2, .7); */
+@mixin deboss-box($border: .1, $shadow: .05, $highlight: .8) {
+border: 1px solid rgba(0,0,0,$border);
+@include box-shadow(rgba(0,0,0,$shadow) -1px 1px 2px inset,
+rgba(255,255,255,$highlight) -1px 1px 0);
+}
+//* emboss-box
+// ex: @include emboss-box(.15, .2, .7); */
+@mixin emboss-box($border: .1, $shadow: .05, $highlight: .5) {
+border: 1px solid rgba(0, 0, 0, $border);
+@include box-shadow(rgba(0, 0, 0, $shadow) -1px 1px 0, rgba(255, 255,
+255, $highlight) -1px 1px 0 inset);
+}
+
+//* button
+// $font-size:font size
+// $color:background color
+// $text-color:text color
+
+// ex: 
+// @include button;
+// @include button($font-size: 24px);
+// @include button($color: #444);
+
+// ex white button:
+// .button-white {
+// a {
+// @include button($color: #f6f6f6, $text-color: #444)
+// @include ts-fff(0)
+// @include ts-000(.1)
+// @inlude emboss-box(.05, .05, 1)
+// }
+//  */
+@mixin button($color: #48B1F2, $font-size: 16px, $text-color: white) {
+display: inline-block;
+background-origin: border-box;
+position: relative;
+font-weight: bold;
+@include ts-000(.1);
+@include gradient-top-lighten($color, 5%);
+@include border-radius(4px);
+@include emboss-box($border: .1, $shadow: .1, $highlight: .2);
+color: rgba($text-color, .9);
+text-align: center;
+font-size: $font-size;
+padding: 0 ($font-size * 2);
+height: $font-size * 3;
+line-height: $font-size * 3;
+i {
+font-size: 130%;
+margin-right: 5px;
+color: rgba($text-color, .5);
+}
+&:hover {
+@include gradient-top-lighten(lighten($color, 5%), 5%);
+text-decoration: none;
+color: $text-color;
+i {
+color: $text-color;
+}
+}
+&:active {
+@include gradient-top-lighten($color, 5%);
+top: 1px;
+}
+}
+
+//* baloon angle */
+//* left */
+@mixin balloon-left($size: 6px, $color: #FFF, $top: 6px){
+position: relative;
+&:after{
+position: absolute;
+content: "";
+display: block;
+border: $size solid transparent;
+border-right: $size solid $color;
+top: $top;
+left: -1 * $size * 2;
+}
+}
+//* left bordered */
+@mixin balloon-left-border($size: 6px, $color: #FFF, $top: 6px,
+$border-color: #CCC, $border: 1px){
+position: relative;
+$size2 : $size + $border;
+@include balloon-left($size, $color, $top);
+&:before{
+position: absolute;
+content: "";
+display: block;
+border: $size2 solid transparent;
+border-right: $size2 solid $border-color;
+top: $top - $border;
+left: -1 * $size2 * 2;
+}
+}
+//* right */
+@mixin balloon-right($size: 6px, $color: #FFF, $top:
+6px){
+position: relative;
+&:after{
+position: absolute;
+content: "";
+display: block;
+border: $size solid transparent;
+border-left: $size solid $color;
+top: $top;
+right: -1 * $size * 2;
+}
+}
+//* right bordered */
+@mixin balloon-right-border($size: 6px, $color: #FFF,
+$top: 6px, $border-color: #CCC, $border: 1px){
+position: relative;
+$size2 : $size + $border;
+@include balloon-right($size, $color, $top);
+&:before{
+position: absolute;
+content: "";
+display: block;
+border: $size2 solid transparent;
+border-left: $size2 solid $border-color;
+top: $top - $border;
+right: -1 * $size2 * 2;
+}
+}
+//* top */
+@mixin balloon-top($size: 6px, $color: #FFF,
+$left: 6px){
+position: relative;
+&:after{
+position: absolute;
+content: "";
+display: block;
+border: $size solid transparent;
+border-bottom: $size solid $color;
+top: -1 * $size * 2;
+left: $left;
+}
+}
+//* top bordered */
+@mixin balloon-top-border($size: 6px, $color: #FFF,
+$left: 6px, $border_color: #CCC, $border: 1px){
+position: relative;
+$size2 : $size + $border;
+@include balloon-top($size, $color, $left);
+&:before{
+position: absolute;
+content: "";
+display: block;
+border: $size2 solid transparent;
+border-bottom: $size2 solid $border-color;
+top: -1 * $size2 * 2;
+left: $left - $border;
+}
+}
+//* bottom */
+@mixin balloon-bottom($size: 6px, $color: #FFF,
+$left: 6px){
+position: relative;
+&:after{
+position: absolute;
+content: "";
+display: block;
+border: $size solid transparent;
+border-top: $size solid $color;
+bottom: -1 * $size * 2;
+left: $left;
+}
+}
+//* bottom bordered */
+@mixin balloon-bottom-border($size: 6px, $color:
+#FFF, $left: 6px, $border-color: #CCC, $border: 1px){
+position: relative;
+@include balloon-bottom($size, $color, $left);
+$size2 : $size + $border;
+&:before {
+position: absolute;
+content: "";
+display: block;
+border: $size2 solid transparent;
+border-top: $size2 solid $border-color;
+bottom: -1 * $size2 * 2;
+left: $left - $border;
+}
+}
+
+// animation
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin placeholderColor($color){
+    &:placeholder-shown {
+        color: $color;
+    }
+    &::-webkit-input-placeholder {
+        color:$color;
+    }
+    &:-moz-placeholder {
+        color:$color;
+        opacity: 1;
+    }
+    &::-moz-placeholder {
+        color:$color;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder {
+        color:$color;
+    }
+}
