@@ -1,0 +1,32 @@
+{
+  "name": "wp-theme-musubi",
+  "version": "0.0.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:common": "node-sass assets/sass/common.scss assets/sass/common.css --output-style compressed",
+    "sass:archive": "node-sass assets/sass/archive.scss assets/sass/archive.css --output-style compressed",
+    "sass:single": "node-sass assets/sass/single.scss assets/sass/single.css --output-style compressed",
+    "sass:slick": "node-sass assets/sass/slick.scss assets/sass/slick.css --output-style compressed",
+    "sass": "run-p sass:*",
+    "watch:common": "node-sass assets/sass/common.scss assets/sass/common.css --output-style compressed -w",
+    "watch:archive": "node-sass assets/sass/archive.scss assets/sass/archive.css --output-style compressed -w",
+    "watch:single": "node-sass assets/sass/single.scss assets/sass/single.css --output-style compressed -w",
+    "watch:slick": "node-sass assets/sass/slick.scss assets/sass/slick.css --output-style compressed -",
+    "watch": "run-p watch:*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkhs/wp-theme-musubi.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/kkhs/wp-theme-musubi/issues"
+  },
+  "homepage": "https://github.com/kkhs/wp-theme-musubi#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
