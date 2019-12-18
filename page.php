@@ -1,21 +1,26 @@
 <?php
 $upload_dir = wp_upload_dir();
-get_header();
+$isLp = get_field('cf_isLp');
+if ($isLp) { get_header('lp'); }
+else { get_header(); }
 ?>
 
-<div id="content" class="<?php echo $post_type; ?> single">
+<div id="content" class="<?php echo $post_type; ?><?php if(!$isLp) { echo ' single'; } ?>">
   <article class="article_main">
     <section id="entry">
-      <?php
-      if ( have_posts() ):
-      ?>
-<div class="post">
+      <?php if ( have_posts() ): ?>
+      <div class="post">
+
 <?php
 	while ( have_posts() ) {
 	the_post();
 ?>
-  <h1 class="post_tit center"><?php the_title(); ?></h1>
+
+<?php if (!$isLp) { ?>
+<h1 class="post_tit center"><?php the_title(); ?></h1>
+<?php } ?>
   
+
   <?php if ( has_post_thumbnail() ) : ?>
   <div class="post_img">
     <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>">
@@ -54,6 +59,9 @@ get_header();
 
 </div>
 
-<?php get_footer(); ?>
+<?php
+  if ($isLp) { get_footer('lp'); }
+  else { get_footer(); }
+?>
 </body>
 </html> 
