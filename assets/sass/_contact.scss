@@ -226,8 +226,6 @@ form {
       align-items: center;
       flex-direction: column;
     }
-    input#agree {
-    }
     label {
       a {
         color: $accent;
@@ -291,7 +289,6 @@ $vw: 750;
           .meta{
             font-size: (24/$fs)*1rem;
             margin-top: (10/$fs)*1rem;
-            .date{}
             .tags{
               margin-left: (24/$fs)*1rem;
             }
@@ -322,10 +319,6 @@ $vw: 750;
 .form_message{
   margin-top: (75/$fs)*1rem;
   text-align: left;
-  h4{
-  }
-  .error_messe{
-  }
 }
   
 form {
@@ -333,8 +326,6 @@ form {
   input[type="email"],
   input[type="tel"]{
     border-radius: (4/$fs)*1rem;
-  }
-  textarea{
   }
   input[type="checkbox"]{
     &+label{
