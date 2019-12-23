@@ -28,7 +28,9 @@ get_header();
   <h1 class="post_tit"><?php the_title(); ?></h1>
   <div class="event_date">
     <div class="date">開催日時：<?php echo $overview['cf_date'] ?></div>
-     <?php if($date_now < $date_end && get_field('cf_entry')){ ?><a class="btn cta" href="/event/entry/?id=<?php echo $post->ID; ?>">セミナーに参加する</a><?php } ?>
+      <?php // if($date_now < $date_end && get_field('cf_entry')){ ?>
+      <!-- <a class="btn cta" href="/event/entry/?id=<?php echo $post->ID; ?>">セミナーに参加する</a> -->
+      <?php // } ?>
   </div>
   <?php if(get_field('cf_user'))echo '<div class="post_user">'.get_field('cf_user').'</div>'; ?>
   <div class="post_img">
@@ -156,9 +158,9 @@ get_header();
     
   </div>
   
-  <?php if($date_now < $date_end && get_field('cf_entry')){ ?>
-  <div class="post_button"><a href="/event/entry/?id=<?php echo $post->ID; ?>" class="btn cta big">セミナーに参加する</a></div>
-  <?php } ?>
+  <?php // if($date_now < $date_end && get_field('cf_entry')){ ?>
+  <!-- <div class="post_button"><a href="/event/entry/?id=<?php echo $post->ID; ?>" class="btn cta big">セミナーに参加する</a></div> -->
+  <?php // } ?>
   
 <?php } // end while ?>
 </div>
