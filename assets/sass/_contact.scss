@@ -82,6 +82,7 @@ form {
       border-color: $green;
     }
   }
+  /*
   input[type="checkbox"]{
     &+label{
       font-size: (14/$fs)*1rem;
@@ -105,6 +106,7 @@ form {
   [type="checkbox"]+label:hover:before {
     border: 1px solid $green!important;
   }
+  */
 
   
 	dl.list {

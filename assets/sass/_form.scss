@@ -1,0 +1,144 @@
+#content.single #entry .post .post_content {
+  .hbspt-form {
+    margin: 3.75rem auto 0;
+    form.hs-form {
+      fieldset {
+        display: block;
+        margin: 0 auto 1.875rem;
+        max-width: none;
+        &.form-columns-1 {
+          .hs-input {
+            width: 100%;
+          }
+        }
+        &.form-columns-2 {
+          .hs-form-field {
+            width: calc((100% - 1.875rem) / 2);
+            margin: 0 1.875rem 0 0;
+            float: left;
+            &:nth-of-type(2n) {
+              margin-right: 0;
+            }
+          }
+        }
+        label {
+          display: block;
+          margin: 0 0 0.5rem;
+          font-weight: bold;
+          & > span.hs-form-required {
+            color: red;
+            padding: 0 0 0 6px;
+          }
+        }
+      }
+      ul.inputs-list {
+        margin: 0;
+        & > li {
+          padding: 0;
+          margin: 0 0 1rem;
+          &:before {
+            content: none;
+          }
+        }
+        &.hs-error-msgs {
+          margin-top: 1rem;
+          & > li {
+            & > label {
+              color: red;
+              font-size: (24 / $fs) * 1rem;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+      // checkbox
+      input[type="checkbox"] {
+        & + span {
+          position: relative;
+          display: block;
+          padding: 0 0 0 2rem;
+          font-weight: normal;
+          cursor: pointer;
+          &:before {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid $green;
+            border-radius: 4px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+          }
+        }
+        &:checked {
+          & + span {
+            &:before {
+              content: "";
+              display: block;
+              width: 16px;
+              height: 16px;
+              background: $green;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translate(0, -50%);
+            }
+          }
+        }
+      }
+
+      // select
+      select {
+        background: #fafafa;
+        border: #c4c4c4 solid 1px;
+        border-radius: (4 / $fs) * 1rem;
+        font-size: 1rem;
+        line-height: (31/16) * 1em;
+        width: 100%;
+        padding: 0.5em 1em;
+        position: relative;
+        &:focus {
+          border-color: $green;
+        }
+      }
+
+      .hs-button.primary,
+      input[type="submit"],
+      input[type="button"] {
+        // from .btn
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        line-height: (50/18);
+        letter-spacing: 0.02em;
+        text-align: center;
+        padding: (4/18) * 1em (36/18) * 1em;
+        position: relative;
+        border: $green solid 1px;
+        border-radius: (60/18) * 1em;
+        color: $accent;
+        background: #fff;
+        width: (400/18) * 1em;
+        // from .btn.cta
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        margin-left: (28/14) * 1em;
+        width: auto;
+        min-width: (152/14) * 1em;
+        border-width: 2px;
+        line-height: (36/14);
+        padding: 0 1.4em;
+        //
+        margin: (80 / $fs) * 1rem auto 0;
+        width: (600 / $fs) * 1rem;
+        font-size: (30 / $fs) * 1rem;
+        padding: 0 1em;
+        line-height: (46/18);
+        cursor: pointer;
+      }
+    }
+  }
+}
