@@ -14,7 +14,7 @@ if ( have_posts() ):
 	while ( have_posts() ) {
     the_post();
 ?>
-  <h1 class="post_tit center">ダウンロード</h1>
+  <h1 class="post_tit center">資料ダウンロード</h1>
 <?php
     if(get_the_content()):
 ?>
