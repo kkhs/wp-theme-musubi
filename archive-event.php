@@ -73,7 +73,7 @@ $first_args = array(
       <?php if ( has_post_thumbnail() ) : ?>
         <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>">
       <?php else: ?>
-      <img src="/assets/images/event/event_default.jpg" alt="">
+      <img src="<?php echo_assets_root_url(); ?>assets/images/event/event_default.jpg" alt="">
       <?php endif; ?>
     </a>
     <span class="desc">
@@ -148,7 +148,7 @@ $first_args = array(
       <?php if ( has_post_thumbnail() ) : ?>
         <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>">
       <?php else: ?>
-      <img src="/assets/images/event/event_default.jpg" alt="">
+      <img src="<?php echo_assets_root_url(); ?>assets/images/event/event_default.jpg" alt="">
       <?php endif; ?>
     </a>
     <span class="desc">
