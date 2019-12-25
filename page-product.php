@@ -59,12 +59,12 @@
               </div>
             </div>
             <div class="imgs setElm f_01">
-              <img class="f_01 ss" src="../../../../assets/images/product/index/feature01_img01.jpg" alt="">
-              <img class="f_01 ss" src="../../../../assets/images/product/index/feature01_img02.jpg" alt="">
-              <img class="f_01" src="../../../../assets/images/product/index/feature01_img03.png" alt="">
-              <img class="f_01" src="../../../../assets/images/icons/icon_pad.svg" alt="">
-              <img class="f_01" src="../../../../assets/images/icons/icon_drugstore.svg" alt="">
-              <img class="f_01" src="../../../../assets/images/icons/icon_medicine.svg" alt="">
+              <img class="f_01 ss" src="<?php echo_assets_root_url(); ?>assets/images/product/index/feature01_img01.jpg" alt="">
+              <img class="f_01 ss" src="<?php echo_assets_root_url(); ?>assets/images/product/index/feature01_img02.jpg" alt="">
+              <img class="f_01" src="<?php echo_assets_root_url(); ?>assets/images/product/index/feature01_img03.png" alt="">
+              <img class="f_01" src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_pad.svg" alt="">
+              <img class="f_01" src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_drugstore.svg" alt="">
+              <img class="f_01" src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_medicine.svg" alt="">
             </div>
           </div>
           <div class="feature_block">
@@ -76,12 +76,12 @@ Musubiは、患者さんそれぞれの疾患・服用中の薬・生活習慣�
               </div>
             </div>
             <div class="imgs setElm f_02">
-              <img class="f_02 ss" src="../../../../assets/images/product/index/feature02_img01.jpg" alt="">
-              <img class="f_02" src="../../../../assets/images/product/index/feature02_img02.png" alt="">
-              <img class="f_02" src="../../../../assets/images/product/index/feature02_img03.png" alt="">
-              <img class="f_02" src="../../../../assets/images/icons/icon_medicine.svg" alt="">
-              <img class="f_02" src="../../../../assets/images/icons/icon_bottle.svg" alt="">
-              <img class="f_02" src="../../../../assets/images/icons/icon_gear.svg" alt="">
+              <img class="f_02 ss" src="<?php echo_assets_root_url(); ?>assets/images/product/index/feature02_img01.jpg" alt="">
+              <img class="f_02" src="<?php echo_assets_root_url(); ?>assets/images/product/index/feature02_img02.png" alt="">
+              <img class="f_02" src="<?php echo_assets_root_url(); ?>assets/images/product/index/feature02_img03.png" alt="">
+              <img class="f_02" src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_medicine.svg" alt="">
+              <img class="f_02" src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_bottle.svg" alt="">
+              <img class="f_02" src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_gear.svg" alt="">
             </div>
           </div>
           <div class="feature_block">
@@ -93,11 +93,11 @@ Musubiは、患者さんそれぞれの疾患・服用中の薬・生活習慣�
               </div>
             </div>
             <div class="imgs setElm f_03">
-              <img class="f_03 ss" src="../../../../assets/images/product/index/feature03_img01.jpg" alt="">
-              <img class="f_03" src="../../../../assets/images/product/index/feature03_img02.png" alt="">
-              <img class="f_03" src="../../../../assets/images/product/index/feature03_img03.png" alt="">
-              <img class="f_03" src="../../../../assets/images/icons/icon_tablet.svg" alt="">
-              <img class="f_03" src="../../../../assets/images/icons/icon_communication.svg" alt="">
+              <img class="f_03 ss" src="<?php echo_assets_root_url(); ?>assets/images/product/index/feature03_img01.jpg" alt="">
+              <img class="f_03" src="<?php echo_assets_root_url(); ?>assets/images/product/index/feature03_img02.png" alt="">
+              <img class="f_03" src="<?php echo_assets_root_url(); ?>assets/images/product/index/feature03_img03.png" alt="">
+              <img class="f_03" src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_tablet.svg" alt="">
+              <img class="f_03" src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_communication.svg" alt="">
             </div>
           </div>
         </div>
