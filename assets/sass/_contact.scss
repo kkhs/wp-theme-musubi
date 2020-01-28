@@ -4,6 +4,7 @@ $fs: 16;
     max-width: 780px;
     .post{
       .post_wp_head{
+        margin-top: 4.375rem;
         padding: (20/$fs)*1rem;
         margin-bottom: (40/$fs)*1rem;
         .post_tit{
@@ -273,6 +274,7 @@ $vw: 750;
       }
       .post_wp_head{
         display: block;
+        margin-top: 2.5rem;
         padding: (30/$fs)*1rem;
         .img{
           border-radius: (6/$fs)*1rem;
