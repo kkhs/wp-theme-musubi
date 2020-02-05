@@ -5,6 +5,11 @@ get_header();
 
 <?php if ( $post->post_parent ): // エントリー画面 ?>
   <div id="content" class="<?php echo $post_type; ?> single contact">
+<!-- dataLayer -->
+  <script>
+    dataLayer.push({'eventname_form': 'eventname_form_<?php echo get_post($post->post_parent)->post_title; ?>'});
+  </script>
+<!-- dataLayer -->
   <article class="article_main">
   <section id="entry" class="contact_entry">
 <?php if ( have_posts() ): ?>
@@ -61,9 +66,29 @@ get_header();
 	the_post();
 ?>
   <h1 class="post_tit"><?php the_title(); ?></h1>
+
+<?php
+  $args = array(
+    'nopaging' => true,
+    'post_type' => 'event',
+    'post_parent' => $post->ID,
+  );
+  $myposts = get_posts( $args );
+  
+  $has_entry = false;
+
+  if( $myposts ) {
+    foreach ( $myposts as $p1 ){
+      if($p1->post_name == 'entry'){
+        $has_entry = true;
+      }
+    }
+  }
+?>
+
   <div class="event_date">
     <div class="date">開催日時：<?php echo $overview['cf_date'] ?></div>
-      <?php if($date_now < $date_end && get_field('cf_entry')){ ?>
+      <?php if($date_now < $date_end && get_field('cf_entry') && $has_entry){ ?>
       <a class="btn cta" href="/event/<?php echo $post->post_name; ?>/entry/">セミナーに参加する</a>
       <?php } ?>
   </div>
@@ -193,7 +218,7 @@ get_header();
     
   </div>
   
-  <?php if($date_now < $date_end && get_field('cf_entry')){ ?>
+  <?php if($date_now < $date_end && get_field('cf_entry') && $has_entry){ ?>
  <div class="post_button"><a href="/event/<?php echo $post->post_name; ?>/entry/" class="btn cta big">セミナーに参加する</a></div>
   <?php } ?>
   
