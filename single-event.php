@@ -18,7 +18,7 @@ get_header();
   <h1 class="post_tit center"><?php echo get_the_title(); ?></h1>
   <div class="post_wp_head">
     <div class="img new">
-      <img src="<?php echo get_the_post_thumbnail_url($post->post_parent,'full'); ?>" alt="さしせまる遠隔服薬指導の解禁。薬局はどう動くべきか？">
+      <img src="<?php echo get_the_post_thumbnail_url($post->post_parent,'full'); ?>" alt="<?php echo get_post($post->post_parent)->post_title; ?>">
     </div>
     <div class="desc">
       <h2 class="post_tit"><?php echo get_the_title($post->post_parent); ?></h2>
