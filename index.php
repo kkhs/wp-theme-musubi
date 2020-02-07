@@ -127,14 +127,6 @@
               <span>紙薬歴からの切り替えをお考えの方に</span>
             </a>
           </li>
-          <li class="winter2019">
-            <a href="/cmp-winter2019">
-              <i><span>期間<br>限定</span></i>
-              <b>お得にMusubiを始められる</b>
-              <strong>冬季キャンペーン</strong>
-              <span> 4月末までの月額使用料が無料！</span>
-            </a>
-          </li>
         </ul>
       </div>
     </section>
