@@ -68,11 +68,11 @@ get_header();
       + ("0"+now.getHours()).slice(-2)
       + ("0"+now.getMinutes()).slice(-2);
     var isValid = parseInt(end) > parseInt(nowString);
-    console.log(nowString);
-    console.log(end);
-    console.log('result:', isValid )
     if(!isValid) {
       $('.dateCheck').css({'display': 'none'});
+      if($('.event_end').length <= 0) {
+        $('.badges').append('<div class="event_end">開催終了</div>');
+      }
     }
   });
   </script>
