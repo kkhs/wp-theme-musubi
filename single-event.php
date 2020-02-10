@@ -56,6 +56,27 @@ get_header();
   if($overview['cf_date_end'])$date_end = $overview['cf_date_end'];
   if( intval(get_field('cf_event_target')) === 1 || $date_now >= $date_end ):
 ?>
+
+  <script>
+  $(document).ready(function() {
+    var end = '<?php echo $date_end; ?>';
+    var now = new Date();
+    var nowString = 
+      now.getFullYear().toString()
+      + ("0"+(now.getMonth() + 1)).slice(-2)
+      + ("0"+now.getDate()).slice(-2)
+      + ("0"+now.getHours()).slice(-2)
+      + ("0"+now.getMinutes()).slice(-2);
+    var isValid = parseInt(end) > parseInt(nowString);
+    if(!isValid) {
+      $('.dateCheck').css({'display': 'none'});
+      if($('.event_end').length <= 0) {
+        $('.badges').append('<div class="event_end">開催終了</div>');
+      }
+    }
+  });
+  </script>
+
   <div class="badges">
     <?php if(intval(get_field('cf_event_target')) === 1){ ?><div class="post_badge">Musubiユーザ向け</div><?php } ?>
     <?php if($date_now >= $date_end){ ?><div class="event_end">開催終了</div><?php } ?>
@@ -89,7 +110,7 @@ get_header();
   <div class="event_date">
     <div class="date">開催日時：<?php echo $overview['cf_date'] ?></div>
       <?php if($date_now < $date_end && get_field('cf_entry') && $has_entry){ ?>
-      <a class="btn cta" href="/event/<?php echo $post->post_name; ?>/entry/">セミナーに参加する</a>
+      <a class="btn cta dateCheck" href="/event/<?php echo $post->post_name; ?>/entry/">セミナーに参加する</a>
       <?php } ?>
   </div>
   <?php if(get_field('cf_user'))echo '<div class="post_user">'.get_field('cf_user').'</div>'; ?>
@@ -219,7 +240,7 @@ get_header();
   </div>
   
   <?php if($date_now < $date_end && get_field('cf_entry') && $has_entry){ ?>
- <div class="post_button"><a href="/event/<?php echo $post->post_name; ?>/entry/" class="btn cta big">セミナーに参加する</a></div>
+ <div class="post_button dateCheck"><a href="/event/<?php echo $post->post_name; ?>/entry/" class="btn cta big">セミナーに参加する</a></div>
   <?php } ?>
   
 <?php } // end while ?>
