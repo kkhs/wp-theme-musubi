@@ -15,12 +15,12 @@ $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
   display: block;
   width: 1.33333em;
   height: 1.13333em;
-  background-image: url(/wp/wp-content/themes/wp-theme-musubi/assets/images/icons/icon_blog.svg);
+  background-image: url(<?php echo_assets_root_url(); ?>/assets/images/icons/icon_blog.svg);
 }
   </style>
   <article class="article_main">
     <section id="entries">
-      <h1 class="tit">お役立ち資料</h1>
+      <h1 class="tit">お役立ち資料ダウンロード</h1>
 <ul class="posts" style="margin-top: 0;">
 <?php
   $args = array(
@@ -50,7 +50,7 @@ $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
     endif;
     ?>
     <a href="<?php the_permalink() ?>" class="img" style="background: url(<?php echo $imgURL; ?>) 50% top/cover no-repeat;">
-    <img style="opacity: 0;" src="/assets/images/common/noimg.jpg" alt="">
+    <img style="opacity: 0;" src="<?php echo_assets_root_url(); ?>/assets/images/common/noimg.jpg" alt="">
     </a>
     <span class="desc">
       <h2 class="tit"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
