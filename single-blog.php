@@ -124,10 +124,16 @@ get_header();
   endif;
 ?>
     </section>
-    
+
 <?php
   if(!is_object_in_term($post->ID, 'blog_category','news')){
-    
+
+  $tax_query = array(
+    'taxonomy' => 'blog_category',
+    'field' => 'slug',
+    'terms' => 'news',
+    'operator' => 'NOT IN',
+  );
   $args = array(
     'post_type' => $post_type,
     'posts_per_page'=>3,
@@ -135,6 +141,7 @@ get_header();
     'post_status' => 'publish',
     'order' => 'DESC',
     'orderby' => 'date',
+    'tax_query' => array($tax_query),
   );
   $query = new WP_Query( $args );
   if ( $query -> have_posts() ):
@@ -190,4 +197,5 @@ get_header();
 
 <?php get_footer(); ?>
 </body>
-</html> 
+</html>
+
