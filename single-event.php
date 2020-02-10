@@ -140,17 +140,17 @@ get_header();
     ?>
     <h2>スピーカー</h2>
     <div class="event_speaker">
-      <div class="speaker">
 <?php while(have_rows('cf_speaker')): the_row();
+    echo '<div class="speaker" style="align-items:center;">';
     $sp_img = (get_sub_field('cf_speaker_img'))?get_sub_field('cf_speaker_img'):'/assets/images/event/speaker_img.jpg';
     echo '<div class="img" style="background-image:url('.$sp_img.');"><img src="'.$sp_img.'" alt="'.get_sub_field('cf_speaker_name').'"></div>';
 ?>
 <div class="desc">
-  <h3 class="name"><?php echo get_sub_field('cf_speaker_name'); ?></h3>
+  <h3 class="name" style="margin-top: 1em;"><?php echo get_sub_field('cf_speaker_name'); ?></h3>
   <div class="prof"><?php echo get_sub_field('cf_speaker_prof'); ?></div>
 </div>
+</div>
 <?php endwhile; ?>
-      </div>
     </div>
     <?php
     endif;
