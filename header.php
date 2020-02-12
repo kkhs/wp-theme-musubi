@@ -178,9 +178,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="header_btm">
           <ul class="header_menu">
             <li><a href="/product"<?php if(is_page('product')): ?>class="current"<?php endif; ?>>サービス詳細</a></li>
+            <li><a href="/product#price">価格</a></li>
             <li><a href="/case"<?php if(is_post_type_archive('case')|is_singular('case'))echo 'class="current"'; ?>>導入事例</a></li>
-            <li><a href="/event">イベント</a></li>
-            <li><a href="/faq">よくある質問</a></li>
+            <li><a href="/faq"<?php if(is_page('faq'))echo 'class="current"'; ?>>よくある質問</a></li>
+            <li><a href="/wp-download"<?php if(is_post_type_archive('post')|is_singular('post'))echo 'class="current"'; ?>>お役立ち資料</a></li>
+            <li><a href="/event"<?php if(is_post_type_archive('event')|is_singular('event'))echo 'class="current"'; ?>>イベント</a></li>
             <li><a href="/blog"<?php if(is_post_type_archive('blog')|is_singular('blog'))echo 'class="current"'; ?>>ブログ</a></li>
           </ul>
         </div>
