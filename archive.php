@@ -21,12 +21,70 @@ $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
   <article class="article_main">
     <section id="entries">
       <h1 class="tit">お役立ち資料ダウンロード</h1>
-<ul class="posts" style="margin-top: 0;">
+<ul class="posts">
 <?php
-  $args = array(
+  $paged = get_query_var( 'paged', 1 );
+  $post__not_in = [];
+  $days = 7;
+  $today = date_i18n('U');
+      
+$first_args = array(
+  'post_type' => $post_type,
+  'posts_per_page'=>1,
+  'post_status' => 'publish',
+  'order' => 'DESC',
+  'orderby' => 'date',
+  'tax_query' => array($tax_query),
+);
+  $first_query = new WP_Query( $first_args );
+  if ( $first_query -> have_posts() ):
+  while ( $first_query->have_posts() ) {
+  $first_query->the_post();
+    $post__not_in = $post->ID;
+    if (!is_paged()) {
+      $entry = get_the_time('U');
+      $postdate = date('U',($today - $entry)) / 86400 ;
+      //$new = ( $days > $postdate )?1:0;
+?>
+<li class="post first">
+	<div class="post_box">
+    <?php if ( has_post_thumbnail() ) :
+      $imgURL = get_the_post_thumbnail_url();
+    else: 
+      $imgURL = '/assets/images/common/noimg.jpg';
+    endif;
+    ?>
+    <a href="<?php the_permalink() ?>" class="img" style="background: url(<?php echo $imgURL; ?>) 50% top/cover no-repeat;">
+    <img style="opacity: 0;" src="<?php echo_assets_root_url(); ?>assets/images/common/noimg.jpg" alt="">
+    </a>
+    <span class="desc">
+      <h2 class="tit"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+      <?php if(get_field('cf_user'))echo '<span class="user">'.get_field('cf_user').'</span>'; ?>
+      <span class="meta">
+        <?php
+        $tax = 'case_tag';
+        $terms = get_the_terms( $post->ID, $tax );
+        if ( $terms && ! is_wp_error( $terms ) ) :
+        ?>
+        <ul class="tags">
+        <?php
+          foreach ( $terms as $term ) {
+            echo '<li class="tag"><a href="'.get_term_link($term->slug, $tax).'" class="label">#'.$term->name.'</a></li>';
+          } ?>
+        </ul>
+        <?php endif; ?>
+      </span>      
+      <a href="<?php the_permalink() ?>" class="more">read more</a>
+    </span>
+	</div>
+</li>
+<?php      
+    }
+  } endif;  $args = array(
     'paged' => $paged,
     'post_type' => $post_type,
     'posts_per_page'=>9,
+    'post__not_in' => array($post__not_in),
     'post_status' => 'publish',
     'order' => 'DESC',
     'orderby' => 'date',
@@ -104,4 +162,4 @@ $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 </div>
 <?php get_footer(); ?>
 </body>
-</html> 
+</html>
