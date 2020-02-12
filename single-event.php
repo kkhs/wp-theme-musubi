@@ -7,7 +7,7 @@ get_header();
   <div id="content" class="<?php echo $post_type; ?> single contact">
 <!-- dataLayer -->
   <script>
-    dataLayer.push({'eventname_form': 'eventname_form_<?php echo get_post($post->post_parent)->post_title; ?>'});
+    dataLayer.push({'eventname_form': 'eventname_form_<?php echo get_post($post->post_parent)->post_title; ?>_<?php echo get_post_meta($post->post_parent, 'cf_overview_cf_date', true); ?>'});
   </script>
 <!-- dataLayer -->
   <article class="article_main">
