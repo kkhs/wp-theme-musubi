@@ -49,6 +49,7 @@ if(term_exists($term, 'event_tag')){
       
 $first_args = array(
   'post_type' => $post_type,
+  'post_parent' => 0,
   'posts_per_page'=>1,
   'post_status' => 'publish',
   'order' => 'DESC',
@@ -111,6 +112,7 @@ $first_args = array(
     $args = array(
       'paged' => $paged,
       'post_type' => $post_type,
+      'post_parent' => 0,
       'posts_per_page'=>9,
       'post__not_in' => array($post__not_in),
       'post_status' => 'publish',
@@ -122,6 +124,7 @@ $first_args = array(
     $args = array(
       'paged' => $paged,
       'post_type' => $post_type,
+      'post_parent' => 0,
       'posts_per_page'=>9,
       'post__not_in' => array($post__not_in),
       'year' => $monthly_arc[ 'year' ],

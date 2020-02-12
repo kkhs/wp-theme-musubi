@@ -3,19 +3,80 @@ $upload_dir = wp_upload_dir();
 get_header();
 ?>
 
-<div id="content" class="<?php echo $post_type; ?> single">
+<?php if ( $post->post_parent ): // エントリー画面 ?>
+  <div id="content" class="<?php echo $post_type; ?> single contact">
+<!-- dataLayer -->
+  <script>
+    dataLayer.push({'eventname_form': 'eventname_form_<?php echo get_post($post->post_parent)->post_title; ?>'});
+  </script>
+<!-- dataLayer -->
   <article class="article_main">
-    <section id="entry">
+  <section id="entry" class="contact_entry">
+<?php if ( have_posts() ): ?>
+  <div class="post">
+<?php while ( have_posts() ) { the_post(); ?>
+  <h1 class="post_tit center"><?php echo get_the_title(); ?></h1>
+  <div class="post_wp_head">
+    <div class="img new">
+      <img src="<?php echo get_the_post_thumbnail_url($post->post_parent,'full'); ?>" alt="<?php echo get_post($post->post_parent)->post_title; ?>">
+    </div>
+    <div class="desc">
+      <h2 class="post_tit"><?php echo get_the_title($post->post_parent); ?></h2>
+      <input type="hidden" name="イベント" value="<?php echo get_the_title($post->post_parent); ?>">
+      <span class="event_meta">
+        <span class="event_date">開催日：<?php echo get_post_meta($post->post_parent, 'cf_overview_cf_date', true); ?></span>
+        <span class="event_badges"></span>
+      </span>
+    </div>
+  </div>
+
+<?php if(get_the_content()): ?>
+  <div class="post_content">
+<?php the_content(); ?>
+  </div>
+<?php endif; } ?>
+</div>
+
+<?php else: ?>
+  <div id="nopost">該当する投稿がありません。</div>
+<?php endif; ?>
+</section>
+</article>
+</div>
+
+<?php else: // eventページ ?>
+  <div id="content" class="<?php echo $post_type; ?> single">
+  <article class="article_main">
+  <section id="entry">
+<?php if ( have_posts() ): ?>
+  <div class="post">
 <?php
-      if ( have_posts() ): ?>
-<div class="post">
-  <?php
   $overview = get_field('cf_overview');
-  
   date_default_timezone_set('Asia/Tokyo'); $date_now = date('YmdHi');
   if($overview['cf_date_end'])$date_end = $overview['cf_date_end'];
   if( intval(get_field('cf_event_target')) === 1 || $date_now >= $date_end ):
-  ?>
+?>
+
+  <script>
+  $(document).ready(function() {
+    var end = '<?php echo $date_end; ?>';
+    var now = new Date();
+    var nowString = 
+      now.getFullYear().toString()
+      + ("0"+(now.getMonth() + 1)).slice(-2)
+      + ("0"+now.getDate()).slice(-2)
+      + ("0"+now.getHours()).slice(-2)
+      + ("0"+now.getMinutes()).slice(-2);
+    var isValid = parseInt(end) > parseInt(nowString);
+    if(!isValid) {
+      $('.dateCheck').css({'display': 'none'});
+      if($('.event_end').length <= 0) {
+        $('.badges').append('<div class="event_end">開催終了</div>');
+      }
+    }
+  });
+  </script>
+
   <div class="badges">
     <?php if(intval(get_field('cf_event_target')) === 1){ ?><div class="post_badge">Musubiユーザ向け</div><?php } ?>
     <?php if($date_now >= $date_end){ ?><div class="event_end">開催終了</div><?php } ?>
@@ -26,11 +87,31 @@ get_header();
 	the_post();
 ?>
   <h1 class="post_tit"><?php the_title(); ?></h1>
+
+<?php
+  $args = array(
+    'nopaging' => true,
+    'post_type' => 'event',
+    'post_parent' => $post->ID,
+  );
+  $myposts = get_posts( $args );
+  
+  $has_entry = false;
+
+  if( $myposts ) {
+    foreach ( $myposts as $p1 ){
+      if($p1->post_name == 'entry'){
+        $has_entry = true;
+      }
+    }
+  }
+?>
+
   <div class="event_date">
     <div class="date">開催日時：<?php echo $overview['cf_date'] ?></div>
-      <?php // if($date_now < $date_end && get_field('cf_entry')){ ?>
-      <!-- <a class="btn cta" href="/event/entry/?id=<?php echo $post->ID; ?>">セミナーに参加する</a> -->
-      <?php // } ?>
+      <?php if($date_now < $date_end && get_field('cf_entry') && $has_entry){ ?>
+      <a class="btn cta dateCheck" href="/event/<?php echo $post->post_name; ?>/entry/">セミナーに参加する</a>
+      <?php } ?>
   </div>
   <?php if(get_field('cf_user'))echo '<div class="post_user">'.get_field('cf_user').'</div>'; ?>
   <div class="post_img">
@@ -158,9 +239,9 @@ get_header();
     
   </div>
   
-  <?php // if($date_now < $date_end && get_field('cf_entry')){ ?>
-  <!-- <div class="post_button"><a href="/event/entry/?id=<?php echo $post->ID; ?>" class="btn cta big">セミナーに参加する</a></div> -->
-  <?php // } ?>
+  <?php if($date_now < $date_end && get_field('cf_entry') && $has_entry){ ?>
+ <div class="post_button dateCheck"><a href="/event/<?php echo $post->post_name; ?>/entry/" class="btn cta big">セミナーに参加する</a></div>
+  <?php } ?>
   
 <?php } // end while ?>
 </div>
@@ -174,10 +255,11 @@ get_header();
 <?php
   endif;
 ?>
-    </section>
-  </article>
-
+</section>
+</article>
 </div>
+<?php endif; ?>
+
 
 <?php get_footer(); ?>
 </body>
