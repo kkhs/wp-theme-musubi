@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/NotoSansCJKjp-Light.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Light.woff") format("woff"), url("../fonts/NotoSansCJKjp-Light.ttf") format("truetype"), url("../fonts/NotoSansCJKjp-Light.eot") format("embedded-opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/NotoSansCJKjp-DemiLight.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-DemiLight.woff") format("woff"), url("../fonts/NotoSansCJKjp-DemiLight.ttf") format("truetype"), url("../fonts/NotoSansCJKjp-DemiLight.eot") format("embedded-opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NotoSansCJKjp-Regular.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Regular.woff") format("woff"), url("../fonts/NotoSansCJKjp-Regular.ttf") format("truetype"), url("../fonts/NotoSansCJKjp-Regular.eot") format("embedded-opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NotoSansCJKjp-Medium.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Medium.woff") format("woff"), url("../fonts/NotoSansCJKjp-Medium.ttf") format("truetype"), url("../fonts/NotoSansCJKjp-Medium.eot") format("embedded-opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NotoSansCJKjp-Bold.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Bold.woff") format("woff"), url("../fonts/NotoSansCJKjp-Bold.ttf") format("truetype"), url("../fonts/NotoSansCJKjp-Bold.eot") format("embedded-opentype"); }
+
+.block-editor-writing-flow {
+  font-family: 'Noto Sans Japanese',Helvetica,Verdana,Arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','游ゴシック','Yu Gothic',YuGothic,'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-weight: 300;
+  color: #333;
+  letter-spacing: 0; }
+  .block-editor-writing-flow .editor-post-title__input {
+    font-family: inherit;
+    font-weight: 500; }
+  .block-editor-writing-flow .wp-block {
+    max-width: 740px; }
+
+.editor-post-title__block:after {
+  color: coral;
+  font-size: .8em;
+  content: "※タイトル文字数は30字以内に収めてください。";
+  display: block;
+  text-align: right; }
+
+.post_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 2.5rem auto 0; }
+  .post_label .label {
+    display: block;
+    min-width: 10.1875rem;
+    padding: 0 1rem;
+    font-size: 1.125rem;
+    line-height: 2.22222;
+    color: #1bbaaf;
+    font-weight: 500;
+    letter-spacing: .06em;
+    text-align: center;
+    border: #4ecdc4 solid 1px; }
+
+h2 {
+  padding-left: 1.25rem;
+  font-size: 1.625rem;
+  line-height: 1.53846;
+  font-weight: 500;
+  letter-spacing: .06em;
+  margin: 3.125rem auto 0;
+  border-left: #4ecdc4 solid 5px; }
+
+h3 {
+  margin: 3.125rem auto 0;
+  letter-spacing: .06em;
+  font-weight: 500;
+  font-size: 1.5em; }
+
+h4 {
+  margin: 3.125rem auto 0;
+  letter-spacing: .06em;
+  font-weight: 500;
+  font-size: 1.25em; }
+
+strong {
+  font-weight: 500; }
+
+em {
+  font-style: italic; }
+
+s {
+  text-decoration: line-through; }
+
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px; }
+
+p {
+  line-height: 2.125;
+  font-weight: 300;
+  margin: 2.5rem auto 0; }
+  p a {
+    color: #1bbaaf; }
+
+figure.wp-block-image {
+  margin: 2.5rem auto 0; }
+  figure.wp-block-image img {
+    width: 100%;
+    max-width: 100%; }
+  figure.wp-block-image figcaption {
+    font-size: 0.875rem;
+    margin-top: .2em;
+    text-align: left; }
+
+.wp-block-image .alignleft,
+.wp-block-image .aligncenter,
+.wp-block-image .alignright {
+  margin-top: 2.5rem; }
+
+blockquote.wp-block-quote {
+  margin-top: 2.5rem;
+  padding: 2.1875rem;
+  background: #f0f7f8; }
+  blockquote.wp-block-quote p:first-child {
+    margin-top: 0; }
+  blockquote.wp-block-quote cite {
+    color: #888;
+    font-size: 0.875em;
+    display: block;
+    margin-top: .5em;
+    text-align: right; }
+
+ul {
+  margin: 2.5rem auto 0; }
+  ul li {
+    line-height: 1.5;
+    padding-left: 1.25em;
+    margin-top: .4em;
+    position: relative; }
+    ul li:before {
+      content: '●';
+      color: #1bbaaf;
+      display: inline-block;
+      position: absolute;
+      width: 1.25em;
+      height: 1.5em;
+      top: 0;
+      left: 0; }

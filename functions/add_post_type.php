@@ -18,13 +18,22 @@ add_action( 'pre_get_posts', 'change_posts_per_page' );
 
 
 function custom_post_labels( $labels ) {
-	$labels->name = 'ホワイトペーパー'; // 投稿
-	$labels->singular_name = 'ホワイトペーパー'; // 投稿
-	$labels->menu_name = 'ホワイトペーパー'; // 投稿
-	$labels->name_admin_bar = 'ホワイトペーパー'; // 投稿
+	$labels->name = 'お役立ち資料'; // 投稿
+	$labels->singular_name = 'お役立ち資料'; // 投稿
+	$labels->menu_name = 'お役立ち資料'; // 投稿
+	$labels->name_admin_bar = 'お役立ち資料'; // 投稿
 	return $labels;
 }
 add_filter( 'post_type_labels_post', 'custom_post_labels' );
+
+function post_has_archive( $args, $post_type ) {
+    if ( 'post' == $post_type ) {
+        $args['rewrite'] = true;
+        $args['has_archive'] = 'wp-download';
+    }
+    return $args;
+}
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
 
 function create_post_type() {

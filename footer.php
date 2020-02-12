@@ -1,4 +1,4 @@
-<?php include(TEMPLATEPATH .'/mod/mod-download.php');?>
+<?php if(!is_archive('post')){ include(TEMPLATEPATH .'/mod/mod-download.php');} ?>
 <?php include(TEMPLATEPATH .'/mod/mod-vision.php');?>
 <?php include(TEMPLATEPATH .'/mod/mod-inquiry.php');?>
 
@@ -23,6 +23,7 @@
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.easing.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.inview.min.js"></script>
+<script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/smooth-scroll.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/simpleLightbox/simpleLightbox.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/slick.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/common.js"></script>
