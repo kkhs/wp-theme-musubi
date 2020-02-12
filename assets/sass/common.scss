@@ -311,7 +311,7 @@ body{
         margin: (25/$fs)*1rem 0;
       }
     }
-    .header_menu{
+    .btn_menu{
       display: none;
     }
     .header_navi{
@@ -806,6 +806,15 @@ footer{
 	html{
 		font-size: (16/1280)*100vw;
 	}
+  
+#header .header_inner .header_navi .header_btm .header_menu{
+  li{
+    letter-spacing: .06em;
+    margin-right: 2em;
+    font-size: (14/$fs)*1rem;
+  }
+}
+  
 }
 @media (min-width:961px){//PC layout
 	.forSP{

@@ -16,15 +16,13 @@ $(document).ready(function() {
   
   scrFunc();
 	
-	$('a[href^="#"]').click(function(e) {
-	  e.preventDefault();
-	  var anc = $(this).attr('href'),
-        target = $(anc),
-        hh = $('#header').height();
-        scr = target.offset().top;
-	  $('html,body').animate({scrollTop:(scr-hh)},800,'easeInOutExpo');
-	});
-		  
+  var scroll = new SmoothScroll('a[href*="#"]',{
+    header: '.header_inner',
+    speed: 800,
+    speedAsDuration: true,
+    easing: 'easeInOutCubic',
+  });
+  
   $(".btn_menu").click(function(){
     $('body').toggleClass('body--menuOpen');
     $('#header .header_navi').slideToggle(250);

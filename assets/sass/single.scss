@@ -264,6 +264,9 @@ $fs: 16;
             color: $accent;
             font-weight: 500;
             line-height: (34/16);
+            &:first-child{
+              margin-top: 0;
+            }
           }
           ul{
             margin-top: 0;
