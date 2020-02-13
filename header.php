@@ -1,6 +1,7 @@
 <?php 
 global $unique;
 $post_type = get_post_type_object(get_post_type());
+$isLp = get_field('cf_isLp');
 if (is_home()) {
 	$canonical_url = get_bloginfo('url');
 } elseif (is_tag()) {
@@ -192,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </header>
 	
-<?php if(!is_home() && !is_404()){ ?>
+<?php if(!is_home() && !is_404() && !$isLp){ ?>
 <div id="breadclumb"><ul typeof="BreadcrumbList" vocab="http://schema.org/">
 <?php echo_breadcrumb(); ?>
 </ul></div>
