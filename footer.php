@@ -1,5 +1,7 @@
-<?php if(!is_archive('post')){ include(TEMPLATEPATH .'/mod/mod-download.php');} ?>
-<?php include(TEMPLATEPATH .'/mod/mod-vision.php');?>
+<?php $isLp = get_field('cf_isLp'); ?>
+
+<?php if(!is_archive('post') && !$isLp){ include(TEMPLATEPATH .'/mod/mod-download.php');} ?>
+<?php if(!$isLp) { include(TEMPLATEPATH .'/mod/mod-vision.php'); }?>
 <?php include(TEMPLATEPATH .'/mod/mod-inquiry.php');?>
 
 <footer id="footer">

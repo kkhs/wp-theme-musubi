@@ -1,8 +1,7 @@
 <?php
 $upload_dir = wp_upload_dir();
 $isLp = get_field('cf_isLp');
-if ($isLp) { get_header('lp'); }
-else { get_header(); }
+get_header();
 ?>
 
 <div id="content" class="<?php echo $post_type; ?><?php if(!$isLp) { echo ' single'; } ?>">
@@ -59,9 +58,6 @@ else { get_header(); }
 
 </div>
 
-<?php
-  if ($isLp) { get_footer('lp'); }
-  else { get_footer(); }
-?>
+<?php get_footer(); ?>
 </body>
 </html> 
