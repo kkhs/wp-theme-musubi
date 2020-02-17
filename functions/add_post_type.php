@@ -16,7 +16,7 @@ function change_posts_per_page( $query ) {
 }
 add_action( 'pre_get_posts', 'change_posts_per_page' );
 
-
+/*
 function custom_post_labels( $labels ) {
 	$labels->name = 'お役立ち資料'; // 投稿
 	$labels->singular_name = 'お役立ち資料'; // 投稿
@@ -34,9 +34,60 @@ function post_has_archive( $args, $post_type ) {
     return $args;
 }
 add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
-
+*/
 
 function create_post_type() {
+  /* お役立ち資料 */	
+  register_post_type(
+    'wp-download',
+    array(
+      'label' => '導入事例',
+      'labels' => array(
+        'name' => 'お役立ち資料ダウンロード',
+        'singular_name' => 'お役立ち資料',
+        'menu_name' => 'お役立ち資料',
+        'name_admin_bar' => 'お役立ち資料',
+      ),
+      'public' => true,
+			'publicly_queryable' => true,
+			'has_archive' => true,
+      'hierarchical' => false,
+      'supports' => array(
+        'title',
+        'editor',
+        'thumbnail',
+        'revisions',
+      ),
+      'taxonomies' => array( 'wp_category', 'wp_tag'),
+      'menu_position' => 5,
+      'show_in_rest' => true,
+    )
+  );
+  register_taxonomy(
+    'wp_category',
+    'wp-download',
+    array(
+      'hierarchical' => true,
+      'update_count_callback' => '_update_post_term_count',
+      'label' => 'カテゴリー',
+      'query_var' => true,
+      'rewrite' => array('slug' => 'wp-download'),
+      'show_in_rest' => true,
+    )
+  );  
+  register_taxonomy(
+    'wp_tag',
+    'wp-download',
+    array(
+      'hierarchical' => false,
+      'update_count_callback' => '_update_post_term_count',
+      'label' => 'タグ',
+      'query_var' => true,
+      'rewrite' => array('slug' => 'wp-download'),
+      'show_in_rest' => true,
+    )
+  );
+
   /* 導入事例 */	
   register_post_type(
     'case',
