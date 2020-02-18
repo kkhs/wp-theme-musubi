@@ -46,6 +46,17 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
+//コメントを無効
+add_filter( 'comments_open', '__return_false' );
+
+//メニューを非表示
+function unset_menu() {
+  global $menu;
+  //unset( $menu[ 5 ] ); //投稿メニュー
+  unset( $menu[ 25 ] ); //コメント
+}
+add_action( "admin_menu", "unset_menu" );
+
 // リンク先変更
 function my_login_logo_url() {
   return home_url();
