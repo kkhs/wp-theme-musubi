@@ -78,11 +78,6 @@ function echo_breadcrumb() {
 		if ( is_object_in_term($post->ID, 'blog_category','news') ){
 			echo '<li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="'.get_bloginfo('url').'/'.$post_type->name.'/news" ><span property="name">お知らせ</span></a><meta property="position" content="'.$pos++.'"></li>';
 			echo $sep;
-		}elseif( $post_type->name == 'post' ){
-			$before = '<li property="itemListElement" typeof="ListItem">';
-			$after = '<meta property="position" content="'.$pos++.'"></li>';
-			echo $before.'<a property="item" typeof="WebPage" href="'.esc_url(home_url('/')).$post_type->has_archive.'"><span property="name">'.$post_type->label.'</span></a>'.$after;
-			echo $sep;
 		}elseif( $post_type->name != 'post' && $post_type->name != 'page' ){
 			$before = '<li property="itemListElement" typeof="ListItem">';
 			$after = '<meta property="position" content="'.$pos++.'"></li>';
@@ -112,12 +107,6 @@ function echo_breadcrumb() {
           $after = '<meta property="position" content="'.$pos++.'"></li>';
           echo $before.'<a property="item" typeof="WebPage" href="'.esc_url(home_url('/')).$post_type->name.'"><span property="name">'.$post_type->label.'</span></a>'.$after;
           echo $sep;
-          $y = get_query_var('year');
-          if($y){
-          echo '<li property="itemListElement" typeof="ListItem"><span property="name">'.$y.'年</span><meta property="position" content="'.$pos++.'"></li>';
-          }else{
-          echo '<li property="itemListElement" typeof="ListItem"><span property="name">'.single_tag_title( '', false ).'</span><meta property="position" content="'.$pos++.'"></li>';
-          }
         }
       }else{
         $before = '<li property="itemListElement" typeof="ListItem">';
@@ -128,6 +117,12 @@ function echo_breadcrumb() {
 			$before = '<li property="itemListElement" typeof="ListItem">';
 			$after = '<meta property="position" content="'.$pos++.'"></li>';
 			echo $before.'<span property="item" typeof="WebPage"><span property="name">'.$post_type->label.'test</span></span>'.$after;
+    }
+    $y = get_query_var('year');
+    if($y){
+    echo '<li property="itemListElement" typeof="ListItem"><span property="name">'.$y.'年</span><meta property="position" content="'.$pos++.'"></li>';
+    }else{
+    echo '<li property="itemListElement" typeof="ListItem"><span property="name">'.single_tag_title( '', false ).'</span><meta property="position" content="'.$pos++.'"></li>';
     }
 
 		//the_archive_title( '<li property="itemListElement" typeof="ListItem"><span property="name">', '</span><meta property="position" content="'.$pos++.'"></li>' );

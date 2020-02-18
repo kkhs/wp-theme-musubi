@@ -92,6 +92,21 @@ $fs: 16;
         line-height: (56/18);
         box-shadow: 0 0 (27/$fs)*1rem (10/$fs)*1rem rgba(0,0,0,0.1);
       }
+      &+.post_summary{
+        margin-top: 0!important;
+        padding-top: 0!important;
+        .post_meta{
+          @media (min-width: 960px){
+          .category{
+            &+.tags{
+              padding-left: 1em;
+              //margin-left: 1em;
+              border-left: #888 solid 1px;
+            }
+          }
+          }
+        }
+      }
     }
     .post_wp_body{
       width: 100%;
