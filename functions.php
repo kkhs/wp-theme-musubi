@@ -52,7 +52,7 @@ add_filter( 'comments_open', '__return_false' );
 //メニューを非表示
 function unset_menu() {
   global $menu;
-  //unset( $menu[ 5 ] ); //投稿メニュー
+  unset( $menu[ 5 ] ); //投稿メニュー
   unset( $menu[ 25 ] ); //コメント
 }
 add_action( "admin_menu", "unset_menu" );
