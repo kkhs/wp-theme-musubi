@@ -4,6 +4,9 @@
 function change_posts_per_page( $query ) {
   if ( is_admin() || !$query->is_main_query() )
     return;
+  if ( $query->is_archive( 'wp-download' ) ) {
+    $query->set( 'posts_per_page', 1 );
+  }
   if ( $query->is_archive( 'case' ) ) {
     $query->set( 'posts_per_page', 1 );
   }
@@ -284,6 +287,14 @@ function wp_insertMyRewriteRules($rules)
     $cats = get_categories( $args );
  
     foreach ( $cats as $k => $v ){
+        $post_type = 'wp-download';
+        $newrules[$post_type.'/'.$taxonomy.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
+        $newrules[$post_type.'/'.$v->category_nicename.'/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename;
+        $newrules[$post_type.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
+        $newrules[$post_type.'/date/([0-9]{4})/?$'] = 'index.php?post_type='.$post_type.'&year=$matches[1]';
+        $newrules[$post_type.'/date/([0-9]{4})([0-9]{1,2})/?$'] = 'index.php?post_type='.$post_type.'&year=$matches[1]&monthnum=$matches[2]';
+        $newrules[$post_type.'/date/([0-9]{4})([0-9]{1,2})([0-9]{1,2})/?$'] = 'index.php?post_type='.$post_type.'&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]';
+      
         $post_type = 'case';
         $newrules[$post_type.'/'.$taxonomy.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
         $newrules[$post_type.'/'.$v->category_nicename.'/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename;
