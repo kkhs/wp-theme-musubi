@@ -204,6 +204,7 @@
           <?php
           $args = array(
             'post_type' => 'event',
+            'post_parent' => 0,
             'posts_per_page' => 5,
             'post_status' => 'publish',
             'order' => 'DESC',
