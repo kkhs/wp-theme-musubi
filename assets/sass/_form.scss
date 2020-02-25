@@ -139,6 +139,14 @@
         line-height: (46/18);
         cursor: pointer;
       }
+
+      // agree
+      .hs-richtext {
+        text-align: center;
+        a {
+          color: $green;
+        }
+      }
     }
     div.submitted-message {
       text-align: center;
