@@ -63,7 +63,7 @@
               <span class="num"><img src="<?php echo_assets_root_url(); ?>assets/images/index/function_num02.svg" alt="02"></span>
               <div class="img"><img src="<?php echo_assets_root_url(); ?>assets/images/index/function02.jpg" alt=""></div>
               <div class="desc">
-                <h3 class="tit">患者さん一人ひとりにあわせた<em>オーダーメイド<br class="forPC">服薬指導</em></h3>
+                <h3 class="tit">薬剤師の仕事をサポート<em>服薬指導<br class="forPC">アシスタント</em></h3>
                 <div class="txt">患者さんそれぞれの疾患・服用中のお薬・生活習慣・過去処方・季節情報などをもとに、適切な服薬指導の内容を自動で提案します。</div>
               </div>
             </li>
