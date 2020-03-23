@@ -28,7 +28,7 @@ get_header();
       <div class="meta">
         <div class="date"><?php the_time('Y/n/j'); ?></div>
       </div>
-      <a href="/download/?id=<?php echo $post->ID; ?>" class="btn cta" target="_blank">無料ダウンロードする</a>
+<?php /* <a href="/download/?id=<?php echo $post->ID; ?>" class="btn cta" target="_blank">無料ダウンロードする</a> */ ?>
     </div>
   </div>
   
@@ -86,8 +86,7 @@ get_header();
       endif;
       ?>    
     </div>
-
-    <div class="post_button"><a href="/download/?id=<?php echo $post->ID; ?>" class="btn cta" target="_blank">無料ダウンロードする</a></div>
+<?php /* <div class="post_button"><a href="/download/?id=<?php echo $post->ID; ?>" class="btn cta" target="_blank">無料ダウンロードする</a></div> */ ?>
   </div>
   
 <?php } // end while ?>
@@ -96,13 +95,14 @@ get_header();
 <?php
 	else:
 ?>
-  <div id="nopost">
-    該当する投稿がありません。
-  </div>
+      <div id="nopost">
+        該当する投稿がありません。
+      </div>
 <?php
   endif;
 ?>
     </section>
+    <div class="dl-form"></div>
   </article>
 
 </div>

@@ -1,105 +1,107 @@
-#content.single{
-  padding-bottom: (100/$fs)*1rem;
-  &.case{
+#content.single {
+  padding-bottom: (100 / $fs) * 1rem;
+  &.case {
   }
   #entry {
-    margin: (30/$fs)*1rem auto 0;
-    .post{
-      .post_wp_head{
+    margin: (30 / $fs) * 1rem auto 0;
+    .post {
+      .post_wp_head {
         display: block;
-        padding: (30/$fs)*1rem;
-        .img{
-          border-radius: (6/$fs)*1rem;
+        padding: (30 / $fs) * 1rem;
+        .img {
+          border-radius: (6 / $fs) * 1rem;
           width: 100%;
         }
-        .desc{
+        .desc {
           width: 100%;
-          margin-top: (35/$fs)*1rem;
-          .post_tit{
-            font-size: (32/$fs)*1rem;
+          margin-top: (35 / $fs) * 1rem;
+          .post_tit {
+            font-size: (32 / $fs) * 1rem;
             line-height: (55/32);
-            .after{
+            .after {
               display: block;
             }
           }
-          .meta{
-            font-size: (24/$fs)*1rem;
-            margin-top: (10/$fs)*1rem;
-            .date{}
-            .tags{
-              margin-left: (24/$fs)*1rem;
+          .meta {
+            font-size: (24 / $fs) * 1rem;
+            margin-top: (10 / $fs) * 1rem;
+            .date {
+            }
+            .tags {
+              margin-left: (24 / $fs) * 1rem;
             }
           }
         }
-        .btn{
-          font-size: (32/$fs)*1rem;
-          width: (576/32)*1em;
+        .btn {
+          font-size: (32 / $fs) * 1rem;
+          width: (576/32) * 1em;
           padding: 0 1em;
           line-height: (96/32);
-          box-shadow: 0 0 (20/$fs)*1rem (10/$fs)*1rem rgba(0,0,0,0.07);
-          margin: (40/$fs)*1rem auto 0;
+          box-shadow: 0 0 (20 / $fs) * 1rem (10 / $fs) * 1rem
+            rgba(0, 0, 0, 0.07);
+          margin: (40 / $fs) * 1rem auto 0;
         }
       }
-      .badges{
-        .date{
-          margin-left: (30/$fs)*1rem;
-          font-size: (24/$fs)*1rem;
+      .badges {
+        .date {
+          margin-left: (30 / $fs) * 1rem;
+          font-size: (24 / $fs) * 1rem;
         }
       }
-      .post_badge{
-        min-width: (220/$fs)*1rem;
-        font-size: (22/$fs)*1rem;
+      .post_badge {
+        min-width: (220 / $fs) * 1rem;
+        font-size: (22 / $fs) * 1rem;
         line-height: (46/22);
         color: $accent;
         letter-spacing: 0;
       }
-      &>.post_tit {
-        font-size: (42/$fs)*1rem;
+      & > .post_tit {
+        font-size: (42 / $fs) * 1rem;
         line-height: (64/42);
-        margin-top: (30/$fs)*1rem;
-        &:first-child{
+        margin-top: (30 / $fs) * 1rem;
+        &:first-child {
           margin-top: 0;
         }
       }
-      .event_date{
+      .event_date {
         flex-direction: column;
-        padding-top: (15/$fs)*1rem;
-        padding-bottom: (20/$fs)*1rem;
-        .date{
-          font-size: (32/$fs)*1rem;
+        padding-top: (15 / $fs) * 1rem;
+        padding-bottom: (20 / $fs) * 1rem;
+        .date {
+          font-size: (32 / $fs) * 1rem;
           align-self: flex-start;
         }
-        .btn.cta{
-          font-size: (32/$fs)*1rem;
-          width: (580/32)*1em;
+        .btn.cta {
+          font-size: (32 / $fs) * 1rem;
+          width: (580/32) * 1em;
           line-height: (96/32);
           margin-left: 0;
-          margin-top: (30/$fs)*1rem;
+          margin-top: (30 / $fs) * 1rem;
         }
       }
       .post_user {
-        font-size: (28/$fs)*1rem;
+        font-size: (28 / $fs) * 1rem;
         line-height: (32/28);
-        margin-top: (25/$fs)*1rem;
+        margin-top: (25 / $fs) * 1rem;
       }
       .post_img {
-        margin-top: (30/$fs)*1rem;
+        margin-top: (30 / $fs) * 1rem;
       }
       .post_summary {
-        margin-top: (40/$fs)*1rem;
-        padding: (30/$fs)*1rem;
+        margin-top: (40 / $fs) * 1rem;
+        padding: (30 / $fs) * 1rem;
         .summary {
-          font-size: (24/$fs)*1rem;
+          font-size: (24 / $fs) * 1rem;
           line-height: (46/24);
         }
         .post_meta {
           //display: block;
           flex-wrap: wrap;
-          font-size: (22/$fs)*1rem;
-          &:last-child{
-            margin-top: (25/$fs)*1rem;
+          font-size: (22 / $fs) * 1rem;
+          &:last-child {
+            margin-top: (25 / $fs) * 1rem;
           }
-          &:first-child{
+          &:first-child {
             margin-top: 0;
           }
           .date {
@@ -109,242 +111,269 @@
             width: 100%;
             flex: auto;
             li.tag {
-              .label {}
+              .label {
+              }
             }
           }
         }
       }
       .post_content {
         .post_label {
-          margin: (60/$fs)*1rem auto 0;
-          .label{
-            min-width: (223/$fs)*1rem;
-            font-size: (28/$fs)*1rem;
+          margin: (60 / $fs) * 1rem auto 0;
+          .label {
+            min-width: (223 / $fs) * 1rem;
+            font-size: (28 / $fs) * 1rem;
             line-height: (60/28);
           }
         }
         h2 {
-          padding-left: (30/$fs)*1rem;
-          font-size: (32/$fs)*1rem;
+          padding-left: (30 / $fs) * 1rem;
+          font-size: (32 / $fs) * 1rem;
           line-height: (50/32);
-          margin: (80/$fs)*1rem auto 0;
-          border-left: $green solid (7/$fs)*1rem;
-          br{
+          margin: (80 / $fs) * 1rem auto 0;
+          border-left: $green solid (7 / $fs) * 1rem;
+          br {
             display: none;
           }
         }
         p {
           line-height: (50/28);
-          margin: (45/$fs)*1rem auto 0;
+          margin: (45 / $fs) * 1rem auto 0;
         }
         figure.wp-block-image {
-          margin: (55/$fs)*1rem auto 0;
+          margin: (55 / $fs) * 1rem auto 0;
           figcaption {
-            font-size: (22/$fs)*1rem;
+            font-size: (22 / $fs) * 1rem;
           }
         }
-        blockquote.wp-block-quote{
-          margin-top: (40/$fs)*1rem;
-          padding: (30/$fs)*1rem;
-          font-size: (24/$fs)*1rem;
+        blockquote.wp-block-quote {
+          margin-top: (40 / $fs) * 1rem;
+          padding: (30 / $fs) * 1rem;
+          font-size: (24 / $fs) * 1rem;
         }
-        
-        .event_recommend, .post_index{
-          padding: (40/$fs)*1rem;
-          margin-top: (60/$fs)*1rem;
-          border-radius: (10/$fs)*1rem;
-          h3{
+
+        .event_recommend,
+        .post_index {
+          padding: (40 / $fs) * 1rem;
+          margin-top: (60 / $fs) * 1rem;
+          border-radius: (10 / $fs) * 1rem;
+          h3 {
           }
-          ul{
-            li{
+          ul {
+            li {
               line-height: (48/28);
-              margin-top: .2em;
-              &:before{
-                height: (48/28)*1em;
+              margin-top: 0.2em;
+              &:before {
+                height: (48/28) * 1em;
               }
             }
           }
         }
-        .event_overview{
-          //margin-top: (45/$fs)*1rem; 
+        .event_overview {
+          //margin-top: (45/$fs)*1rem;
         }
-        table{
-          margin-top: (45/$fs)*1rem; 
-          tr{
-            th,td{
-              padding: (25/$fs)*1rem (20/$fs)*1rem;
+        table {
+          margin-top: (45 / $fs) * 1rem;
+          tr {
+            th,
+            td {
+              padding: (25 / $fs) * 1rem (20 / $fs) * 1rem;
             }
-            th{
+            th {
               //background: $pale;
             }
-            td{
-              a{}
+            td {
+              a {
+              }
             }
           }
         }
-        
-        .event_speaker{
-          margin-top: (55/$fs)*1rem;
-          .speaker{
+
+        .event_speaker {
+          margin-top: (55 / $fs) * 1rem;
+          .speaker {
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            margin-top: (40/$fs)*1rem;
-            &:first-child{
+            margin-top: (40 / $fs) * 1rem;
+            &:first-child {
               margin-top: 0;
             }
-            .img{
-              width: (290/$fs)*1rem;
-              height: (290/$fs)*1rem;
+            .img {
+              width: (290 / $fs) * 1rem;
+              height: (290 / $fs) * 1rem;
               margin-right: 0;
             }
-            .desc{
-              margin-top: (50/$fs)*1rem;
+            .desc {
+              margin-top: (50 / $fs) * 1rem;
               flex: 1;
               display: flex;
               flex-direction: column;
               align-items: center;
-              .name{
-                font-size: (38/$fs)*1rem;
+              .name {
+                font-size: (38 / $fs) * 1rem;
                 font-weight: 500;
                 //line-height: 1;
                 text-align: center;
               }
-              .prof{
-                font-size: (28/$fs)*1rem;
+              .prof {
+                font-size: (28 / $fs) * 1rem;
                 line-height: (50/28);
                 margin-top: 1em;
               }
             }
           }
         }
-        
       }
       .post_button {
-        margin: (80/$fs)*1rem auto 0;
-        a.btn{
-          font-size: (32/$fs)*1rem;
+        margin: (80 / $fs) * 1rem auto 0;
+        a.btn {
+          font-size: (32 / $fs) * 1rem;
           font-weight: 400;
           line-height: (80/32);
           width: auto;
-          padding: 0 .5em;
-          min-width: (500/32)*1em;
-          border-width: (2/32)*1em;
-          &.big{
-            font-size: (32/$fs)*1rem;
+          padding: 0 0.5em;
+          min-width: (500/32) * 1em;
+          border-width: (2/32) * 1em;
+          &.big {
+            font-size: (32 / $fs) * 1rem;
             line-height: (96/32);
             min-width: 0;
-            width: (580/$fs)*1rem;
+            width: (580 / $fs) * 1rem;
             padding: 0 1em;
           }
-          &.contact{
-            font-size: (32/$fs)*1rem;
+          &.contact {
+            font-size: (32 / $fs) * 1rem;
             line-height: (96/32);
-            width: (580/$fs)*1rem;
+            width: (580 / $fs) * 1rem;
             min-width: 0;
             padding: 0 1em;
           }
         }
       }
-      .mod_date{
-        font-size: (22/$fs)*1rem;
-        margin-top: (35/$fs)*1rem;
+      .mod_date {
+        font-size: (22 / $fs) * 1rem;
+        margin-top: (35 / $fs) * 1rem;
       }
-      
+
       .faq_list {
-        margin-top: (80/$fs)*1rem;
+        margin-top: (80 / $fs) * 1rem;
         width: 100%;
-        ul{
-          li{
-            margin-top: (30/$fs)*1rem;
-            &:first-child{
+        ul {
+          li {
+            margin-top: (30 / $fs) * 1rem;
+            &:first-child {
               margin-top: 0;
             }
             .faq_q {
-              font-size: (28/$fs)*1rem;
+              font-size: (28 / $fs) * 1rem;
               line-height: (50/28);
-              padding-left: (85/$fs)*1rem;
-              padding-right: (80/$fs)*1rem;
-              min-height: (50/$fs)*1rem;
-              &:before{
-                font-size: (30/$fs)*1rem;
+              padding-left: (85 / $fs) * 1rem;
+              padding-right: (80 / $fs) * 1rem;
+              min-height: (50 / $fs) * 1rem;
+              &:before {
+                font-size: (30 / $fs) * 1rem;
                 line-height: (50/30);
-                width: (50/$fs)*1rem;
-                height: (50/$fs)*1rem;
+                width: (50 / $fs) * 1rem;
+                height: (50 / $fs) * 1rem;
               }
-              &:after{
+              &:after {
                 //display: none;
               }
             }
             .faq_a {
-              padding-left: (85/$fs)*1rem;
-              padding-right: (0/$fs)*1rem;
-              margin-top: (20/$fs)*1rem;
-              &:before{
-                font-size: (30/$fs)*1rem;
+              padding-left: (85 / $fs) * 1rem;
+              padding-right: (0 / $fs) * 1rem;
+              margin-top: (20 / $fs) * 1rem;
+              &:before {
+                font-size: (30 / $fs) * 1rem;
                 line-height: (50/30);
-                width: (50/$fs)*1rem;
-                height: (50/$fs)*1rem;
+                width: (50 / $fs) * 1rem;
+                height: (50 / $fs) * 1rem;
               }
-              .txt{
-                min-height: (50/$fs)*1rem;
+              .txt {
+                min-height: (50 / $fs) * 1rem;
               }
             }
             .link {
-              font-size: (28/$fs)*1em;
-              a{}
+              font-size: (28 / $fs) * 1em;
+              a {
+              }
             }
-            .note {}
+            .note {
+            }
           }
         }
       }
-      
     }
-  }//#entry
-  
-  
-  #relative{
-    margin: (100/$fs)*1rem auto 0;
-    &>.tit {
-      padding-left: (30/$fs)*1rem;
-      font-size: (32/$fs)*1rem;
+  } //#entry
+
+  #relative {
+    margin: (100 / $fs) * 1rem auto 0;
+    & > .tit {
+      padding-left: (30 / $fs) * 1rem;
+      font-size: (32 / $fs) * 1rem;
       line-height: (50/32);
-      margin: (50/$fs)*1rem auto 0;
-      border-left: $green solid (7/$fs)*1rem;
+      margin: (50 / $fs) * 1rem auto 0;
+      border-left: $green solid (7 / $fs) * 1rem;
     }
     ul.posts {
-      margin-top: (35/$fs)*1rem;
+      margin-top: (35 / $fs) * 1rem;
       display: block;
-      &:before,&:after{
+      &:before,
+      &:after {
         display: none;
       }
       li.post {
-        margin-top: (75/$fs)*1rem;
+        margin-top: (75 / $fs) * 1rem;
         width: 100%;
-        &:first-child{
+        &:first-child {
           margin-top: 0;
         }
-        a{
+        a {
           .img {
-            &.new{
-              &:after{
-                font-size: (28/$fs)*1rem;
+            &.new {
+              &:after {
+                font-size: (28 / $fs) * 1rem;
               }
             }
           }
           .desc {
-            margin-top: (35/$fs)*1rem;
+            margin-top: (35 / $fs) * 1rem;
             .tit {
-              font-size: (32/$fs)*1rem;
+              font-size: (32 / $fs) * 1rem;
               line-height: (50/32);
             }
             .meta {
-              margin-top: (20/$fs)*1rem;
-              font-size: (24/$fs)*1rem;
+              margin-top: (20 / $fs) * 1rem;
+              font-size: (24 / $fs) * 1rem;
             }
           }
         }
       }
-    }    
+    }
+  }
+  &.wp-download {
+    & > article {
+      display: block;
+      padding: 0;
+      & > section {
+        &#entry.post_entry {
+          width: 89.33333%;
+          max-width: 740px;
+          margin: 1.875rem auto 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      & > div.dl-form {
+        width: 89.33333%;
+        max-width: 740px;
+        min-height: 100px;
+        margin: 1.875rem auto 0;
+        background: #000;
+      }
+    }
   }
 }
