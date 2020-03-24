@@ -758,17 +758,20 @@ $fs: 16;
   &.wp-download {
     & > article {
       display: flex;
+      margin: 0 auto;
       padding: 0 2.5rem;
+      max-width: 1416px;
       & > section {
         &#entry.post_entry {
-          width: 60%;
+          width: 50%;
           margin-right: 2.5rem;
         }
       }
       & > div.dl-form {
-        width: calc(40% - 2.5rem);
+        width: calc(50% - 2.5rem);
         margin: 1.875rem auto 0;
-        background: #000;
+        border-radius: 8px;
+        background: #f9f9f9;
       }
     }
   }

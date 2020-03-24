@@ -200,6 +200,7 @@ $first_args = array(
   //wp_reset_query();
 ?>
       </ul>
+      <div class="post_button"><a href="/download/" class="btn cta">無料で一括ダウンロードする</a></div>
     </section>
   </article>
 
