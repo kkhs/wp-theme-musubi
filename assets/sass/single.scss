@@ -755,6 +755,26 @@ $fs: 16;
       }
     }    
   }//#relative
+  &.wp-download {
+    & > article {
+      display: flex;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+      max-width: 1416px;
+      & > section {
+        &#entry.post_entry {
+          width: 50%;
+          margin-right: 2.5rem;
+        }
+      }
+      & > div.dl-form {
+        width: calc(50% - 2.5rem);
+        margin: 1.875rem auto 0;
+        border-radius: 8px;
+        background: #f9f9f9;
+      }
+    }
+  }
 }
 
 @media (min-width:1501px) {//*1280px～大型PC
