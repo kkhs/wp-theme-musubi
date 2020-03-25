@@ -1,4 +1,5 @@
-#content.single #entry .post .post_content {
+#content.single #entry .post .post_content,
+#content.single .dl-form {
   .hbspt-form {
     margin: 3.75rem auto 0;
     form.hs-form {
@@ -21,16 +22,21 @@
             }
           }
         }
-        label {
-          display: block;
-          margin: 0 0 0.5rem;
-          font-weight: bold;
-          & > span.hs-form-required {
-            color: red;
-            padding: 0 0 0 6px;
-          }
+      }
+      & > .hs-form-field {
+        margin-bottom: 1.875rem;
+      }
+      // label
+      label {
+        display: block;
+        margin: 0 0 0.5rem;
+        font-weight: bold;
+        & > span.hs-form-required {
+          color: red;
+          padding: 0 0 0 6px;
         }
       }
+      // list
       ul.inputs-list {
         margin: 0;
         & > li {
@@ -150,6 +156,22 @@
     }
     div.submitted-message {
       text-align: center;
+    }
+  }
+}
+
+#content.single .dl-form {
+  .hbspt-form {
+    margin: 0 auto;
+    padding: 1.875rem;
+    form.hs-form {
+      input,
+      select {
+        background: #fff;
+      }
+      .hs-richtext {
+        font-size: 0.9rem;
+      }
     }
   }
 }

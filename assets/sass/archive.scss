@@ -71,6 +71,11 @@ $fs: 16;
       max-width: 1000px;
     }
   }
+  &.wp-download{
+    .post_button{
+      margin: 1.875rem auto 0;
+    }
+  }
   #entries {
     width: (670/750)*100%;
     max-width: 1200px;
