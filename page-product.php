@@ -117,53 +117,73 @@ Musubiは、患者さんそれぞれの疾患・服用中の薬・生活習慣�
               </a>
             </li>
             <li class="setElm">
-              <span class="box">
+              <a class="box" href="/product/product-dsu">
                 <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function02.svg" alt=""></span>
                 <span class="txt">ハイリスク薬のDSU（医薬品<br>安全対策情報）に対応</span>
-              </span>
+              </a>
             </li>
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function01.svg" alt=""></span>
-              <span class="txt">同一法人店舗間で<br>患者情報を自動連係</span>
-            </span></li>
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function09.svg" alt=""></span>
-              <span class="txt">トレーシングレポート<br>の作成機能</span>
-            </span></li>
+            <li class="setElm">
+              <a class="box" href="/product/product-linkage">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function01.svg" alt=""></span>
+                <span class="txt">同一法人店舗間で<br>患者情報を自動連係</span>
+              </a>
+            </li>
+            <li class="setElm">
+              <a class="box" href="/product/product-report">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function09.svg" alt=""></span>
+                <span class="txt">トレーシングレポート<br>の作成機能</span>
+              </a>
+            </li>
 
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function04.svg" alt=""></span>
-              <span class="txt">在宅計画書・報告書<br>の作成機能</span>
-            </span></li>
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function03.svg" alt=""></span>
-              <span class="txt">検査値管理機能</span>
-            </span></li>
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function07.svg" alt=""></span>
-              <span class="txt">処方チェック機能</span>
-            </span></li>
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function10.svg" alt=""></span>
-              <span class="txt">服薬指導の表示や<br>健康アドバイスの<br>高頻度アップデート</span>
-            </span></li>
+            <li class="setElm">
+              <a class="box" href="/product/product-zaitaku">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function04.svg" alt=""></span>
+                <span class="txt">在宅計画書・報告書<br>の作成機能</span>
+              </a>
+            </li>
+            <li class="setElm">
+              <a class="box" href="/product/product-checkup">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function03.svg" alt=""></span>
+                <span class="txt">検査値管理機能</span>
+                </a>
+            </li>
+            <li class="setElm">
+              <a class="box" href="/product/product-checkprescription">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function07.svg" alt=""></span>
+                <span class="txt">処方チェック機能</span>
+              </a>
+            </li>
+            <li class="setElm">
+              <a class="box" href="/product/product-update">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function10.svg" alt=""></span>
+                <span class="txt">服薬指導の表示や<br>健康アドバイスの<br>高頻度アップデート</span>
+              </a>
+            </li>
 
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function06.svg" alt=""></span>
-              <span class="txt">セキュリティ・データ管理<br>に優れたクラウド型</span>
-            </span></li>
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function11.svg" alt=""></span>
-              <span class="txt">導入時の立ち上がり支援</span>
-            </span></li>
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function08.svg" alt=""></span>
-              <span class="txt">つながりやすい<br>サポートデスク</span>
-            </span></li>
-            <li class="setElm"><span class="box">
-              <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function12.svg" alt=""></span>
-              <span class="txt">ユーザー向け勉強会<br>など随時開催</span>
-            </span></li>
+            <li class="setElm">
+              <a class="box" href="/product/product-security">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function06.svg" alt=""></span>
+                <span class="txt">セキュリティ・データ管理<br>に優れたクラウド型</span>
+              </a>
+            </li>
+            <li class="setElm">
+              <a class="box" href="/product/product-usersuccess">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function11.svg" alt=""></span>
+                <span class="txt">導入時の立ち上がり支援</span>
+              </a>
+            </li>
+            <li class="setElm">
+              <a class="box" href="/product/product-supportdesk">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function08.svg" alt=""></span>
+                <span class="txt">つながりやすい<br>サポートデスク</span>
+              </a>
+            </li>
+            <li class="setElm">
+              <a class="box" href="/product/product-usersupport">
+                <span class="pict"><img src="<?php echo_assets_root_url(); ?>assets/images/product/index/function12.svg" alt=""></span>
+                <span class="txt">ユーザー向け勉強会<br>など随時開催</span>
+                </a>
+            </li>
           </ul>
         </div>
         <a href="/contact" class="btn cta">資料請求・お問い合わせ</a>
