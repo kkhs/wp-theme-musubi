@@ -55,6 +55,7 @@ get_header();
   date_default_timezone_set('Asia/Tokyo'); $date_now = date('YmdHi');
   if($overview['cf_date_end'])$date_end = $overview['cf_date_end'];
   if( intval(get_field('cf_event_target')) === 1 || $date_now >= $date_end ):
+  date_default_timezone_set('UTC');
 ?>
 
   <script>
