@@ -1,8 +1,11 @@
 <?php $isLp = get_field('cf_isLp'); ?>
 
 <?php if(!is_post_type_archive('wp-download')&& !is_singular('wp-download') && !$isLp){ include(TEMPLATEPATH .'/mod/mod-download.php');} ?>
+<?php if ( is_home() || is_front_page() || is_page( array('productcustom','concept') )) : ?>
+<?php else: ?>
 <?php if(!$isLp) { include(TEMPLATEPATH .'/mod/mod-vision.php'); }?>
 <?php include(TEMPLATEPATH .'/mod/mod-inquiry.php');?>
+<?php endif; ?>
 
 <footer id="footer">
   <div class="ft_btm">
@@ -25,11 +28,12 @@
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.easing.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.inview.min.js"></script>
+<script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.magnific-popup.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/smooth-scroll.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/simpleLightbox/simpleLightbox.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/slick.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/common.js"></script>
-
+<script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
 <?php 
 /*if( current_user_can( 'administrator' ) ):
 global $template; // テンプレートファイルのパスを取得

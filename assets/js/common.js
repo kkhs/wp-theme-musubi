@@ -61,3 +61,10 @@ function scrFunc(){
     h.removeClass('fixed');
   }
 }
+
+  // Magnific Popup
+  $(function() {
+      $('.inline-link').magnificPopup({
+      type:'inline'
+      });
+    });

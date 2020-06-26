@@ -2,6 +2,70 @@
 
 <div id="content" class="index">
   <article class="article_main">
+    <section id="kv_custom">
+      <div class="mv_area  setElm">
+
+        <div class="img_area A">
+          <div class="box_l bg_1">
+          </div>
+          <div class="box_l bg_2">
+          </div>
+          <div class="box_l bg_3">
+          </div>
+          <div class="box_l bg_4">
+          </div>
+        </div>
+
+        <div class="img_area B">
+
+          <div class="box_2l A">
+            <div class="small_box">
+              <div class="bg_14">
+              </div>
+              <div class="bg_13">
+              </div>
+            </div>
+            <div class="large bg_12">
+            </div>
+          </div>
+
+          <div class="box_bg">
+            <div class="title_area">
+              <p>患者満足と薬局の働き方改革を支援する</p>
+              <h1>薬局体験アシスタント</h1>
+            </div>
+            <div class="btn_area">
+              <a href="#" class="btn_kv">
+              薬局体験とは？
+              </a>
+            </div>
+          </div>
+
+          <div class="box_2l B">
+            <div class="large bg_10">
+            </div>
+            <div class="small_box">
+              <div class="bg_8">
+              </div>
+              <div class="bg_9">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img_area C">
+          <div class="box_l bg_11">
+          </div>
+          <div class="box_l bg_12">
+          </div>
+          <div class="box_l bg_13">
+          </div>
+          <div class="box_l bg_14">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
     <section id="kv">
       <div class="kv_top">
         <div class="kv_inner">
@@ -25,115 +89,253 @@
         </div>
       </div>
     </section>
-
-    <section id="overview">
-      <div class="lead">
+    -->
+    <section id="point_custom">
+      <div class="bg">
         <div class="section_inner">
-          <div class="desc">
-            <h2 class="tit">
-              薬剤師の負担を最小に、<br>
-              患者さんの満足度を最大にする
-              <em>電子薬歴・服薬指導システム</em></h2>
-            <div class="txt">
-              Musubiは「薬局業務の最適化」による「患者さんのより良い薬局体験」を目指して開発された、まったく新しい薬局支援サービス。紙薬歴を電子化した従来型の電子薬歴とは異なり、薬局の生産性向上と服薬指導の充実化、患者コミュニケーションの円滑化を、トータルに実現します。
+          <div class="colum-wh">
+            <h2 class="title">Musubiが導く<br class="display-sp"><span>3つ</span>の薬局変革</h2>
+            <p class="caption">
+            これからの薬局に求められる「患者満足」。それは患者さん一人ひとりに向き合う薬局スタッフの「働き方改革」なくして実現するものではありません。<br>
+            そして働き方改革は、適切な「店舗の状況把握」があってこそ。<br>
+            Musubiはその全てをサポートし、薬局・薬剤師と患者さん“双方”の薬局体験を向上させます。
+            </p>
+            <div class="point-area setElm">
+              <div class="point">
+                <div class="icon_area">
+                  <figure>
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/icon_point_1@2x.png" alt="">
+                  </figure>
+                </div>
+                <div class="txt_area">
+                  <p>店舗の状況把握<!--<br>経営改善--></p>
+                </div>
+              </div>
+              <div class="point sec">
+                <div class="icon_area">
+                  <figure>
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/icon_point_2@2x.png" alt="">
+                  </figure>
+                </div>
+                <div class="txt_area">
+                  <p>働き方改革</p>
+                </div>
+              </div>
+              <div class="point thi">
+                <div class="icon_area">
+                  <figure>
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/icon_point_3@2x.png" alt="">
+                  </figure>
+                </div>
+                <div class="txt_area">
+                  <p>患者満足</p>
+                </div>
+              </div>
+              <div class="border"></div>
+            </div>
+            <div class="btn_area">
+              <a href="#" class="btn cta">薬局体験アシスタント<br class="display-sp">Musubiとは？</a>
             </div>
           </div>
-          <div class="imgs setElm">
-            <img src="<?php echo_assets_root_url(); ?>assets/images/index/overview_disp02.jpg" alt="">
-            <img src="<?php echo_assets_root_url(); ?>assets/images/index/overview_disp01.jpg" alt="">
-            <img src="<?php echo_assets_root_url(); ?>assets/images/index/overview_disp03.jpg" alt="">
-            <img src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_pad.svg" alt="">
-            <img src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_medicine.svg" alt="">
-            <img src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_communication.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="choice_custom">
+      <div class="bg setElm">
+        <h2 class="title">Musubiが選ばれる理由</h2>
+        <div class="section_inner">
+          <div class="choice_box setElm">
+            <div class="inner">
+              <div class="title-area">
+                <div class="focus">Point.01</div>
+                <h3 class="colum_title">
+                  <span>服薬指導中に薬歴作成と同時に、</span><br>
+                  圧倒的な薬歴業務の効率化を実現
+                </h3>
+                <p class="caption">
+                患者さんと一緒にタブレットPCを見ながら服薬指導。<br class="display-pc">
+                指導中に画面タッチするだけで、薬歴の下書きが自動で作成されます。
+                </p>
+              </div>
+              <div class="flow-base">
+                <div class="flow-area-outer">
+                  <div class="js-scrollable">
+                    <div class="flow-area">
+                      <div class="box A">
+                        <div class="num">1</div>
+                        <div class="border">
+                          <div class="title">処方箋受付</div>
+                          <div class="img-area">
+                            <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_flow_1@2x.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box B">
+                        <div class="num">2</div>
+                        <div class="border">
+                          <div class="title">調剤・監査</div>
+                          <div class="img-area">
+                            <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_flow_2@2x.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box focus C">
+                        <div class="num">3</div>
+                        <div class="border">
+                          <div class="title">服薬指導と薬歴作成を同時に</div>
+                          <div class="img-area">
+                            <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_flow_3@2x.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box D">
+                        <div class="num">4</div>
+                        <div class="border">
+                          <div class="title">薬剤交付</div>
+                          <div class="img-area">
+                            <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_flow_4@2x.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box E">
+                        <div class="num">5</div>
+                        <div class="border">
+                          <div class="title">完了</div>
+                          <div class="img-area">
+                            <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_flow_5@2x.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="caption-area">
+                  <h3>Musubiは、<span>特許を取得</span>しています！</h3>
+                  <p>
+                    発明の名称｜薬剤師による患者に対する服薬指導を支援するための装置、方法及びプログラム<br>
+                    特許番号｜第6381088号　出願日｜2016年10月7日　登録日｜2018年8月10日
+                  </p>
+                  <a href="blog/181115-musubi-patent/" class="txt_link" target=”_blank” rel=”noopener”>詳しくはこちら</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="choice_box sec setElm">
+            <div class="inner">
+              <div class="title-area">
+                <span class="focus">Point.02</span>
+              </div>
+              <div class="flex_box">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/movie_ui.gif" alt="">
+                  </div>
+                </div>
+                <div class="txt-area">
+                  <h3 class="colum_title">
+                    <span>シンプルな画面・操作方法</span><br>
+                    だから、誰でもすぐに使えます
+                  </h3>
+                  <p>
+                  見やすさ・分かりやすさにこだわったテキスト表示や画面デザイン。タブレットPCの画面タッチをメインに、キーボードによるタイピングを最小限に留めた直感的な操作性。従来型のシステムと一線を画す、Musubiならではのこだわりです。
+                  </p>
+                  <figure>
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/gooddesign.png" alt="">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="choice_box third setElm">
+            <div class="inner">
+              <div class="title-area">
+                <span class="focus">Point.03</span>
+              </div>
+              <div class="flex_box">
+                <div class="img-area">
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_choice_3@2x.png" alt="">
+                </div>
+                <div class="txt-area">
+                  <h3 class="colum_title">
+                    <span>マンツーマンサポート</span>をご用意<br>
+                    安心してお任せください
+                  </h3>
+                  <p>
+                  Musubiの効率的な習熟のために設計された、独自の研修プログラムをご用意。
+                  一度きりの一括導入研修にとどまらない継続的なサポートが、多くのユーザー薬局に支持されています。
+                  </p>
+                </div>
+              </div>
+              <div class="fikidashi">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/fukidashi_choice_3.png" alt="">
+              </div>
+              <div class="comment-area">
+                <div class="title">
+                  <h4>プログラム終了時のコメント<br class="display-sp">（アンケート回答より抜粋）</h4>
+                </div>
+                <div class="comment-base">
+                  <ul>
+                    <li>
+                      <span class="icon"></span>
+                      <span class="txt">パソコン初心者にも分かりやすく説明してくれました。</span>
+                      
+                    </li>
+                    <li>
+                    <span class="icon"></span>
+                    <span class="txt">
+                      Musubiを使いながら毎週セッションがあるのでその段階ごとの疑問や問題点を
+                      リアルタイムで解決できるのですごく助かりました。
+                    </span>
+                    </li>
+                    <li>
+                    <span class="icon"></span>
+                    <span class="txt">
+                    セッション以外にもチャットツールで細かな要望や質問事項などにも答えてもらえ、
+                      スムーズにMusubiを使いこなせるようになりました。
+                    </span>
+                    </li>
+                    <li>
+                    <span class="icon"></span>
+                    <span class="txt">
+                    カケハシスタッフの質が高く、基本的には満足している。
+                    </span>
+                    </li>
+                  </ul>
+                </div>
+                <p class="teacher-heading">一部講師のご紹介</p>
+                <div class="teacher-area">
+                  <div class="box">
+                    <div class="img-area">
+                      <div class="circle">
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_choice_3_2@2x.png" alt="">
+                      </div>
+                    </div>
+                    <div class="txt-area">
+                      <p class="job">株式会社カケハシ、ファーマシストパートナー</p>
+                      <p class="name">山﨑 友樹 （ 薬剤師 ）</p>
+                      <p class="caption">
+                        水野薬局本局の主任、Cambridge Healthcare Research社のリサーチャーなどを経て2017年に
+                        KAKEHASHIに参画。Musubiの導入支援や薬剤関連コンテンツの整備に従事。
+                        多くの薬局様のMusubi導入に関わった知見を活かして情報をご提供いたします。
+                        CareNetにて「論文で探る服薬指導のエビデンス」を連載。所属勉強会は、EBM-Tokyoなど。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <a href="#" class="btn cta">サービス詳細についてはこちら</a>
           </div>
         </div>
-      </div>
-      <div id="function">
-        <div class="section_inner">
-          <ul>
-            <li>
-              <span class="num"><img src="<?php echo_assets_root_url(); ?>assets/images/index/function_num01.svg" alt="01"></span>
-              <div class="img"><img src="<?php echo_assets_root_url(); ?>assets/images/index/function01.jpg" alt=""></div>
-              <div class="desc">
-                <h3 class="tit">カンタン操作で内容充実<em>瞬間薬歴</em></h3>
-                <div class="txt">タブレットPCの画面タップで、薬歴の下書きを自動作成。服薬指導中に、薬歴をほぼ完成させることができます。</div>
-              </div>
-            </li>
-            <li>
-              <span class="num"><img src="<?php echo_assets_root_url(); ?>assets/images/index/function_num02.svg" alt="02"></span>
-              <div class="img"><img src="<?php echo_assets_root_url(); ?>assets/images/index/function02.jpg" alt=""></div>
-              <div class="desc">
-                <h3 class="tit">薬剤師の仕事をサポート<em>服薬指導<br class="forPC">アシスタント</em></h3>
-                <div class="txt">患者さんそれぞれの疾患・服用中のお薬・生活習慣・過去処方・季節情報などをもとに、適切な服薬指導の内容を自動で提案します。</div>
-              </div>
-            </li>
-            <li>
-              <span class="num"><img src="<?php echo_assets_root_url(); ?>assets/images/index/function_num03.svg" alt="03"></span>
-              <div class="img"><img src="<?php echo_assets_root_url(); ?>assets/images/index/function03.jpg" alt=""></div>
-              <div class="desc">
-                <h3 class="tit">患者さんに届く・伝わる<em>ビジュアル<br class="forPC">コミュニケーション</em></h3>
-                <div class="txt">一般的な電子薬歴とは異なり、Musubiは専用のタブレット画面を患者さんにお見せしながら服薬指導することができます。</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="movie">
-        <div class="section_inner">
-          <a class="popMovie">
-            <span class="thumb"><img src="<?php echo_assets_root_url(); ?>assets/images/index/service_movie.jpg" alt="電子薬歴システム「Musubi」とは？"></span>
-            <h3 class="tit">電子薬歴システム「Musubi」とは？</h3>
-            <i class="btn_play"></i>
-          </a>
-          <a href="/product" class="btn cta">サービス詳細へ</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="mod-expansion" class="setElm">
-      <div class="section_inner">
-        <div class="desc">
-          <h2 class="tit">導入薬局、全国に拡大中</h2>
-          <div class="txt">これからの時代を真剣に考える薬局が、<br class="forSP">Musubiを選んでいます。</div>
-        </div>
-        <div class="map">
-          <img class="map_base" src="<?php echo_assets_root_url(); ?>assets/images/index/expansion_map.png" alt="">
-          <i class="pin pin01"></i>
-          <i class="pin pin02"></i>
-          <i class="pin pin03"></i>
-          <i class="pin pin04"></i>
-          <i class="pin pin05"></i>
-          <i class="pin pin06"></i>
-        </div>
-      </div>
-    </section>
-
-    <section id="campaign">
-      <div class="section_inner">
-        <h2 class="tit">お得なプラン・キャンペーン</h2>
-        <ul>
-          <li class="starter">
-            <a href="/plan-starter">
-              <b>スタータープラン</b>
-              <strong>新規開業・出店向け</strong>
-              <span>これから新規開業される方に最適なプランです</span>
-            </a>
-          </li>
-          <li class="hajimete">
-            <a href="/plan-hajimete">
-              <b>電子薬歴はじめてプラン</b>
-              <strong>紙薬歴からの切り替え向け</strong>
-              <span>紙薬歴からの切り替えをお考えの方に</span>
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
 
     <section id="case">
       <div class="section_inner">
-        <h2 class="tit">導入事例</h2>
+        <h2 class="title">導入事例</h2>
         <?php
         $args = array(
           'post_type' => 'case',
@@ -188,7 +390,9 @@
               });
             });
           </script>
-          <a href="/case" class="btn cta">導入事例をもっと見る</a>
+          <div class="btn_area">
+            <a href="/case" class="btn cta">導入事例をもっと見る</a>
+          </div>
         <?php
         endif;
         wp_reset_query();
@@ -196,16 +400,216 @@
       </div>
     </section>
 
-    <section id="topic">
+    <section id="faq_custom">
+      <div class="bg">
+        <h2>よくある質問</h2>
+        <div class="section_inner">
+          <div class="faq_base">
+            <div class="q_area">
+              <div class="icon">Q</div>
+              <p>今使っているレセコンと連携できますか？</p>
+            </div>
+            <div class="a_area">
+              <div class="icon">A</div>
+              <div class="text_area">
+                <p>
+                Musubiは日本薬剤師会が推奨する、薬局向けコンピュータ間の連携システムであるNSIPS®に準拠しております。
+                NSIPS®に対応しているレセコンとの連携が可能です。多数のレセコンメーカーとの連携実績がありますのでご安心ください。
+                </p>
+                <a href="#" class="txt_link">詳しくはこちらのページを参照ください</a>
+                <p>
+                  ＊NSIPS®とは日本薬剤師会が提案する、薬局向けの各種調剤システムを連動させるための共有仕様です。
+                  ＊NSIPS®は公益社団法人日本薬剤師会の登録商標です。（商標登録 第5214610号）
+                </p>
+              </div>
+              <div class="img_area">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_faq_1@2x.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="faq_base">
+            <div class="q_area">
+              <div class="icon">Q</div>
+              <p>いま使っている電子薬歴から、データの引継ぎは可能ですか？</p>
+            </div>
+            <div class="a_area">
+              <div class="icon">A</div>
+              <div class="text_area">
+                <p>
+                  Musubiは「電子薬歴データ交換仕様に関する連絡協議会」（exPD）に加盟しています。
+                  exPDに加盟している電子薬歴からのデータ移行が可能です。 詳しくはお問い合わせください。
+                </p>
+                <a href="#" class="txt_link">お問い合わせはこちらから</a>
+              </div>
+              <div class="img_area">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_faq_2@2x.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="faq_base">
+            <div class="q_area">
+              <div class="icon">Q</div>
+              <p>IT機器の導入に不安があるのですが……</p>
+            </div>
+            <div class="a_area">
+              <div class="icon">A</div>
+              <div class="text_area">
+                <p>
+                  事前の準備から当日の設置まで、専門スタッフが細かくサポートしますので、ご安心ください。
+                </p>
+              </div>
+              <div class="img_area">
+                <!--
+                <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_faq_3@2x.png" alt="">
+                -->
+              </div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <a href="/faq" class="btn cta">質問をもっと見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="price">
       <div class="section_inner">
-        <a href="javascript:void(0);" class="tab active" data-tab="event"><span>イベント</span></a>
-        <a href="javascript:void(0);" class="tab" data-tab="blog"><span>お知らせ</span></a>
-        <div class="sheet">
+        <h2 class="tit">価格体系</h2>
+        <div class="price_plan setElm">
+          <div class="txt">基本プランで、すべての<br class="forSP">機能・<br class="forPC">サービス・サポート<br class="forSP">をご利用いただけます。</div>
+          <div class="badge">5年ごとの<br>更新料<em>不要!</em></div>
+          <div class="equation">
+            <span class="cost total">基本プラン</span>
+            <i class="eq"><img src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_equal.svg" alt="="></i>
+            <span class="cost">初期費用</span>
+            <i class="eq"><img src="<?php echo_assets_root_url(); ?>assets/images/icons/icon_plus.svg" alt="+"></i>
+            <span class="cost">月額利用料</span>
+          </div>
+        </div>
+        <div class="price_free setElm">
+          <div class="free"><span class="shine">すべて<em>無料</em></span></div>
+          <div class="support">
+            <ul>
+              <li><div class="label">機能追加・アップデート</div><div class="desc">リリース2年で80回超のアップデート実績！</div></li>
+              <li><div class="label">電話サポート</div><div class="desc">100％応答！不通時は折り返し対応を徹底</div></li>
+              <li><div class="label">遠隔サポート</div><div class="desc">技術担当による直接対応！</div></li>
+              <li><div class="label">ユーザーコミュニティ参加</div><div class="desc">勉強会や交流イベントなど随時開催！</div></li>
+              <li><div class="label">ユーザー追加</div><div class="desc">店舗の人員拡大にも柔軟に対応可能！</div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-area">
+          <a href="#" class="btn cta A">
+            新規開業される方へ<br>
+            <span>お得なプランはこちら</span>
+          </a>
+          <a href="#" class="btn cta B">
+            紙薬歴から切替の方へ<br>
+            <span>お得なプランはこちら</span>
+          </a>
+        </div>
+        <!--
+        <div class="ctabox setElm">
+          <p class="call">詳しくはお問い合わせください</p>
+          <a href="/contact" class="btn cta">お見積り依頼・お問い合わせ</a>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <section id="event_custom">
+      <div class="section_inner">
+        <h2 class="tit">イベント・セミナー情報</h2>
+        <?php
+        $args = array(
+          'post_type' => 'event',
+          'post_parent' => 0,
+          'posts_per_page' => 8,
+          'post_status' => 'publish',
+          'order' => 'DESC',
+          'orderby' => 'date',
+        );
+        $query = new WP_Query($args);
+        if ($query->have_posts()) :
+        ?>
+          <div class="cases slider">
+              <?php
+                while ($query->have_posts()) {
+                  $query->the_post();
+                  $overview = get_field('cf_overview');
+                  if ($overview['cf_date_end']) $date_end = $overview['cf_date_end'];
+                ?>
+              <div class="case">
+                <a class="post_wrap" href="<?php the_permalink() ?>">
+                  <span class="img">
+                    <?php if (has_post_thumbnail()) : ?>
+                      <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>">
+                    <?php else : ?>
+                      <img src="/assets/images/common/noimg.jpg" alt="">
+                    <?php endif; ?>
+                  </span>
+                  <div class="inner">
+                    <p class="title"><?php the_title(); ?></p>
+                    <div class="date">
+                      <?php
+                        $before = array('年', '月', '日');
+                        $after = array('/', '/', '');
+                        $date = str_replace($before, $after, $overview['cf_date']);
+                        echo $date;
+                        ?>
+                    </div>
+                    <?php
+                    $terms = get_the_terms($post->ID, 'event_category');
+                    if ($terms && !is_wp_error($terms)) :
+                      foreach ($terms as $term) {
+                    ?>
+                        <span class="category"><?php echo $term->name; ?></span>
+                    <?php }
+                    endif; ?>
+                  </div>
+                </a>
+              </div>
+            <?php } // end while
+            ?>
+          </div>
+          <script>
+            $(document).ready(function() {
+              $('.slider').slick({
+                slide: '.case',
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: true,
+                prevArrow: '<a href="javascript:void(0)" class="slick-arrow slick-prev" title="Prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.49 72.71"><polygon class="cls-1" style="fill: #999;" points="42.49 35.33 5.11 0 0 5.41 31.98 35.62 1.76 67.6 7.17 72.71 37.38 40.73 37.38 40.73 42.49 35.33"/></svg></a>',
+                nextArrow: '<a href="javascript:void(0)" class="slick-arrow slick-next" title="Next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.49 72.71"><polygon class="cls-1" style="fill: #999;" points="42.49 35.33 5.11 0 0 5.41 31.98 35.62 1.76 67.6 7.17 72.71 37.38 40.73 37.38 40.73 42.49 35.33"/></svg></a>',
+                responsive: [{
+                  breakpoint: 960,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                }]
+              });
+            });
+          </script>
+          <div class="btn_area">
+            <a href="/event" class="btn cta">イベント・セミナー情報をもっと見る</a>
+          </div>
+        <?php
+        endif;
+        wp_reset_query();
+        ?>
+      </div>
+    </section>
+
+    <section id="doc_custom">
+      <div class="bg">
+        <h2>お役立ち資料</h2>
+        <div class="section_inner">
           <?php
           $args = array(
-            'post_type' => 'event',
-            'post_parent' => 0,
-            'posts_per_page' => 5,
+            'post_type' => 'wp-download',
+            'posts_per_page' => 6,
             'post_status' => 'publish',
             'order' => 'DESC',
             'orderby' => 'date',
@@ -213,43 +617,64 @@
           $query = new WP_Query($args);
           if ($query->have_posts()) :
           ?>
-            <div class="list_topic active" data-tab="event">
-              <ul>
-                <?php
-                while ($query->have_posts()) {
-                  $query->the_post();
-                  $overview = get_field('cf_overview');
-                  if ($overview['cf_date_end']) $date_end = $overview['cf_date_end'];
-                ?>
-                  <li>
-                    <a class="post_wrap" href="<?php the_permalink() ?>">
-                      <span class="date"><?php
-                                          $before = array('年', '月', '日');
-                                          $after = array('/', '/', '');
-                                          $date = str_replace($before, $after, $overview['cf_date']);
-                                          echo $date;
-                                          ?></span>
-                      <?php
-                      $terms = get_the_terms($post->ID, 'event_category');
-                      if ($terms && !is_wp_error($terms)) :
-                        foreach ($terms as $term) {
-                      ?>
-                          <span class="category"><?php echo $term->name; ?></span>
-                      <?php }
-                      endif; ?>
-                      <span class="txt"><?php the_title(); ?></span>
-                    </a>
-                  </li>
-                <?php } // end while 
-                ?>
-              </ul>
-              <a href="/event" class="btn bullet pale">一覧へ</a>
+            <div class="cases slider">
+              <?php
+              while ($query->have_posts()) {
+                $query->the_post();
+              ?>
+                <div class="case">
+                  <a href="<?php the_permalink() ?>" class="case_inner">
+                    <span class="img">
+                      <?php if (has_post_thumbnail()) : ?>
+                        <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>">
+                      <?php else : ?>
+                        <img src="/assets/images/common/noimg.jpg" alt="">
+                      <?php endif; ?>
+                    </span>
+                    <span class="desc">
+                      <h2 class="tit"><?php the_title(); ?></h2>
+                      <?php if (get_field('cf_user')) echo '<span class="user">' . get_field('cf_user') . '</span>'; ?>
+                    </span>
+                  </a>
+                </div>
+              <?php } // end while
+              ?>
+            </div>
+            <script>
+              $(document).ready(function() {
+                $('.slider').slick({
+                  slide: '.case',
+                  infinite: true,
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  dots: true,
+                  prevArrow: '<a href="javascript:void(0)" class="slick-arrow slick-prev" title="Prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.49 72.71"><polygon class="cls-1" style="fill: #999;" points="42.49 35.33 5.11 0 0 5.41 31.98 35.62 1.76 67.6 7.17 72.71 37.38 40.73 37.38 40.73 42.49 35.33"/></svg></a>',
+                  nextArrow: '<a href="javascript:void(0)" class="slick-arrow slick-next" title="Next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.49 72.71"><polygon class="cls-1" style="fill: #999;" points="42.49 35.33 5.11 0 0 5.41 31.98 35.62 1.76 67.6 7.17 72.71 37.38 40.73 37.38 40.73 42.49 35.33"/></svg></a>',
+                  responsive: [{
+                    breakpoint: 960,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                    }
+                  }]
+                });
+              });
+            </script>
+            <div class="btn_area">
+              <a href="/wp-download" class="btn cta">お役立ち資料をもっと見る</a>
             </div>
           <?php
           endif;
           wp_reset_query();
           ?>
+        </div>
+      </div>
+    </section>
 
+    <section id="topic_custom">
+      <div class="section_inner">
+        <h2>お知らせ</h2>
+        <div class="sheet">
           <?php
           $tax_query = array(
             'taxonomy' => 'blog_category',
@@ -304,23 +729,47 @@
                       <?php } elseif (get_field('cf_exlink')) { ?>
                       </a>
                     <?php } else { ?>
+                    </div>
+                  <?php } ?>
+                  </li>
+                <?php } // end while 
+                ?>
+              </ul>
+              <a href="/blog/news" class="btn bullet pale">一覧へ</a>
             </div>
-          <?php } ?>
-          </li>
-        <?php } // end while 
-        ?>
-        </ul>
-        <a href="/blog/news" class="btn bullet pale">一覧へ</a>
+          <?php
+              endif;
+              wp_reset_query();
+          ?>
         </div>
-      <?php
-          endif;
-          wp_reset_query();
-      ?>
-
       </div>
-</div>
-</section>
-</article>
+    </section>
+
+    <section id="docarea_custom">
+      <div class="bg">
+        <h2>Musubiの事がよくわかる資料</h2>
+        <div class="section_inner">
+          <div class="doc-area">
+            <figure>
+            <img src="<?php echo_assets_root_url(); ?>assets/images/common/img_doc_1.png" alt="">
+            </figure>
+            <figure>
+            <img src="<?php echo_assets_root_url(); ?>assets/images/common/img_doc_2.png" alt="">
+            </figure>
+            <figure>
+            <img src="<?php echo_assets_root_url(); ?>assets/images/common/img_doc_3.png" alt="">
+            </figure>
+            <figure>
+            <img src="<?php echo_assets_root_url(); ?>assets/images/common/img_doc_4.png" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="btn_area">
+            <a href="#" class="btn cta">資料をダウンロードする</a>
+        </div>
+      </div>
+    </section>      
+  </article>
 </div>
 
 <?php get_footer(); ?>
@@ -341,6 +790,15 @@
     $('.list_topic[data-tab="' + t + '"]').addClass('active');
   });
 </script>
+
+<script>
+	new ScrollHint('.js-scrollable', {
+	i18n: {
+		scrollable: 'スクロールできます'
+	}
+	});
+</script>
+
 </body>
 
 </html>
