@@ -316,7 +316,7 @@ body{
     }
     .header_navi{
       flex: 1;
-      margin-left: (48/$fs)*1rem;
+      margin-left: (36/$fs)*1rem;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
@@ -359,7 +359,9 @@ body{
           align-items: center;
           li{
             letter-spacing: .08em;
-            margin-right: 2.16em;
+            //margin-right: 2.16em;
+            font-size: .95em;
+            margin-right: 1.8em;
             a{
               display: block;
               @media(hover:hover){
@@ -810,8 +812,10 @@ footer{
 #header .header_inner .header_navi .header_btm .header_menu{
   li{
     letter-spacing: .06em;
-    margin-right: 2em;
-    font-size: (14/$fs)*1rem;
+    //margin-right: 2em;
+    //font-size: (14/$fs)*1rem;
+    font-size: .85rem;
+    margin-right: 1.4em;
   }
 }
   
@@ -951,8 +955,9 @@ $fs: 28;
         content: "";
         display: block;
         width: 100%;
-        height: 1px;
+        height: 3px;
         background: $green;
+        border-radius: 2px;
         position: absolute;
         top: 50%;
         left: 0;
