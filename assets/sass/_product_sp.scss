@@ -278,6 +278,9 @@
                 margin-right: 0;
                 margin-bottom: .8em;
               }
+              p.txt_btn {
+                margin-bottom: .8em;
+              }
             }
             .border {
               position: absolute;
@@ -1540,17 +1543,23 @@
   #top {
     .title_area {
       background-color: #4ecdc4;
-      padding: 1.8em 0;
+      padding: 1.5em 0;
       text-align: center;
-      span {
-        color: #fff;
-        font-size: 1rem;
-      }
       h1 {
         color: #fff;
-        font-size: 2.1rem;
-        line-height: 1.4;
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+      p.focus {
+        color: #fff;
+        font-size: 1.7rem;
+        line-height: 1.3;
         margin-bottom: .2em;
+        span {
+          margin: 0 .2em;
+          font-size: 1.7rem;
+          font-weight: 500;
+        }
       }
     }
   }
@@ -1561,7 +1570,7 @@
       padding: 1.4em 0;
       text-align: center;
       h2 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -1678,12 +1687,11 @@
           flex-direction: column;
           padding-top: 2em;
           margin-bottom: 0;
-          .title_sp {
-            display: block;
-            font-size: 1.7rem;
-            text-align: center;
-          }
           &.inview { 
+            .title_sp {
+              opacity: 1;
+              transform: translateY(0);
+            }
             .sub_box {
               .sub.A, .sub.B, .sub.C {
                 opacity: 1;
@@ -1691,7 +1699,9 @@
             }
             .main_box {
               figure {
-                .img_1, .img_2, .img_3, .img_4 {
+                .img_1, .img_2, .img_3, .img_4,
+                .img_1_dot, .img_2_dot, .img_3_dot, .img_4_dot,
+                .img_5 {
                   opacity: 1;
                   transform: translateY(0);
                 }
@@ -1700,6 +1710,14 @@
                 opacity: 1;
               }
             }
+          }
+          .title_sp {
+            display: block;
+            font-size: 1.7rem;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(2rem);
+            transition: all 1s ease-out .3s;
           }
           .sub_box {
             //background-color: #c1c1c1;
@@ -1739,33 +1757,64 @@
             min-height: 200px;
             position: relative;
             figure{
-              .img_1, .img_2, .img_3, .img_4 {
+              .img_1, .img_2, .img_3, .img_4,
+              .img_1_dot, .img_2_dot, .img_3_dot, .img_4_dot,
+              .img_5 {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
               }
+              .img_1_dot {
+                opacity: 0;
+                transition: all .6s ease-in 1.4s;
+                z-index: 2;
+              }
               .img_1 {
                 opacity: 0;
-                transition: all .8s ease-in .6s;
+                transition: all .6s ease-in 1.4s;
+                z-index: 1;
+              }
+              .img_2_dot {
+                opacity: 0;
+                transition: all .6s ease-in 2.4s;
+                z-index: 2;
               }
               .img_2 {
                 opacity: 0;
-                transition: all .8s ease-in 1.4s;
+                transition: all .6s ease-in 2.4s;
+                z-index: 1;
+              }
+              .img_3_dot {
+                opacity: 0;
+                transition: all .6s ease-in 3.4s;
+                z-index: 2;
               }
               .img_3 {
                 opacity: 0;
-                transition: all .8s ease-in 2.2s;
+                transition: all .6s ease-in 3.4s;
+                z-index: 1;
+              }
+              .img_4_dot {
+                opacity: 0;
+                transition: all .6s ease-in 4.4s;
+                z-index: 2;
               }
               .img_4 {
                 opacity: 0;
+                transition: all .6s ease-in 4.4s;
+                z-index: 1;
+              }
+              .img_5 {
+                opacity: 0;
                 transform: translateY(2rem);
-                transition: all 1s ease-out 3.2s;
+                transition: all 1s ease-out 5.6s;
+                z-index: 3;
               }
             }
             .txt_area {
               opacity: 0;
-              transition: all 1s ease-out 4.2s;
+              transition: all 1s ease-out 6.6s;
               position: absolute;
               bottom: -6em;
               left: 50%;
@@ -1938,6 +1987,9 @@
         font-size: (42 / $fs) * 1rem;
         line-height: (60/42);
       }
+      .title {
+        font-size: 1.5rem;
+      }
       .cases {
         margin: (65 / $fs) * 1rem auto 0;
         .slick-list {
@@ -2059,7 +2111,7 @@
         }
       }
       .btn_area {
-        margin-top: 3em;
+        margin-top: 1em;
         a.btn.cta {
           margin: 0 auto;
           font-size: .9rem;
@@ -2081,7 +2133,7 @@
       }
     }
     .section_inner {
-      padding: 2em 0;
+      padding: 1em 0 2em; 
       & > .tit {
         font-size: (42 / $fs) * 1rem;
         line-height: (60/42);

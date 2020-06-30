@@ -35,7 +35,7 @@
               <h1>薬局体験アシスタント</h1>
             </div>
             <div class="btn_area">
-              <a href="#" class="btn_kv">
+              <a href="/concept/" class="btn_kv">
               薬局体験とは？
               </a>
             </div>
@@ -65,31 +65,7 @@
         </div>
       </div>
     </section>
-    <!--
-    <section id="kv">
-      <div class="kv_top">
-        <div class="kv_inner">
-          <div class="catch">患者さんと真剣に向き合うために<em>薬局・薬剤師に、もっと余裕を。</em></div>
-          <div class="btnWrap"><a href="/contact" class="btn bullet">資料請求・お問い合わせ</a></div>
-        </div>
-      </div>
-      <div class="kv_btm">
-        <div class="kv_inner">
-          <ul class="faces">
-            <li><img src="<?php echo_assets_root_url(); ?>assets/images/index/kv_face01.jpg" alt=""></li>
-            <li><img src="<?php echo_assets_root_url(); ?>assets/images/index/kv_face02.jpg" alt=""></li>
-            <li class="sp_end"><img src="<?php echo_assets_root_url(); ?>assets/images/index/kv_face03.jpg" alt=""></li>
-            <li><img src="<?php echo_assets_root_url(); ?>assets/images/index/kv_face04.jpg" alt=""></li>
-            <li class="forPC"><img src="<?php echo_assets_root_url(); ?>assets/images/index/kv_face05.jpg" alt=""></li>
-          </ul>
-          <div class="mock">
-            <span class="badge">導入薬局<br>全国に拡大中</span>
-            <img src="<?php echo_assets_root_url(); ?>assets/images/index/kv_mock.png" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
+    
     <section id="point_custom">
       <div class="bg">
         <div class="section_inner">
@@ -98,7 +74,7 @@
             <p class="caption">
             これからの薬局に求められる「患者満足」。それは患者さん一人ひとりに向き合う薬局スタッフの「働き方改革」なくして実現するものではありません。<br>
             そして働き方改革は、適切な「店舗の状況把握」があってこそ。<br>
-            Musubiはその全てをサポートし、薬局・薬剤師と患者さん“双方”の薬局体験を向上させます。
+            Musubiはその全てをサポートし、薬局・薬剤師と患者さん“双方”の薬局体験を向上させる、従来の電子薬歴とは明確に異なる新時代のサービスです。
             </p>
             <div class="point-area setElm">
               <div class="point">
@@ -134,7 +110,7 @@
               <div class="border"></div>
             </div>
             <div class="btn_area">
-              <a href="#" class="btn cta">薬局体験アシスタント<br class="display-sp">Musubiとは？</a>
+              <a href="/concept/" class="btn cta">薬局体験アシスタント<br class="display-sp">Musubiとは？</a>
             </div>
           </div>
         </div>
@@ -143,7 +119,7 @@
 
     <section id="choice_custom">
       <div class="bg setElm">
-        <h2 class="title">Musubiが選ばれる理由</h2>
+        <h2 class="title">なぜMusubiが選ばれるのか？</h2>
         <div class="section_inner">
           <div class="choice_box setElm">
             <div class="inner">
@@ -155,12 +131,12 @@
                 </h3>
                 <p class="caption">
                 患者さんと一緒にタブレットPCを見ながら服薬指導。<br class="display-pc">
-                指導中に画面タッチするだけで、薬歴の下書きが自動で作成されます。
+                指導中に画面タッチするだけで、薬歴の下書きが自動で作成されます。<br class="display-pc">ただ早く書くことを目的とした従来の電子薬歴と異なり、「書かずに漏れなく記録する」ためのシステムです。
                 </p>
               </div>
               <div class="flow-base">
                 <div class="flow-area-outer">
-                  <div class="js-scrollable">
+                  <!-- <div class="js-scrollable"> -->
                     <div class="flow-area">
                       <div class="box A">
                         <div class="num">1</div>
@@ -208,7 +184,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  <!-- </div> -->
                 </div>
                 <div class="caption-area">
                   <h3>Musubiは、<span>特許を取得</span>しています！</h3>
@@ -238,7 +214,7 @@
                     だから、誰でもすぐに使えます
                   </h3>
                   <p>
-                  見やすさ・分かりやすさにこだわったテキスト表示や画面デザイン。タブレットPCの画面タッチをメインに、キーボードによるタイピングを最小限に留めた直感的な操作性。従来型のシステムと一線を画す、Musubiならではのこだわりです。
+                  見やすさ・分かりやすさにこだわったテキスト表示や画面デザイン。タブレットPCの画面タッチをメインに、キーボードによるタイピングを最小限に留めた直感的な操作性。従来型の電子薬歴システムと一線を画す、Musubiならではのこだわりです。
                   </p>
                   <figure>
                     <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/gooddesign.png" alt="">
@@ -263,7 +239,7 @@
                   </h3>
                   <p>
                   Musubiの効率的な習熟のために設計された、独自の研修プログラムをご用意。
-                  一度きりの一括導入研修にとどまらない継続的なサポートが、多くのユーザー薬局に支持されています。
+                  一度きりの一括導入研修にとどまらない継続的なサポートが、PC操作や新しいシステムの導入に不安をお持ちの薬局からも指示されています。
                   </p>
                 </div>
               </div>
@@ -278,7 +254,7 @@
                   <ul>
                     <li>
                       <span class="icon"></span>
-                      <span class="txt">パソコン初心者にも分かりやすく説明してくれました。</span>
+                      <span class="txt">電子薬歴やパソコン初心者にも分かりやすく説明してくれました。</span>
                       
                     </li>
                     <li>
@@ -327,7 +303,7 @@
             </div>
           </div>
           <div class="btn_area">
-            <a href="#" class="btn cta">サービス詳細についてはこちら</a>
+            <a href="/product/" class="btn cta">サービス詳細についてはこちら</a>
           </div>
         </div>
       </div>
@@ -499,11 +475,11 @@
           </div>
         </div>
         <div class="btn-area">
-          <a href="#" class="btn cta A">
+          <a href="/plan-starter/" class="btn cta A">
             新規開業される方へ<br>
             <span>お得なプランはこちら</span>
           </a>
-          <a href="#" class="btn cta B">
+          <a href="/plan-hajimete/" class="btn cta B">
             紙薬歴から切替の方へ<br>
             <span>お得なプランはこちら</span>
           </a>
@@ -765,7 +741,7 @@
           </div>
         </div>
         <div class="btn_area">
-            <a href="#" class="btn cta">資料をダウンロードする</a>
+            <a href="/contact/" class="btn cta">資料をダウンロードする</a>
         </div>
       </div>
     </section>      

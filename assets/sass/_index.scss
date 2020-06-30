@@ -416,7 +416,7 @@ $fs: 16;
               width: 260px;
               height: 260px;
               background-color: #fff;
-              border: 6px solid #4ecdc4;
+              border: 6px solid rgba(78, 205, 196, .75);
               border-radius: 50%;
               display: flex;
               flex-direction: column;
@@ -450,7 +450,7 @@ $fs: 16;
             }
             .border {
               position: absolute;
-              border-top: 6px solid #4ecdc4;
+              border-top: 6px solid rgba(78, 205, 196, .75);
               top: 42%;
               transform: translateXY(-50%);
               -webkit-transform: translateXY(-50%);
@@ -520,7 +520,7 @@ $fs: 16;
             opacity: 0;
             transition: all .4s ease-in .3s;
             .focus {
-              color: #4ecdc4;
+              //color: #4ecdc4;
               font-size: 1.4rem;
               font-weight: 500;
               margin-bottom: .8em;
@@ -731,6 +731,20 @@ $fs: 16;
         .choice_box.sec {
           background-color: #fafafa;
           padding: 3em 0 4em;
+          &.inview { 
+            .title-area {
+              opacity: 1;
+            }
+            .flex_box {
+              .txt-area {
+                opacity: 1;
+              }
+              .img-area {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+          }
           .flex_box { 
             flex-direction: row-reverse;
             justify-content: space-between;
@@ -743,6 +757,9 @@ $fs: 16;
               width: 480px;
               height: 320px;
               position: relative;
+              opacity: 0;
+              transform: translateX(3em);
+              transition: all .6s ease-in .8s;
               .img-box {
                 position: absolute;
                 top: 11%;
@@ -755,6 +772,8 @@ $fs: 16;
               }
             }
             .txt-area {
+              opacity: 0;
+              transition: all .4s ease-in .45s;
               figure {
                 margin-top: 2.4em;
                 text-align: left;
@@ -768,13 +787,42 @@ $fs: 16;
         }
         .choice_box.third {
           padding: 2em 0;
+          &.inview { 
+            .title-area {
+              opacity: 1;
+            }
+            .flex_box {
+              .txt-area {
+                opacity: 1;
+              }
+              .img-area {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+            .fikidashi, .comment-area {
+              opacity: 1;
+            }
+          }
           .flex_box { 
             margin-bottom: 2em;
             justify-content: space-between;
+
+            .img-area {
+              opacity: 0;
+              transform: translateX(-3em);
+              transition: all .6s ease-in .8s;
+            }
+            .txt-area {
+              opacity: 0;
+              transition: all .4s ease-in .45s;
+            }
           }
           .fikidashi {
             margin: 3em auto 1em;
             text-align: center;
+            opacity: 0;
+            transition: all .4s ease-in 1.2s;
             img {
               width: 380px;
             }
@@ -785,6 +833,8 @@ $fs: 16;
             border-radius: 4px;
             box-shadow: 2px 2px 2px rgba(0,0,0,.15);
             width: 100%;
+            opacity: 0;
+            transition: all .4s ease-in 1.6s;
             .title {
               background-color: #4ecdc4;
               color: #fff;
@@ -2417,6 +2467,18 @@ $vw: 750;
 }
 @media (min-width: 601px) and (max-width: 960px) {
   //*600px～タブレット
+  #content.index {
+    #kv_custom {
+      .mv_area {
+        .img_area {
+          .box_l.bg_2, .box_l.bg_3,
+          .box_l.bg_12, .box_l.bg_13 {
+            height: 160px;
+          }
+        }
+      }
+    }
+  } 
 }
 @media (min-width: 481px) and (max-width: 600px) {
   //*480px～：SP横

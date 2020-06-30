@@ -4,13 +4,13 @@
   <article class="article_main">
 
     <section id="top">
-      <div class="title_area">
-        <span>Musubi コンセプト</span>
-        <h1>薬局体験アシスタント</h1>
+      <div class="title_area setElm">
+        <h1>Musubi コンセプト</h1>
+        <p class="focus">薬局体験アシスタント</p>
       </div>
     </section>
     <section id="about">
-      <div class="bg">
+      <div class="bg setElm">
         <h2>薬局体験とは</h2>
         <p>薬剤師側と患者側、双方での体験を指します。</p>
       </div>
@@ -74,30 +74,63 @@
               </div>
             </div>
             <div class="main_box">
+
+              <figure class="display-pc">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_1_dot@2x.png" class="img_1_dot" alt="">
+              </figure>
               <figure class="display-pc">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_1@2x.png" class="img_1" alt="">
+              </figure>
+              <figure class="display-pc">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_2_dot@2x.png" class="img_2_dot" alt="">
               </figure>
               <figure class="display-pc">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_2@2x.png" class="img_2" alt="">
               </figure>
               <figure class="display-pc">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_3_dot@2x.png" class="img_3_dot" alt="">
+              </figure>
+              <figure class="display-pc">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_3@2x.png" class="img_3" alt="">
               </figure>
               <figure class="display-pc">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_4_dot@2x.png" class="img_4_dot" alt="">
+              </figure>
+              <figure class="display-pc">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_4@2x.png" class="img_4" alt="">
+              </figure>
+              <figure class="display-pc">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_5@2x.png" class="img_5" alt="">
+              </figure>
+              
+              <figure class="display-sp">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_sp_1_dot@2x.png" class="img_1_dot" alt="">
               </figure>
               <figure class="display-sp">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_sp_1@2x.png" class="img_1" alt="">
               </figure>
               <figure class="display-sp">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_sp_2_dot@2x.png" class="img_2_dot" alt="">
+              </figure>
+              <figure class="display-sp">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_sp_2@2x.png" class="img_2" alt="">
+              </figure>
+              <figure class="display-sp">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_sp_3_dot@2x.png" class="img_3_dot" alt="">
               </figure>
               <figure class="display-sp">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_sp_3@2x.png" class="img_3" alt="">
               </figure>
               <figure class="display-sp">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_sp_4_dot@2x.png" class="img_4_dot" alt="">
+              </figure>
+              <figure class="display-sp">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_sp_4@2x.png" class="img_4" alt="">
               </figure>
+              <figure class="display-sp">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/concept/illust_sp_5@2x.png" class="img_5" alt="">
+              </figure>
+
               <div class="txt_area">
                 <div class="arrow_before"></div>
                 <div class="arrow"></div>
@@ -130,7 +163,7 @@
         </div>
         -->
         <div class="section_inner">
-          <h2>それは選ばれつづける薬局経営の前提条件。</h2>
+          <h2>それは選ばれつづける<br class="display-sp">薬局経営の前提条件。</h2>
           <div class="txt_box">
             <p>
               患者さんが、⾃分たちの薬局を選び続けてくれる。<br class="display-pc">
@@ -150,8 +183,8 @@
               薬局体験アシスタント Musubi は、その実現のための最も⾝近なパートナーです。
             </p>
           </div>
-          <div class="content_box">
-            <div class="box">
+          <div class="content_box setElm">
+            <div class="box first">
               <div class="title_area">
                 <h4>店舗の現状が⾒える</h4>
               </div>
@@ -172,7 +205,7 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box sec">
               <div class="title_area">
                 <h4>薬剤師に選ばれる</h4>
               </div>
@@ -193,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box thi">
               <div class="title_area">
                 <h4>患者さんに選ばれる</h4>
               </div>
@@ -461,7 +494,7 @@
           </div>
         </div>
         <div class="btn_area">
-            <a href="#" class="btn cta">資料をダウンロードする</a>
+            <a href="/contact/" class="btn cta">資料をダウンロードする</a>
         </div>
       </div>
     </section>  
