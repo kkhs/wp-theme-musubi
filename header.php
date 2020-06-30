@@ -115,6 +115,10 @@ $ogimg = $assets_root . 'assets/images/ogp_products.jpg';
   <?php elseif($unique['layout'] === 'single' || is_404()): ?>
 	<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/single.css">
   <?php endif; ?>
+  <!-- scroll-hint -->
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+  <!-- magnific-popup-->
+  <link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/magnific-popup.css">
     
   <?php if(is_page() || is_singular()): ?>
   <script type="application/ld+json">
@@ -178,8 +182,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="header_btm">
           <ul class="header_menu">
+            <li><a href="/concept"<?php if(is_page('concept')): ?>class="current"<?php endif; ?>>薬局体験とは</a></li>
             <li><a href="/product"<?php if(is_page('product')): ?>class="current"<?php endif; ?>>サービス詳細</a></li>
-            <li><a href="/product#price">価格</a></li>
+            <li><a href="/#price">価格</a></li>
             <li><a href="/case"<?php if(is_post_type_archive('case')|is_singular('case'))echo 'class="current"'; ?>>導入事例</a></li>
             <li><a href="/faq"<?php if(is_page('faq'))echo 'class="current"'; ?>>よくある質問</a></li>
             <li><a href="/wp-download"<?php if(is_post_type_archive('wp-download')|is_singular('wp-download'))echo 'class="current"'; ?>>お役立ち資料</a></li>
