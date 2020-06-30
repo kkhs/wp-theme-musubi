@@ -35,7 +35,7 @@
               <h1>薬局体験アシスタント</h1>
             </div>
             <div class="btn_area">
-              <a href="/concept/" class="btn_kv">
+              <a href="/concept/" class="btn cta">
               薬局体験とは？
               </a>
             </div>
@@ -192,7 +192,7 @@
                     発明の名称｜薬剤師による患者に対する服薬指導を支援するための装置、方法及びプログラム<br>
                     特許番号｜第6381088号　出願日｜2016年10月7日　登録日｜2018年8月10日
                   </p>
-                  <a href="blog/181115-musubi-patent/" class="txt_link" target=”_blank” rel=”noopener”>詳しくはこちら</a>
+                  <a href="blog/181115-musubi-patent/" class="txt_link">詳しくはこちら</a>
                 </div>
               </div>
             </div>

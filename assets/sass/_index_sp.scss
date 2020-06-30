@@ -97,9 +97,18 @@
               transform: translateY(0);
             }
             .btn_area {
-              a.btn_kv {
-                opacity: 1;
-                transform: translateY(0);
+              opacity: 1;
+              transform: translateY(0);
+              a.btn.cta {
+                background-color: #fff;
+                border-color: $dark;
+                color: $dark;
+                @media (hover: hover) {
+                  &:hover{
+                    background-color: $dark;
+                    color: #fff;
+                  }
+                }
               }
             }
           }
@@ -222,15 +231,16 @@
           }
           .btn_area {
             margin: 1em auto .8em;
-            a.btn_kv {
+            opacity: 0;
+            transition: all .4s ease-out 2s;
+            a.btn.cta {
               background-color: #fff;
               border: 1px solid #1a535c;
               border-radius: 36px;
               color: #1a535c;
-              padding: .6em 2em;
-              margin: 2em auto 0;
-              opacity: 0;
-              transition: all .4s ease-out 2s;
+              padding: .4em 2em;
+              margin: 1em auto 0;
+              width: 300px;
             }
           }
         }
@@ -293,6 +303,7 @@
             }
           }
           .btn_area {
+            margin: 2.5em auto 2em;
             a.btn.cta {
               width: 90%;
               padding: .4em;
@@ -439,7 +450,7 @@
             &:before {
               content: '';
               position: absolute;
-              top: 0%;
+              top: -1%;
               left: 50%;
               border: 75px solid transparent;
               border-top: 35px solid #fafafa;
@@ -477,6 +488,11 @@
         .choice_box.sec {
           background-color: #fafafa;
           padding: 2em 0;
+          &.inview { 
+            .img-area {
+              opacity: 1;
+            }
+          }
           .flex_box { 
             flex-direction: column-reverse;
             justify-content: flex-start;
@@ -485,6 +501,9 @@
               width: 360px;
               height: 270px;
               position: relative;
+              opacity: 0;
+              transform: translateX(0);
+              transition: all .6s ease-in .8s;
               .img-box {
                 position: absolute;
                 top: 14%;
@@ -509,10 +528,20 @@
         }
         .choice_box.third {
           padding: 2em 0;
+          &.inview { 
+            .img-area {
+              opacity: 1;
+            }
+          }
           .flex_box { 
             flex-direction: column-reverse;
             margin-bottom: 2em;
             justify-content: flex-start;
+            .img-area {
+              opacity: 0;
+              transform: translateX(0);
+              transition: all .6s ease-in .8s;
+            }
           }
           .fikidashi {
             margin: 2.4em auto 1em;
@@ -568,7 +597,7 @@
               &:before {
                 content: '';
                 position: absolute;
-                top: 0%;
+                top: -1%;
                 left: 50%;
                 border: 75px solid transparent;
                 border-top: 35px solid #fff;
@@ -646,8 +675,8 @@
               position: absolute;
               top: 18px;
               left: 18px;
-              width: 40px;
-              height: 40px;
+              width: 36px;
+              height: 36px;
             }
             p {
               font-size: 1.1rem;
@@ -669,8 +698,8 @@
               font-weight: 500;
               align-items: center;
               justify-content: center;
-              width: 40px;
-              height: 40px;
+              width: 36px;
+              height: 36px;
             }
             .text_area {
               width: auto;
@@ -1382,6 +1411,9 @@
       & > .tit {
         font-size: (42 / $fs) * 1rem;
         line-height: (60/42);
+      }
+      .title {
+        font-size: 1.8rem;
       }
       .cases {
         margin: (65 / $fs) * 1rem auto 0;

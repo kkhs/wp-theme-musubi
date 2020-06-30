@@ -172,9 +172,18 @@ $fs: 16;
               transform: translateY(0);
             }
             .btn_area {
-              a.btn_kv {
-                opacity: 1;
-                transform: translateY(0);
+              opacity: 1;
+              transform: translateY(0);
+              a.btn.cta {
+                background-color: #fff;
+                border-color: $dark;
+                color: $dark;
+                @media (hover: hover) {
+                  &:hover{
+                    background-color: $dark;
+                    color: #fff;
+                  }
+                }
               }
             }
           }
@@ -356,6 +365,9 @@ $fs: 16;
           }
           .btn_area {
             margin: 3em auto 0;
+            opacity: 0;
+            transform: translateY(2rem);
+            transition: all .4s ease-out 3.6s;
             a.btn_kv {
               background-color: #fff;
               border: 2px solid #1a535c;
@@ -364,9 +376,6 @@ $fs: 16;
               font-size: 1.1rem;
               padding: .8em 4em;
               margin: 3em auto 0;
-              opacity: 0;
-              transform: translateY(2rem);
-              transition: all .4s ease-out 3.6s;
             }
           }
         }
@@ -709,6 +718,17 @@ $fs: 16;
             }
             a.txt_link {
               color: #fff;
+              &:after {
+                content: '';
+                display: inline-block;
+                width: 11px;
+                height: 14px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url(../../assets/images/product/custom/after_txtbtn_wh.png);
+                margin-left: .5em;
+                vertical-align: text-bottom;
+              }
             }
             a.txt_link:hover {
             }

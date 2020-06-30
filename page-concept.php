@@ -5,8 +5,8 @@
 
     <section id="top">
       <div class="title_area setElm">
-        <h1>Musubi コンセプト</h1>
-        <p class="focus">薬局体験アシスタント</p>
+        <p class="focus">Musubi コンセプト</p>
+        <h1>薬局体験アシスタント</h1>
       </div>
     </section>
     <section id="about">
@@ -62,7 +62,7 @@
             <div class="title_sp">
               <p>双方の体験が実現すれば</p>
             </div>
-            <div class="sub_box">
+            <div class="sub_box A">
               <div class="sub A">
                 <span>⼀⼈ひとりの患者さんに<br>不安なく投薬できるようになる</span>
               </div>
@@ -248,6 +248,9 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="btn_area">
+            <a href="/product/" class="btn cta">サービス詳細についてはこちら</a>
           </div>
         </div>
       </div>

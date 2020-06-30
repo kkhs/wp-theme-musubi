@@ -182,7 +182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="header_btm">
           <ul class="header_menu">
-            <li><a href="/concept"<?php if(is_page('concept')): ?>class="current"<?php endif; ?>>コンセプト</a></li>
+            <li><a href="/concept"<?php if(is_page('concept')): ?>class="current"<?php endif; ?>>薬局体験とは</a></li>
             <li><a href="/product"<?php if(is_page('product')): ?>class="current"<?php endif; ?>>サービス詳細</a></li>
             <li><a href="/#price">価格</a></li>
             <li><a href="/case"<?php if(is_post_type_archive('case')|is_singular('case'))echo 'class="current"'; ?>>導入事例</a></li>

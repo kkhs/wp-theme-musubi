@@ -69,7 +69,7 @@
     <section id="top">
       <div class="title_area setElm">
         <h1>Musubiサービス詳細</h1>
-        <p class="sub">選ばれる続ける薬局になるために</p>
+        <p class="sub">選ばれ続ける薬局になるために</p>
         <p class="focus">薬局体験アシスタント<br class="display-sp">Musubiが導く<span>3つ</span>の薬局変革</p>
       </div>
       <div class="point_base">
@@ -282,7 +282,7 @@
                     <div id="inline-popup_2" class="mfp-hide">
                       <div class="pd-colum">
                         <div class="img_area">
-                          <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_2.png" alt="">
+                          <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_2b@2x.png" alt="">
                         </div>
                       </div>
                       <div class="mfp-close"></div>
@@ -295,7 +295,7 @@
                 </div>
                 <div class="caption_box img">
                   <div class="img_area">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_2.png" alt="">
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_2b@2x.png" alt="">
                   </div>
                 </div>
               </div>
@@ -341,9 +341,7 @@
                     </div>
                   </div>
                   <div class="btn_area first">
-                    <p class="txt_btn">服薬指導中にタッチで薬歴下書き完成</p>
-                  </div><br>
-                  <div class="btn_area">
+                    <a href="#" class="txt_btn"><span>服薬指導中にタッチで薬歴下書き完成</span></a>
                     <a href="product/product-report/" class="txt_btn"><span>トレーシングレポート作成機能</span></a>
                   </div>
                 </div>
@@ -413,7 +411,7 @@
                 </div>
                 <div class="caption_box">
                   <p class="category display-pc">患者満足</p>
-                  <h3>服薬指導・患者<br class="display-sp">コミュニケーション</h3>
+                  <h3 class="function_5">服薬指導・患者<br class="display-sp">コミュニケーション</h3>
                   <p class="task">患者さんとの価値あるコミュニケーションを、<br class="display-pc">いかに実践していくか？</p>
                   <p class="text">
                     Musubiは、患者さんに画面をお見せしながら服薬指導できます。
@@ -435,17 +433,19 @@
                       <div class="mfp-close"></div>
                     </div>
                   </div>
-                  <div class="btn_area first">
+                  <!--
+                  <div class="btn_area">
                     <p class="txt_btn">ビジュアルコミュニケーション</p>
                   </div><br class="display-sp">
-                  <div class="btn_area">
+                  -->
+                  <div class="btn_area first">
                     <a href="/product/continuous/" class="txt_btn"><span>継続的な薬学管理</span></a>
                     <a href="/product/product-dsu/" class="txt_btn"><span>ハイリスク薬のDSUに対応</span></a>
-                  </div><br class="display-sp">
+                  </div><br>
                   <div class="btn_area">
                     <a href="/product/product-checkprescription/" class="txt_btn"><span>処方チェック機能</span></a>
                     <a href="/product/product-checkup/" class="txt_btn"><span>検査値管理機能</span></a>
-                  </div><br class="display-sp">
+                  </div><br>
                   <div class="btn_area">
                     <a href="/product/product-update/" class="txt_btn"><span>高頻度アップデート</span></a>
                     <a href="/blog/200422-musubi-remote-movie/" class="txt_btn"><span>オンライン服薬指導</span></a>
@@ -509,7 +509,7 @@
               </div>
               <div class="box thi">
                 <figure>
-                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_3.png" alt="">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_3b.png" alt="">
                 </figure>
                 <h3>マンツーマン<br class="display-pc">サポート</h3>
                 <p>満足度90％。継続的なMusubiの活用サポートで、PC操作やITシステムが苦手な薬剤師さんも安心です。</p>
