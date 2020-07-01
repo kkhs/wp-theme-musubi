@@ -405,7 +405,8 @@ $fs: 16;
             }
           }
           p.caption {
-            margin-bottom: 2em;
+            width: 78%;
+            margin: 0 auto 2em;
           }
           .point-area {
             display: flex;
@@ -554,7 +555,8 @@ $fs: 16;
             }
           }
           p.caption {
-            margin-bottom: .8em;
+            width: 78%;
+            margin: 0 auto .8em;
           }
           .flow-base {
             background-color: #fafafa;
@@ -697,12 +699,12 @@ $fs: 16;
             }
             h3 {
               color: #fff;
-              font-size: 2.1rem;
+              font-size: 1.9rem;
               &:before {
                 display: inline-block;
                 content: '';
-                width: 30px;/*画像の幅*/
-                height: 45px;/*画像の高さ*/
+                width: 25px;/*画像の幅*/
+                height: 38px;/*画像の高さ*/
                 background-image: url(../../assets/images/index/custom/icon_flow_1@2x.png);
                 background-size: contain;
                 vertical-align: sub;
@@ -714,6 +716,7 @@ $fs: 16;
             }
             p {
               color: #fff;
+              font-size: .9rem;
               margin-bottom: 1em;
             }
             a.txt_link {
@@ -844,7 +847,7 @@ $fs: 16;
             opacity: 0;
             transition: all .4s ease-in 1.2s;
             img {
-              width: 380px;
+              width: 400px;
             }
           }
           .comment-area {
@@ -947,6 +950,7 @@ $fs: 16;
                   }
                   p.caption {
                     width: 90%;
+                    margin: inherit;
                   }
                 }
               }
@@ -1032,6 +1036,28 @@ $fs: 16;
             .text_area {
               width: 60%;
               margin-left: 8%;
+              .btn_area {
+                margin: 1em auto;
+                padding: 0;
+                text-align: left;
+                a.txt_link {
+                  color: #4ecdc4;
+                  &:after {
+                      display: inline-block;
+                      content: '';
+                      width: 12px;
+                      height: 12px;
+                      margin-left: .6em;
+                      background-position: 50%;
+                      background-repeat: no-repeat;
+                      background-size: 90%;
+                      @include bullet_right($green);
+                      transform: translateY(-50%);
+                      vertical-align: bottom;
+                      padding-bottom: .2em;
+                  }
+                }
+              }
             }
             .img_area {
               width: 30%;
@@ -1474,7 +1500,7 @@ $fs: 16;
           }
         }
         .slick-dots {
-          display: none;
+          //display: none;
         }
         .case {
           width: (360/1260) * 100%;

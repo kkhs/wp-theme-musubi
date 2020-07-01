@@ -438,6 +438,8 @@ $fs: 16;
             }
             p {
               color: #fff;
+              width: 85%;
+              margin: 0 auto;
             }
           }
           .box.first {
@@ -1756,7 +1758,8 @@ $fs: 16;
             }
           }
           .box.B {
-            color: #4ecdc4;
+            //color: #4ecdc4;
+            color: #2ba99c;
             text-align: right;
             h2 {
               opacity: 0;
@@ -1832,7 +1835,8 @@ $fs: 16;
           }
           .sub_box.B {
             text-align: right;
-            color: #4ecdc4;
+            //color: #4ecdc4;
+            color: #2ba99c;
             margin-top: -2%;
             .sub.A {
               display: inline-flex;
@@ -2077,7 +2081,7 @@ $fs: 16;
                 ul {
                   font-size: 1rem;
                   line-height: 1.6;
-                  margin-left: 1.4em;
+                  margin-left: 3em;
                   li {
                     list-style: disc;
                     margin-bottom: 1em;
@@ -2168,7 +2172,9 @@ $fs: 16;
           }
         }
         .slick-dots {
-          display: none;
+          //display: none;
+          display: flex;
+          justify-content: center;
         }
         .case {
           width: (360/1260) * 100%;

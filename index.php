@@ -72,9 +72,9 @@
           <div class="colum-wh">
             <h2 class="title">Musubiが導く<br class="display-sp"><span>3つ</span>の薬局変革</h2>
             <p class="caption">
-            これからの薬局に求められる「患者満足」。それは患者さん一人ひとりに向き合う薬局スタッフの「働き方改革」なくして実現するものではありません。<br>
-            そして働き方改革は、適切な「店舗の状況把握」があってこそ。<br>
-            Musubiはその全てをサポートし、薬局・薬剤師と患者さん“双方”の薬局体験を向上させる、従来の電子薬歴とは明確に異なる新時代のサービスです。
+            これからの薬局に求められる「患者満足」。<br class="display-pc">それは患者さん一人ひとりに向き合う薬局スタッフの「働き方改革」なくして実現するものではありません。<br>
+            そして働き方改革は、適切な「店舗の状況把握」があってこそ。
+            Musubiはその全てをサポートし、<br class="display-pc">薬局・薬剤師と患者さん“双方”の薬局体験を向上させる、従来の電子薬歴とは明確に異なる新時代のサービスです。
             </p>
             <div class="point-area setElm">
               <div class="point">
@@ -126,12 +126,11 @@
               <div class="title-area">
                 <div class="focus">Point.01</div>
                 <h3 class="colum_title">
-                  <span>服薬指導中に薬歴作成と同時に、</span><br>
-                  圧倒的な薬歴業務の効率化を実現
+                  服薬指導しながら薬歴作成<br>圧倒的な業務効率化を実現
                 </h3>
                 <p class="caption">
-                患者さんと一緒にタブレットPCを見ながら服薬指導。<br class="display-pc">
-                指導中に画面タッチするだけで、薬歴の下書きが自動で作成されます。<br class="display-pc">ただ早く書くことを目的とした従来の電子薬歴と異なり、「書かずに漏れなく記録する」ためのシステムです。
+                患者さんと一緒にタブレットPCを見ながら服薬指導。指導中に画面タッチするだけで、<br class="display-pc">
+                薬歴の下書きが自動で作成されます。ただ早く書くことを目的とした従来の電子薬歴と異なり、<br class="display-pc">「書かずに漏れなく記録する」ためのシステムです。
                 </p>
               </div>
               <div class="flow-base">
@@ -210,7 +209,7 @@
                 </div>
                 <div class="txt-area">
                   <h3 class="colum_title">
-                    <span>シンプルな画面・操作方法</span><br>
+                    シンプルな画面、かんたん操作<br>
                     だから、誰でもすぐに使えます
                   </h3>
                   <p>
@@ -234,7 +233,7 @@
                 </div>
                 <div class="txt-area">
                   <h3 class="colum_title">
-                    <span>マンツーマンサポート</span>をご用意<br>
+                    マンツーマンサポートをご用意<br>
                     安心してお任せください
                   </h3>
                   <p>
@@ -244,7 +243,7 @@
                 </div>
               </div>
               <div class="fikidashi">
-                <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/fukidashi_choice_3.png" alt="">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/fukidashi_choice_3b.png" alt="">
               </div>
               <div class="comment-area">
                 <div class="title">
@@ -271,12 +270,14 @@
                       スムーズにMusubiを使いこなせるようになりました。
                     </span>
                     </li>
+                    <!--
                     <li>
                     <span class="icon"></span>
                     <span class="txt">
-                    カケハシスタッフの質が高く、基本的には満足している。
+                    カケハシスタッフの質が高く、基本的には満足しています。
                     </span>
                     </li>
+                    -->
                   </ul>
                 </div>
                 <p class="teacher-heading">一部講師のご紹介</p>
@@ -288,13 +289,12 @@
                       </div>
                     </div>
                     <div class="txt-area">
-                      <p class="job">株式会社カケハシ、ファーマシストパートナー</p>
+                      <p class="job">ファーマシストパートナー</p>
                       <p class="name">山﨑 友樹 （ 薬剤師 ）</p>
                       <p class="caption">
-                        水野薬局本局の主任、Cambridge Healthcare Research社のリサーチャーなどを経て2017年に
-                        KAKEHASHIに参画。Musubiの導入支援や薬剤関連コンテンツの整備に従事。
-                        多くの薬局様のMusubi導入に関わった知見を活かして情報をご提供いたします。
-                        CareNetにて「論文で探る服薬指導のエビデンス」を連載。所属勉強会は、EBM-Tokyoなど。
+                      水野薬局店舗主任、メディア立ち上げ、英国企業のマーケットリサーチャーなどを経てKAKEHASHIに参画。
+                      Musubiの導入支援や薬剤関連コンテンツの整備に従事。各種メディアへの寄稿や職種をまたいだ医療関係者の勉強会運営にも携わる。
+                      多くの薬局様のMusubi導入に関わった知見を活かしてサポートをいたします。
                       </p>
                     </div>
                   </div>
@@ -392,7 +392,9 @@
                 Musubiは日本薬剤師会が推奨する、薬局向けコンピュータ間の連携システムであるNSIPS®に準拠しております。
                 NSIPS®に対応しているレセコンとの連携が可能です。多数のレセコンメーカーとの連携実績がありますのでご安心ください。
                 </p>
-                <a href="#" class="txt_link">詳しくはこちらのページを参照ください</a>
+                <div class="btn_area">
+                  <a href="/receipt-computer/" class="txt_link">詳しくはこちらのページを参照ください</a>
+                </div>
                 <p>
                   ＊NSIPS®とは日本薬剤師会が提案する、薬局向けの各種調剤システムを連動させるための共有仕様です。
                   ＊NSIPS®は公益社団法人日本薬剤師会の登録商標です。（商標登録 第5214610号）
@@ -415,7 +417,9 @@
                   Musubiは「電子薬歴データ交換仕様に関する連絡協議会」（exPD）に加盟しています。
                   exPDに加盟している電子薬歴からのデータ移行が可能です。 詳しくはお問い合わせください。
                 </p>
-                <a href="#" class="txt_link">お問い合わせはこちらから</a>
+                <div class="btn_area">
+                  <a href="/contact/" class="txt_link">お問い合わせはこちらから</a>
+                </div>
               </div>
               <div class="img_area">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_faq_2@2x.png" alt="">

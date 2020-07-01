@@ -263,6 +263,7 @@
           }
           p.caption {
             text-align: left;
+            width: auto;
           }
           .point-area {
             flex-direction: column;
@@ -338,7 +339,7 @@
             width: 90%;
             margin: 0 auto 1.6em;
             .focus {
-              color: #4ecdc4;
+              //color: #4ecdc4;
               font-size: 1.4rem;
               font-weight: 500;
               margin-bottom: .8em;
@@ -364,6 +365,7 @@
           }
           p.caption {
             text-align: left;
+            width: auto;
           }
           .flow-base {
             background-color: #fafafa;
@@ -630,6 +632,10 @@
                   p.job {
                     font-size: 1.1rem;
                   }
+                  p.caption {
+                    width: auto;
+                    margin: auto;
+                  }
                 }
               }
             }
@@ -704,6 +710,12 @@
             .text_area {
               width: auto;
               margin-left: 55px;
+              a.txt_link {
+                font-size: .9rem;
+                &:after {
+                  margin-left: .5em;
+                }
+              }
             }
             .img_area {
               //width: auto;
@@ -948,7 +960,7 @@
       }
     }
     .section_inner {
-      padding: 2em 0;
+      padding: 0 0 2em;
       & > .tit {
         font-size: (42 / $fs) * 1rem;
         line-height: (60/42);
