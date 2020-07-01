@@ -188,7 +188,7 @@
                       </span>
                     </div>
                     <p class="txt">
-                      服用期間中の<br class="display-pc">フォロー
+                      服薬期間中の<br class="display-pc">フォロー
                     </p>
                     <div class="arrow"></div>
                   </a>
@@ -233,7 +233,7 @@
                   <p class="text">
                     薬歴完了率やSOAPそれぞれの平均記載時間といった薬剤師の業務状況を表すデータから、調剤事業の売上や後発品比率をはじめとする店舗経営データ、
                     処方箋数や再来率・新患率など患者さんとの関係性を表すデータまで、Musubiが自動的に“見える化”。
-                    “書けるだけ”の電子薬歴とは異なり、解決すべき課題の発見・把握をも効率化します。
+                    書けるだけの電子薬歴とは異なり、解決すべき課題の発見・把握をも効率化します。
                   </p>
                   <div class="popup_outer">
                     <div class="inline-link" data-mfp-src="#inline-popup">
@@ -289,8 +289,8 @@
                     </div>
                   </div>
                   <div class="btn_area first">
-                    <a href="product/product-linkage/" class="txt_btn"><span>患者情報連携機能</span></a>
-                    <a href="product/product-security/" class="txt_btn"><span>クラウドとは？</span></a>
+                    <a href="/product-linkage/" class="txt_btn"><span>患者情報連携機能</span></a>
+                    <a href="/product-security/" class="txt_btn"><span>クラウドとは？</span></a>
                   </div>
                 </div>
                 <div class="caption_box img">
@@ -320,10 +320,10 @@
                 <div class="caption_box">
                   <p class="category display-pc">働き方改革</p>
                   <h3>薬歴業務の効率化</h3>
-                  <p class="task">薬歴に追われる状況を脱け出し、いかに余裕を生み出すか？</p>
+                  <p class="task">薬歴に追われる状況を脱し、いかに余裕を生み出すか？</p>
                   <p class="text">
-                  Musubiなら、薬歴作成は、患者さんへの服薬指導中にほぼ完了。
-                  服薬指導の際、タブレットPCの画面をタッチするだけで、患者さんにご説明した内容が薬歴用に最適化されたテキストに置き換えられてSOAP形式に自動反映されます。
+                  Musubiなら、薬歴作成が患者さんへの服薬指導中にほぼ完了。
+                  服薬指導の際、タブレットPCの画面をタッチするだけで、患者さんにご説明した内容が薬歴用に最適化されたテキストに置き換えられて、SOAP形式に自動反映されます。
                   一件あたり10分以上かかっていた薬歴作成が、従来の電子薬歴より内容充実した上で、わずか2〜3分に効率化した実例も。
                   もちろん、服薬情報提供書（トレーシングレポート）も、Musubiで作成可能です。
                   </p>
@@ -341,8 +341,8 @@
                     </div>
                   </div>
                   <div class="btn_area first">
-                    <a href="#" class="txt_btn"><span>服薬指導中にタッチで薬歴下書き完成</span></a>
-                    <a href="product/product-report/" class="txt_btn"><span>トレーシングレポート作成機能</span></a>
+                    <a href="#function_3" class="txt_btn"><span>服薬指導中にタッチで薬歴下書き完成</span></a>
+                    <a href="/product-report/" class="txt_btn"><span>トレーシングレポート作成機能</span></a>
                   </div>
                 </div>
                 <div class="caption_box img">
@@ -381,8 +381,8 @@
                     </div>
                   </div>
                   <div class="btn_area first">
-                    <a href="/product/product-zaitaku/" class="txt_btn"><span>在宅計画書・報告書作成機能</span></a>
-                    <a href="/product/product-security/" class="txt_btn"><span>クラウドのメリット</span></a>
+                    <a href="/product-zaitaku/" class="txt_btn"><span>在宅計画書・報告書作成機能</span></a>
+                    <a href="/product-security/" class="txt_btn"><span>クラウドのメリット</span></a>
                   </div>
                 </div>
                 <div class="caption_box img">
@@ -439,15 +439,15 @@
                   </div><br class="display-sp">
                   -->
                   <div class="btn_area first">
-                    <a href="/product/continuous/" class="txt_btn"><span>継続的な薬学管理</span></a>
-                    <a href="/product/product-dsu/" class="txt_btn"><span>ハイリスク薬のDSUに対応</span></a>
+                    <a href="/continuous/" class="txt_btn"><span>継続的な薬学管理</span></a>
+                    <a href="/product-dsu/" class="txt_btn"><span>ハイリスク薬のDSUに対応</span></a>
                   </div><br>
                   <div class="btn_area">
-                    <a href="/product/product-checkprescription/" class="txt_btn"><span>処方チェック機能</span></a>
-                    <a href="/product/product-checkup/" class="txt_btn"><span>検査値管理機能</span></a>
+                    <a href="/product-checkprescription/" class="txt_btn"><span>処方チェック機能</span></a>
+                    <a href="/product-checkup/" class="txt_btn"><span>検査値管理機能</span></a>
                   </div><br>
                   <div class="btn_area">
-                    <a href="/product/product-update/" class="txt_btn"><span>高頻度アップデート</span></a>
+                    <a href="/product-update/" class="txt_btn"><span>高頻度アップデート</span></a>
                     <a href="/blog/200422-musubi-remote-movie/" class="txt_btn"><span>オンライン服薬指導</span></a>
                   </div>
                 </div>
@@ -465,12 +465,12 @@
                 </div>
                 <div class="caption_box">
                   <p class="category display-pc">患者満足</p>
-                  <h3>服用期間中のフォロー</h3>
+                  <h3>服薬期間中のフォロー</h3>
                   <p class="task">患者満足を実現しながら、<br class="display-pc">現実的で継続可能な業務フローをどう構築するか？</p>
                   <p class="text">
-                    新たに義務化されることとなった、服用期間中のフォローアップ。これからの時代において、
+                    新たに義務化されることとなった、服薬期間中のフォローアップ。これからの時代において、
                     薬局・薬剤師には、患者さんにとってのより身近な専門家であることが求められるようになるでしょう。
-                    Musubiは、連動する患者さん向け“おくすり連絡帳アプリ”を通じて、服用期間中フォローを軸とした患者さんとの関係づくりをサポート。
+                    Musubiは、連動する患者さん向け“おくすり連絡帳アプリ”を通じて、服薬期間中フォローを軸とした患者さんとの関係づくりをサポート。
                     患者さんとの過剰なやり取りや極端な連絡不足を防ぎ、「必要な患者さんに」「適切な労力で」コミュニケーションを図るための業務フロー構築をアシストします。
                   </p>
                   <!--
@@ -505,14 +505,14 @@
                 <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_2.png" alt="">
                 </figure>
                 <h3>シンプルな画面<br class="display-pc">操作方法</h3>
-                <p>従来のレセコンや電子薬歴とは一線を画す、シンプルな画面に、画面タッチ中心の操作。使う人を選びません。</p>
+                <p>従来のレセコンや電子薬歴とは一線を画すシンプルな画面に、画面タッチ中心の操作。使う人を選びません。</p>
               </div>
               <div class="box thi">
                 <figure>
                 <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_3b.png" alt="">
                 </figure>
                 <h3>マンツーマン<br class="display-pc">サポート</h3>
-                <p>満足度90％。継続的なMusubiの活用サポートで、PC操作やITシステムが苦手な薬剤師さんも安心です。</p>
+                <p>満足度90％以上。継続的なMusubiの活用サポートで、PC操作やITシステムが苦手な薬剤師さんも安心です。</p>
               </div>
             </div>
           </div>
@@ -764,7 +764,7 @@
           </div>
         </div>
         <div class="btn_area">
-            <a href="#" class="btn cta">資料をダウンロードする</a>
+            <a href="/contact/" class="btn cta">資料をダウンロードする</a>
         </div>
       </div>
     </section> 
