@@ -904,7 +904,7 @@ $fs: 16;
             .teacher-heading {
               color: #818181;
               text-align: center;
-              margin: 2em auto 1.2em;
+              margin: .3em auto 1.2em;
             }
             .teacher-area {
               background-color: #4ecdc4;
@@ -2522,6 +2522,17 @@ $vw: 750;
             height: 160px;
           }
         }
+        .img_area.B  {
+          .box_bg {
+            .btn_area {
+              a.btn.cta {
+                border-radius: 48px;
+                padding: .2em 2em;
+                width: 340px;
+              }
+            }
+          }
+        }  
       }
     }
   } 
@@ -2529,9 +2540,35 @@ $vw: 750;
     #choice_custom {
       .bg {
         .section_inner {
+          .choice_box  {
+            .flow-area-outer {
+              .flow-area  {
+                .box.focus:before {
+                  background-repeat: no-repeat;
+                  width: 320px;
+                  height: 50px;
+                }
+              }
+            }
+          }
+          .choice_box.sec {
+            .flex_box {
+              .img-area {
+                width: 600px;
+                height: 450px;
+              }
+              .txt-area {
+                figure {
+                  img {
+                    width: 360px;
+                  }
+                }
+              }
+            }
+          }
           .choice_box.third {
             .flex_box {
-              margin-bottom: 6em;
+              margin-bottom: 7em;
               .img-area {
                 width: 60%;
                 margin: 0 auto;
@@ -2539,7 +2576,18 @@ $vw: 750;
             }
             .fikidashi {
               img {
-                width: 400px;
+                width: 480px;
+              }
+            }
+            .comment-area {
+              .teacher-area {
+                padding: 3.5em 0 2em;
+                .box {
+                  .img-area .circle {
+                    width: 210px;
+                    height: 210px;
+                  }
+                }
               }
             }
           }
