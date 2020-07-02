@@ -334,20 +334,20 @@
                     <div id="inline-popup_3" class="mfp-hide">
                       <div class="pd-colum">
                         <div class="img_area">
-                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3.gif" alt="">
+                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="">
                         </div>
                       </div>
                       <div class="mfp-close"></div>
                     </div>
                   </div>
                   <div class="btn_area first">
-                    <a href="#function_3" class="txt_btn"><span>服薬指導中にタッチで薬歴下書き完成</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-shunkanyakureki/" class="txt_btn"><span>服薬指導中にタッチで薬歴下書き完成</span></a>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-report/" class="txt_btn"><span>トレーシングレポート作成機能</span></a>
                   </div>
                 </div>
                 <div class="caption_box img">
                   <div class="img_area">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3.gif" alt="">
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="">
                   </div>
                 </div>
               </div>
