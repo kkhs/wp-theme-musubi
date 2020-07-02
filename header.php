@@ -93,7 +93,7 @@ $ogimg = $assets_root . 'assets/images/ogp_products.jpg';
 	<link rel="apple-touch-icon" href="<?php echo_assets_root_url(); ?>assets/images/common/apple-touch-icon.png">
 	
 	<?php $description = get_bloginfo('description'); ?>
-	<meta name="description" content="<?php echo $description; ?>">
+	<meta name="description" content="時代は、電子薬歴のその先へ。Musubi（ムスビ）は、患者満足と薬局の働き方改革を支援する薬局体験アシスタント。薬歴業務効率化、店舗業務の見える化、服薬期間中フォローなど多くの機能で薬局体験向上をアシストします。">
 	<?php wp_head(); ?>
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

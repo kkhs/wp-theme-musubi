@@ -289,8 +289,8 @@
                     </div>
                   </div>
                   <div class="btn_area first">
-                    <a href="/product-linkage/" class="txt_btn"><span>患者情報連携機能</span></a>
-                    <a href="/product-security/" class="txt_btn"><span>クラウドとは？</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-linkage/" class="txt_btn"><span>患者情報連携機能</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-security/" class="txt_btn"><span>クラウドとは？</span></a>
                   </div>
                 </div>
                 <div class="caption_box img">
@@ -342,7 +342,7 @@
                   </div>
                   <div class="btn_area first">
                     <a href="#function_3" class="txt_btn"><span>服薬指導中にタッチで薬歴下書き完成</span></a>
-                    <a href="/product-report/" class="txt_btn"><span>トレーシングレポート作成機能</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-report/" class="txt_btn"><span>トレーシングレポート作成機能</span></a>
                   </div>
                 </div>
                 <div class="caption_box img">
@@ -381,8 +381,8 @@
                     </div>
                   </div>
                   <div class="btn_area first">
-                    <a href="/product-zaitaku/" class="txt_btn"><span>在宅計画書・報告書作成機能</span></a>
-                    <a href="/product-security/" class="txt_btn"><span>クラウドのメリット</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-zaitaku/" class="txt_btn"><span>在宅計画書・報告書作成機能</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-security/" class="txt_btn"><span>クラウドのメリット</span></a>
                   </div>
                 </div>
                 <div class="caption_box img">
@@ -439,16 +439,16 @@
                   </div><br class="display-sp">
                   -->
                   <div class="btn_area first">
-                    <a href="/continuous/" class="txt_btn"><span>継続的な薬学管理</span></a>
-                    <a href="/product-dsu/" class="txt_btn"><span>ハイリスク薬のDSUに対応</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/continuous/" class="txt_btn"><span>継続的な薬学管理</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-dsu/" class="txt_btn"><span>ハイリスク薬のDSUに対応</span></a>
                   </div><br>
                   <div class="btn_area">
-                    <a href="/product-checkprescription/" class="txt_btn"><span>処方チェック機能</span></a>
-                    <a href="/product-checkup/" class="txt_btn"><span>検査値管理機能</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-checkprescription/" class="txt_btn"><span>処方チェック機能</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-checkup/" class="txt_btn"><span>検査値管理機能</span></a>
                   </div><br>
                   <div class="btn_area">
-                    <a href="/product-update/" class="txt_btn"><span>高頻度アップデート</span></a>
-                    <a href="/blog/200422-musubi-remote-movie/" class="txt_btn"><span>オンライン服薬指導</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-update/" class="txt_btn"><span>高頻度アップデート</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/200422-musubi-remote-movie/" class="txt_btn"><span>オンライン服薬指導</span></a>
                   </div>
                 </div>
                 <div class="caption_box img">
@@ -746,7 +746,7 @@
 
     <section id="docarea_custom">
       <div class="bg">
-        <h2>Musubiの事がよくわかる資料</h2>
+        <h2>Musubiのことがよくわかる資料</h2>
         <div class="section_inner">
           <div class="doc-area">
             <figure>
