@@ -60,7 +60,7 @@
           </div>
           <div class="illust_area setElm">
             <div class="title_sp">
-              <p>双方の体験が実現すれば</p>
+              <p>双方の体験が向上すれば</p>
             </div>
             <div class="sub_box A">
               <div class="sub A">
@@ -170,8 +170,10 @@
               薬剤師が⾃分の仕事にやりがいと誇りをもつことができる。
             </p>
             <p>
-              患者さんも薬剤師も、薬局に関わる全ての⼈が最⾼の体験を得るために、薬局はどうあるべきなのか？<br>
-              この観点から、Musubiというサービスは⽣まれました。<br class="display-pc">
+              患者さんも薬剤師も、薬局に関わる全ての⼈が最⾼の体験を得るために、薬局はどうあるべきなのか？<br class="display-pc">
+              この観点から、Musubiというサービスは⽣まれました。
+            </p>
+            <p>
               Musubiは、薬局の現状を“⾒える化”し、解くべき課題（GE⽐率や再来率など）を明らかにします。<br class="display-pc">
               そして、従来のさまざまな薬局業務（薬歴・在宅・教育など）を効率化するとともに、<br class="display-pc">
               業務のクオリティ向上や新たなチャレンジ、従業員のワークライフバランスにつながる本質的な余裕を⽣み出します。<br class="display-pc">
@@ -479,7 +481,7 @@
 
     <section id="docarea_custom">
       <div class="bg">
-        <h2>Musubiの事がよくわかる資料</h2>
+        <h2>Musubiのことがよくわかる資料</h2>
         <div class="section_inner">
           <div class="doc-area">
             <figure>

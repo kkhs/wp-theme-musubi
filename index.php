@@ -110,7 +110,7 @@
               <div class="border"></div>
             </div>
             <div class="btn_area">
-              <a href="/concept/" class="btn cta">薬局体験アシスタント<br class="display-sp">Musubiとは？</a>
+              <a href="/product/" class="btn cta">薬局体験アシスタント<br class="display-sp">Musubiとは？</a>
             </div>
           </div>
         </div>
@@ -727,7 +727,7 @@
 
     <section id="docarea_custom">
       <div class="bg">
-        <h2>Musubiの事がよくわかる資料</h2>
+        <h2>Musubiのことがよくわかる資料</h2>
         <div class="section_inner">
           <div class="doc-area">
             <figure>
