@@ -107,18 +107,18 @@ $ogimg = $assets_root . 'assets/images/ogp_products.jpg';
 	<meta property="og:site_name" content="<?php echo $ttlBefore.$title; ?>"/>
 	<meta property="og:image" content="<?php echo $ogimg; ?>"/>
 
-	<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/common.css">
+	<link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/common.css'); ?>">
   <?php if(is_archive()): ?>
-	<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/archive.css">
+	<link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/archive.css'); ?>">
   <?php elseif(is_page() || is_singular()): ?>
-	<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/single.css">
+	<link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/single.css'); ?>">
   <?php elseif($unique['layout'] === 'single' || is_404()): ?>
-	<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/single.css">
+	<link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/single.css'); ?>">
   <?php endif; ?>
   <!-- scroll-hint -->
   <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
   <!-- magnific-popup-->
-  <link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/magnific-popup.css'); ?>">
     
   <?php if(is_page() || is_singular()): ?>
   <script type="application/ld+json">

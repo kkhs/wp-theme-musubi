@@ -8,6 +8,10 @@ function echo_assets_root_url() {
   echo get_assets_root_url();
 }
 
+function echo_revisioned_assets_file_url($path) {
+  echo get_assets_root_url() . $path . "?" . date("YmdHis");
+}
+
 /* header クリーニング */
 // head内不要タグ削除
 remove_action( 'wp_head', '_wp_render_title_tag', 1);

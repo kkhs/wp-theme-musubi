@@ -2063,7 +2063,7 @@
 
   #event_custom {
     .section_inner {
-      padding-top: (75 / $fs) * 1rem;
+      padding-top: (80 / $fs) * 1rem;
       & > .tit {
         font-size: (42 / $fs) * 1rem;
         line-height: (60/42);
@@ -2168,8 +2168,7 @@
           }
         }
         .slick-dots {
-          display: flex;
-          justify-content: center;
+          margin-bottom: auto;
           li {
             width: (20 / $fs) * 1rem;
             height: (20 / $fs) * 1rem;
@@ -2199,7 +2198,7 @@
         }
       }
       .btn_area {
-        margin-top: 3em;
+        margin-top: 2em;
         a.btn.cta {
           margin: 0 auto;
           width: 85%;

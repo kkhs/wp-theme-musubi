@@ -311,7 +311,16 @@ $fs: 16;
                   width: 100%;
                 }
               }
-            }
+              .video_area {
+                height: auto;
+                margin: 0 auto;
+                width: 100%;
+                video {
+                  border: 1px solid #eee;
+                  width: 100%;
+                }
+              }
+            } 
             .caption_box.img {
               width: 45%;
               display: flex;
@@ -1789,7 +1798,7 @@ $fs: 16;
                 .img_1_dot, .img_2_dot, .img_3_dot, .img_4_dot,
                 .img_5 {
                   opacity: 1;
-                  transform: translateY(0);
+                  transform: scale(1);
                 }
               }
               .txt_area {
@@ -1902,7 +1911,7 @@ $fs: 16;
               }
               .img_5 {
                 opacity: 0;
-                transform: translateY(2rem);
+                transform: scale(0.9);
                 transition: all 1s ease-out 8.2s;
               }
             }
@@ -2143,8 +2152,10 @@ $fs: 16;
       .cases {
         margin: 2.5rem auto 0;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        //justify-content: center;
+        //flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         .slick-list {
           width: (1260/1420) * 100%;
           padding-top: (20 / $fs) * 1rem;
@@ -2172,9 +2183,24 @@ $fs: 16;
           }
         }
         .slick-dots {
-          //display: none;
           display: flex;
-          justify-content: center;
+          margin-bottom: 1em;
+          li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #c1c1c1;
+            margin-left: .3em;
+            margin-right: .3em;
+            button {
+              &:before {
+                content: '•';
+              }
+            }
+          }
+          li.slick-active {
+            background-color: #4ecdc4;
+          }
         }
         .case {
           width: (360/1260) * 100%;
@@ -2241,8 +2267,10 @@ $fs: 16;
       .cases {
         margin: 2.5em auto 0;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        //justify-content: center;
+        //flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         .slick-list {
           width: (1260/1420) * 100%;
           padding-top: (20 / $fs) * 1rem;
@@ -2270,7 +2298,24 @@ $fs: 16;
           }
         }
         .slick-dots {
-          display: none;
+          display: flex;
+          margin-top: 2.5em;
+          li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #c1c1c1;
+            margin-left: .3em;
+            margin-right: .3em;
+            button {
+              &:before {
+                content: '•';
+              }
+            }
+          }
+          li.slick-active {
+            background-color: #4ecdc4;
+          }
         }
         .case {
           width: (360/1260) * 100%;
@@ -2367,8 +2412,10 @@ $fs: 16;
         //margin: (60 / $fs) * 1rem auto 0;
         margin: 0 auto;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        //justify-content: center;
+        //flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         .slick-list {
           width: (1260/1420) * 100%;
           padding-top: (20 / $fs) * 1rem;
@@ -2396,7 +2443,24 @@ $fs: 16;
           }
         }
         .slick-dots {
-          display: none;
+          display: flex;
+          margin-bottom: 1em;
+          li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #c1c1c1;
+            margin-left: .3em;
+            margin-right: .3em;
+            button {
+              &:before {
+                content: '•';
+              }
+            }
+          }
+          li.slick-active {
+            background-color: #4ecdc4;
+          }
         }
         .case {
           width: (360/1260) * 100%;
@@ -3907,6 +3971,28 @@ $vw: 750;
 @import 'product_sp';
 }
 @media (min-width:601px) and ( max-width:960px) {//*600px～タブレット
+  #content.productcustom {
+    #bg {
+      .bg_area {
+        height: 540px;
+      }
+    }
+    #functinon_area {
+      .bg {
+        .cta_area {
+          .cta_box {
+            .box {
+              figure {
+                width: 480px;
+                height: 320px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
   #content.concept {
     #illust_area{
       .illust_base {
