@@ -23,7 +23,7 @@
 </div><!--contents_wrap-->
 <?php wp_footer(); ?>
 <link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/js/lib/simpleLightbox/simpleLightbox.min.css">
-<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/slick.css">
+<link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/slick.css'); ?>">
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.easing.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.inview.min.js"></script>
@@ -31,7 +31,7 @@
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/smooth-scroll.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/simpleLightbox/simpleLightbox.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/slick.min.js"></script>
-<script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/common.js"></script>
+<script type="text/javascript" src="<?php echo_revisioned_assets_file_url('assets/js/common.js'); ?>"></script>
 <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
 <?php 
 /*if( current_user_can( 'administrator' ) ):

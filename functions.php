@@ -8,6 +8,10 @@ function echo_assets_root_url() {
   echo get_assets_root_url();
 }
 
+function echo_revisioned_assets_file_url($path) {
+  echo get_assets_root_url() . $path . "?" . date("YmdHis");
+}
+
 /* header クリーニング */
 // head内不要タグ削除
 remove_action( 'wp_head', '_wp_render_title_tag', 1);
@@ -97,12 +101,12 @@ function is_parent_slug() {
 }
 //固定ページのパーマリンクをスラッグで取得する
 function get_permalink_byslug($slug){
-	return esc_url(get_permalink(get_page_by_path($slug)));
+  return esc_url(get_permalink(get_page_by_path($slug)));
 }
 //固定ページのステータスをスラッグで取得する
 function get_status_byslug($slug){
-	$id = get_page_by_path($slug)->ID;
-	return get_post($id) -> post_status;
+  $id = get_page_by_path($slug)->ID;
+  return get_post($id) -> post_status;
 }
 
 //一覧から1件目を判定
@@ -130,7 +134,7 @@ if(empty($first_img)){
 // 検索結果の並び順を日付順にする
 add_filter('posts_search_orderby', 'custom_posts_search_orderby');
 function custom_posts_search_orderby() {
-	return ' post_date desc ';
+  return ' post_date desc ';
 }
 
 function echo_first_image( $postID, $size = 'medium' ) {
@@ -177,9 +181,9 @@ function my_theme_archive_title( $title ) {
     $point = strpos($date,'月');
     $title = mb_substr($date,$point+1).'年'.mb_substr($date,0,$point+1);
   } elseif ( is_tax() ){
-		$my_term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
-		$title = $my_term->name;
-	}
+    $my_term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
+    $title = $my_term->name;
+  }
 
   return $title;
 }
@@ -187,8 +191,8 @@ function my_theme_archive_title( $title ) {
 add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
 
 
-locate_template('functions/post_edit.php', true); 
-locate_template('functions/echo_breadcrumb.php', true); 
-locate_template('functions/add_post_type.php', true); 
+locate_template('functions/post_edit.php', true);
+locate_template('functions/echo_breadcrumb.php', true);
+locate_template('functions/add_post_type.php', true);
 
 ?>
