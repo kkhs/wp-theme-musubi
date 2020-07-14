@@ -43,9 +43,13 @@
 #inline-popup_3 .img_area,
 #inline-popup_4 .img_area,
 #inline-popup_5 .img_area,
-#inline-popup_6 .img_area {
+#inline-popup_6 .video_area {
   border: 1px solid #eee;
   width: 100%;
+  margin: 0 auto;
+}
+#inline-popup_6 .video_area video {
+  width: 95%;
   margin: 0 auto;
 }
 .mfp-container {
@@ -334,7 +338,7 @@
                     <div id="inline-popup_3" class="mfp-hide">
                       <div class="pd-colum">
                         <div class="img_area">
-                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="">
+                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="" id="animation">
                         </div>
                       </div>
                       <div class="mfp-close"></div>
@@ -347,7 +351,7 @@
                 </div>
                 <div class="caption_box img">
                   <div class="img_area">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="">
+                  <img id="animation" src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="">
                   </div>
                 </div>
               </div>
@@ -374,7 +378,7 @@
                     <div id="inline-popup_4" class="mfp-hide">
                       <div class="pd-colum">
                         <div class="img_area">
-                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_4.gif" alt="">
+                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_4.gif" alt="" id="animation_b">
                         </div>
                       </div>
                       <div class="mfp-close"></div>
@@ -387,7 +391,7 @@
                 </div>
                 <div class="caption_box img">
                   <div class="img_area">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_4.gif" alt="">
+                  <img id="animation_b" src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_4.gif" alt="">
                   </div>
                 </div>
               </div>
@@ -421,10 +425,10 @@
                     画面を共有しながらのビジュアルコミュニケーションは、オンライン服薬指導にも最適です。
                   </p>
                   <div class="popup_outer">
-                    <div class="inline-link" data-mfp-src="#inline-popup_4">
+                    <div class="inline-link" data-mfp-src="#inline-popup_5">
                       <p class="link">イメージを見る</p>
                     </div>
-                    <div id="inline-popup_4" class="mfp-hide">
+                    <div id="inline-popup_5" class="mfp-hide">
                       <div class="pd-colum">
                         <div class="img_area">
                         <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_5.jpg" alt="">
@@ -473,14 +477,8 @@
                     Musubiは、連動する患者さん向け“おくすり連絡帳アプリ”を通じて、服薬期間中フォローを軸とした患者さんとの関係づくりをサポート。
                     患者さんとの過剰なやり取りや極端な連絡不足を防ぎ、「必要な患者さんに」「適切な労力で」コミュニケーションを図るための業務フロー構築をアシストします。
                   </p>
-                  <!--
-                  <div class="btn_area">
-                    <a href="" class="txt_btn"><span>●●機能</span></a>
-                    <a href="" class="txt_btn"><span>●●機能</span></a>
-                  </div>
-                  -->
                 </div>
-                <div class="caption_box">
+                <div class="caption_box img">
                   <div class="img_area img">
                   </div>
                 </div>
@@ -495,21 +493,21 @@
             <div class="cta_box">
               <div class="box first">
                 <figure>
-                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_1.png" alt="">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_1_l.png" alt="">
                 </figure>
                 <h3>質を伴った<br class="display-pc">業務効率化</h3>
                 <p>服薬指導の内容が、自動で薬歴へ。外来でも在宅でも、より深く患者さんに向き合うことができます。</p>
               </div>
               <div class="box sec">
                 <figure>
-                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_2.png" alt="">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_2_l.png" alt="">
                 </figure>
                 <h3>シンプルな画面<br class="display-pc">操作方法</h3>
                 <p>従来のレセコンや電子薬歴とは一線を画すシンプルな画面に、画面タッチ中心の操作。使う人を選びません。</p>
               </div>
               <div class="box thi">
                 <figure>
-                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_3b.png" alt="">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_3_l.png" alt="">
                 </figure>
                 <h3>マンツーマン<br class="display-pc">サポート</h3>
                 <p>満足度90％以上。継続的なMusubiの活用サポートで、PC操作やITシステムが苦手な薬剤師さんも安心です。</p>
@@ -779,6 +777,12 @@
     captionAttribute: 'alt',
     widthRatio: .5,
     heightRatio: .4
+  });
+    //gif reload
+    $(document).ready( function(){
+    var timestamp = new Date().getTime();
+    $('#animation').attr('src', '<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif' + '?' + timestamp);
+    $('#animation_b').attr('src', '<?php echo_assets_root_url(); ?>assets/images/product/custom/product_4.gif' + '?' + timestamp);
   });
 </script>
 </body>
