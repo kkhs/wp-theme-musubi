@@ -1,22 +1,22 @@
-<?php 
+<?php
 global $unique;
 $post_type = get_post_type_object(get_post_type());
 $isLp = get_field('cf_isLp');
 if (is_home()) {
-	$canonical_url = get_bloginfo('url');
+  $canonical_url = get_bloginfo('url');
 } elseif (is_tag()) {
-	$canonical_url = get_tag_link(get_query_var('tag_id'));
+  $canonical_url = get_tag_link(get_query_var('tag_id'));
 } elseif (is_category()) {
-	$canonical_url = get_category_link(get_query_var('cat'));
+  $canonical_url = get_category_link(get_query_var('cat'));
 //} elseif (is_archive('seminar')) {
 //	$canonical_url = get_post_type_archive_link('seminar');
-} elseif (is_page() || is_single()) { 
-	$canonical_url = get_permalink();
+} elseif (is_page() || is_single()) {
+  $canonical_url = get_permalink();
 } elseif(is_404()) {
-	$canonical_url =  get_bloginfo('url')."/404";
+  $canonical_url =  get_bloginfo('url')."/404";
 } else {
-	//$canonical_url  = get_bloginfo('url');
-	$canonical_url  = $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+  //$canonical_url  = get_bloginfo('url');
+  $canonical_url  = $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 }
 
 $assets_root = get_assets_root_url();
@@ -26,15 +26,15 @@ $ogimg = $assets_root . 'assets/images/ogp_top.jpg';
 }elseif(is_page('product')){
 $ogimg = $assets_root . 'assets/images/ogp_products.jpg';
 }elseif(is_singular()){
-	if (has_post_thumbnail()){
-		$image_id = get_post_thumbnail_id();
+  if (has_post_thumbnail()){
+    $image_id = get_post_thumbnail_id();
     $image = wp_get_attachment_image_src( $image_id, 'full');
     $ogimg = $image[0];
-	}elseif (catch_that_image()){
+  }elseif (catch_that_image()){
 //		$urlCap = get_bloginfo('url');
 //		$ogimg = str_replace($urlCap, '', catch_that_image());
 //		$ogimg = $urlCap.$ogimg;
-	}
+  }
 }
 //global $overrightOGImage;
 //if(isset($overrightOGImage)){
@@ -48,72 +48,72 @@ $ogimg = $assets_root . 'assets/images/ogp_products.jpg';
 <?php }else{ ?>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <?php } ?>
-	<meta charset="utf-8">
-	
+  <meta charset="utf-8">
+
 <?php //title
-	global $ttlBefore;
-	$addTitle = get_bloginfo('title');
-	if ( is_front_page() ) { 
-		$title = $addTitle; 
-	}elseif( is_singular() ) {
+  global $ttlBefore;
+  $addTitle = get_bloginfo('title');
+  if ( is_front_page() ) {
+    $title = $addTitle;
+  }elseif( is_singular() ) {
     $post_type = get_post_type_object(get_post_type());
     global $post;
     if ( is_object_in_term($post->ID, 'blog_category','news') ){
-      $title = the_title_attribute('echo=0').'｜お知らせ｜'.$addTitle; 
+      $title = the_title_attribute('echo=0').'｜お知らせ｜'.$addTitle;
     }elseif( $post_type->name != 'post' && $post_type->name != 'page' ){
-      $title = the_title_attribute('echo=0').'｜'.$post_type->label.'｜'.$addTitle; 
+      $title = the_title_attribute('echo=0').'｜'.$post_type->label.'｜'.$addTitle;
     }else{
-      $title = the_title_attribute('echo=0').'｜'.$addTitle; 
+      $title = the_title_attribute('echo=0').'｜'.$addTitle;
     }
-	}elseif( is_tag()) { 
-		$title = "#".single_tag_title( '', false ).'｜'.$addTitle; 
-	}elseif(is_tax() || is_category()) { 
-		$title = single_tag_title( '', false ).'｜'.$addTitle; 
-	}elseif( is_year() ) { 
-		$title = get_the_time('Y年').'｜'.$addTitle; 
-	}elseif( is_month() ) { 
-		$title = get_the_time('Y年m月').'｜'.$addTitle; 
-	}elseif(is_archive()) {
-		$post_type = get_post_type_object(get_post_type());
-		$title = $post_type->label.'｜'.$addTitle;
-	}elseif( is_404() ) {
-		$title = "指定されたページが見つかりませんでした。".'｜'.$addTitle; 
-	}elseif( is_search() ) { 
-		$title = "検索結果".'｜'.$addTitle; 
-	}else{
+  }elseif( is_tag()) {
+    $title = "#".single_tag_title( '', false ).'｜'.$addTitle;
+  }elseif(is_tax() || is_category()) {
+    $title = single_tag_title( '', false ).'｜'.$addTitle;
+  }elseif( is_year() ) {
+    $title = get_the_time('Y年').'｜'.$addTitle;
+  }elseif( is_month() ) {
+    $title = get_the_time('Y年m月').'｜'.$addTitle;
+  }elseif(is_archive()) {
+    $post_type = get_post_type_object(get_post_type());
+    $title = $post_type->label.'｜'.$addTitle;
+  }elseif( is_404() ) {
+    $title = "指定されたページが見つかりませんでした。".'｜'.$addTitle;
+  }elseif( is_search() ) {
+    $title = "検索結果".'｜'.$addTitle;
+  }else{
     if($unique['title']){
-		$title = $unique['title'].'｜'.$addTitle; 
+      $title = $unique['title'].'｜'.$addTitle;
     }else{
-		$title = the_title_attribute('echo=0').'｜'.$addTitle; 
+      $title = the_title_attribute('echo=0').'｜'.$addTitle;
     }
-	} ?>
-	<title><?php echo $ttlBefore.$title;?></title>
-		
-	<link rel="shortcut icon" href="<?php echo_assets_root_url(); ?>assets/images/common/favicon.ico">
-	<link rel="apple-touch-icon" href="<?php echo_assets_root_url(); ?>assets/images/common/apple-touch-icon.png">
-	
-	<?php $description = get_bloginfo('description'); ?>
-	<meta name="description" content="時代は、電子薬歴のその先へ。Musubi（ムスビ）は、患者満足と薬局の働き方改革を支援する薬局体験アシスタント。薬歴業務効率化、店舗業務の見える化、服薬期間中フォローなど多くの機能で薬局体験向上をアシストします。">
-	<?php wp_head(); ?>
-	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	
-	<meta property="og:title" content="<?php echo $ttlBefore.$title; ?>"/>
-	<meta property="og:description" content="<?php echo $description; ?>"/>
-	<meta property="og:url" content="<?php echo $canonical_url; ?>"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:site_name" content="<?php echo $ttlBefore.$title; ?>"/>
-	<meta property="og:image" content="<?php echo $ogimg; ?>"/>
+  } ?>
+  <title><?php echo $ttlBefore.$title;?></title>
 
-	<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/common.css">
+  <link rel="shortcut icon" href="<?php echo_assets_root_url(); ?>assets/images/common/favicon.ico">
+  <link rel="apple-touch-icon" href="<?php echo_assets_root_url(); ?>assets/images/common/apple-touch-icon.png">
+
+  <?php $description = get_bloginfo('description'); ?>
+  <meta name="description" content="時代は、電子薬歴のその先へ。Musubi（ムスビ）は、患者満足と薬局の働き方改革を支援する薬局体験アシスタント。薬歴業務効率化、店舗業務の見える化、服薬期間中フォローなど多くの機能で薬局体験向上をアシストします。">
+  <?php wp_head(); ?>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <meta property="og:title" content="<?php echo $ttlBefore.$title; ?>"/>
+  <meta property="og:description" content="<?php echo $description; ?>"/>
+  <meta property="og:url" content="<?php echo $canonical_url; ?>"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="<?php echo $ttlBefore.$title; ?>"/>
+  <meta property="og:image" content="<?php echo $ogimg; ?>"/>
+
+  <link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/common.css'); ?>">
   <?php if(is_archive()): ?>
-	<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/archive.css">
+  <link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/archive.css'); ?>">
   <?php elseif(is_page() || is_singular()): ?>
-	<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/single.css">
+  <link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/single.css'); ?>">
   <?php elseif($unique['layout'] === 'single' || is_404()): ?>
-	<link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/single.css">
+  <link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/single.css'); ?>">
   <?php endif; ?>
   <!-- scroll-hint -->
   <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
@@ -162,13 +162,13 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-T353GVC');</script>
-<!-- End Google Tag Manager -->    
+<!-- End Google Tag Manager -->
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T353GVC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->		
+<!-- End Google Tag Manager (noscript) -->
 <div class="contents_wrap">
 <header id="header">
   <div class="header_wrap">
@@ -197,7 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </header>
-	
+
 <?php if(!is_home() && !is_404() && !$isLp){ ?>
 <div id="breadclumb"><ul typeof="BreadcrumbList" vocab="http://schema.org/">
 <?php echo_breadcrumb(); ?>
