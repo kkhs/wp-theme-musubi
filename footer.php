@@ -17,7 +17,7 @@
         <dd><a href="https://www.kakehashi.life/inquiry.html" target="_blank">お問い合わせ</a></dd>
       </dl>
     </div>
-    <div class="copyright">Copyright &copy; 2020 KAKEHASHI Inc. All Rights Reserved.</div>
+    <div class="copyright">Copyright &copy; 2017 KAKEHASHI Inc. All Rights Reserved.</div>
   </div>
 </footer>
 </div><!--contents_wrap-->
