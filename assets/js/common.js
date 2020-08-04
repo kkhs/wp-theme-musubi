@@ -94,8 +94,3 @@ $(function() {
   type:'inline'
   });
 });
-
-
-$(function(){
-  
-});
