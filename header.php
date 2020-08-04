@@ -22,7 +22,7 @@ if (is_home()) {
 $assets_root = get_assets_root_url();
 $ogimg = $assets_root . 'assets/images/ogp.jpg';
 if(is_home()){
-$ogimg = $assets_root . 'assets/images/ogp_top.jpg';
+$ogimg = $assets_root . 'assets/images/ogp_top_b.jpg';
 }elseif(is_page('product')){
 $ogimg = $assets_root . 'assets/images/ogp_products.jpg';
 }elseif(is_singular()){
@@ -100,11 +100,11 @@ $ogimg = $assets_root . 'assets/images/ogp_products.jpg';
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <meta property="og:title" content="<?php echo $ttlBefore.$title; ?>"/>
-  <meta property="og:description" content="<?php echo $description; ?>"/>
+  <meta property="og:title" content="Musubi（ムスビ）-電子薬歴の先をいく薬局体験アシスタント"/>
+  <meta property="og:description" content="時代は、電子薬歴のその先へ。Musubi（ムスビ）は、患者満足と薬局の働き方改革を支援する薬局体験アシスタント。薬歴業務効率化、店舗業務の見える化、服薬期間中フォローなど多くの機能で薬局体験向上をアシストします。"/>
   <meta property="og:url" content="<?php echo $canonical_url; ?>"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:site_name" content="<?php echo $ttlBefore.$title; ?>"/>
+  <meta property="og:site_name" content="Musubi（ムスビ）-電子薬歴の先をいく薬局体験アシスタント"/>
   <meta property="og:image" content="<?php echo $ogimg; ?>"/>
 
   <link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/common.css'); ?>">
@@ -182,8 +182,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="header_btm">
           <ul class="header_menu">
-            <li><a href="/concept"<?php if(is_page('concept')): ?>class="current"<?php endif; ?>>薬局体験とは</a></li>
-            <li><a href="/product"<?php if(is_page('product')): ?>class="current"<?php endif; ?>>サービス詳細</a></li>
+            <li class="sub_A">
+            <a href="/concept"<?php if(is_page('concept')): ?>class="current"<?php endif; ?>>薬局体験とは</a>
+            </li>
+            <li class="sub_B">
+              <a href="/product"<?php if(is_page('product')): ?>class="current"<?php endif; ?>>
+              <!-- <span class="sub"></span> -->サービス詳細</a>
+              <!--
+              <div class="arrow B"></div>
+              <ul class="sub_menu">
+                <li><a href="#">menumenumenumenumenu</a></li>
+                <li><a href="#">menumenumenumenumenu</a></li>
+                <li><a href="#">menumenumenumenumenu</a></li>
+              </ul>
+              -->
+            </li>
             <li><a href="/#price">価格</a></li>
             <li><a href="/case"<?php if(is_post_type_archive('case')|is_singular('case'))echo 'class="current"'; ?>>導入事例</a></li>
             <li><a href="/faq"<?php if(is_page('faq'))echo 'class="current"'; ?>>よくある質問</a></li>

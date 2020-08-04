@@ -45,10 +45,7 @@ if(term_exists($term, 'event_tag')){
   $post__not_in = [];
   $days = 7;
   $today = date_i18n('U');
-  date_default_timezone_set('Asia/Tokyo'); 
-  $date_now = date('YmdHi');
-  // Set back to UTC.
-  date_default_timezone_set('UTC');
+  date_default_timezone_set('Asia/Tokyo'); $date_now = date('YmdHi');
       
 $first_args = array(
   'post_type' => $post_type,
