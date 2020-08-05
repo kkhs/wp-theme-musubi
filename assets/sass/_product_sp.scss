@@ -256,11 +256,7 @@
                   width: 100%;
                   margin: 0 auto 1.4em 0;
                 }
-                .img_area {
-                  background-color: #f1f1f1;
-                  height: 360px;
-                  margin: 0 auto;
-                  width: 95%;
+                .img_area, .video_area  {
                   display: none;
                 }
               }
@@ -2107,6 +2103,9 @@
           width: (610/750) * 100%;
           margin: 0 (70 / $fs) * 1rem (30 / $fs) * 1rem;
           a {
+            .inner {
+              padding: .8em;
+            }
             .img {
             }
             .desc {
@@ -2115,6 +2114,9 @@
             .tit {
             }
             .user {
+            }
+            .title {
+              font-size: 1.15rem;
             }
           }
         }

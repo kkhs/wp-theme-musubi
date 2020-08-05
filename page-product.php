@@ -477,9 +477,23 @@
                     Musubiは、連動する患者さん向け“おくすり連絡帳アプリ”を通じて、服薬期間中フォローを軸とした患者さんとの関係づくりをサポート。
                     患者さんとの過剰なやり取りや極端な連絡不足を防ぎ、「必要な患者さんに」「適切な労力で」コミュニケーションを図るための業務フロー構築をアシストします。
                   </p>
+                  <div class="popup_outer">
+                    <div class="inline-link" data-mfp-src="#inline-popup_6">
+                      <p class="link">イメージを見る</p>
+                    </div>
+                    <div id="inline-popup_6" class="mfp-hide">
+                      <div class="pd-colum">
+                        <div class="video_area">
+                          <video controls autoplay muted playsinline src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_6_v2.mp4"></video>
+                        </div>
+                      </div>
+                      <div class="mfp-close"></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="caption_box img">
-                  <div class="img_area img">
+                  <div class="video_area">
+                    <video controls autoplay muted playsinline src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_6_v2.mp4"></video>
                   </div>
                 </div>
               </div>

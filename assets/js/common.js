@@ -46,6 +46,32 @@ $(document).ready(function() {
     a.slideToggle().toggleClass('open');
     $(this).toggleClass('open');
   });
+
+  $(".header_btm ul.header_menu li .arrow").click(function(){
+    var sub = $(this).siblings('ul.header_menu ul.sub_menu');
+    sub.slideToggle(250);
+  });
+
+  $(".header_btm ul.header_menu li .arrow.A").click(function(){
+    $('.header_btm ul.header_menu li.sub_A').toggleClass('sub--menuOpen');
+  });
+  $(".header_btm ul.header_menu li .arrow.B").click(function(){
+    $('.header_btm ul.header_menu li.sub_B').toggleClass('sub--menuOpen');
+  });
+  
+  // サブメニュー
+  if (window.matchMedia('(min-width:768px)').matches) {
+    //PC処理
+    // ▼マウスが載ったらサブメニューを表示
+      $("ul.header_menu li").mouseenter(function(){
+        $(this).siblings().find("ul").hide();  // 兄弟要素に含まれるサブメニューを全部消す。
+        $(this).children().slideDown(250);     // 自分のサブメニューを表示する。
+    });
+    // ▼どこかがクリックされたらサブメニューを消す
+      $('html').click(function() {
+        $('ul.header_menu ul').slideUp(250);
+    });
+  }
 });
 
 $(window).on('scroll resize', function() {
@@ -62,9 +88,9 @@ function scrFunc(){
   }
 }
 
-  // Magnific Popup
-  $(function() {
-      $('.inline-link').magnificPopup({
-      type:'inline'
-      });
-    });
+// Magnific Popup
+$(function() {
+  $('.inline-link').magnificPopup({
+  type:'inline'
+  });
+});

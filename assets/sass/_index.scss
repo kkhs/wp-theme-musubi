@@ -1527,6 +1527,7 @@ $fs: 16;
           margin: 0 (30 / $fs) * 1rem (20 / $fs) * 1rem;
           border: 2px solid #4ecdc4;
           border-radius: 4px;
+          min-height: 25em;
           a {
             display: block;
             text-align: left;
@@ -1543,7 +1544,7 @@ $fs: 16;
             }
             .title {
               color: #4ecdc4;
-              font-size: 1.2rem;
+              font-size: 1.18rem;
               font-weight: 400;
               line-height: 1.6;
               margin-bottom: .8em;

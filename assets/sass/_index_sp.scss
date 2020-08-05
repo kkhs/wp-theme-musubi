@@ -926,6 +926,9 @@
           width: (610/750) * 100%;
           margin: 0 (70 / $fs) * 1rem (30 / $fs) * 1rem;
           a {
+            .inner {
+              padding: .8em;
+            }
             .img {
             }
             .desc {
@@ -934,6 +937,9 @@
             .tit {
             }
             .user {
+            }
+            .title {
+              font-size: 1.15rem;
             }
           }
         }
