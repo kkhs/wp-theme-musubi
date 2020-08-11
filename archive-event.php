@@ -79,14 +79,34 @@ $first_args = array(
     </a>
     <span class="desc">
       <h2 class="tit"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+      <!-- getFullYear JS -->
+      <script>
+      $(document).ready(function() {
+        var end = '<?php echo $date_end; ?>';
+        var now = new Date();
+        var nowString = 
+          now.getFullYear().toString()
+          + ("0"+(now.getMonth() + 1)).slice(-2)
+          + ("0"+now.getDate()).slice(-2)
+          + ("0"+now.getHours()).slice(-2)
+          + ("0"+now.getMinutes()).slice(-2);
+        var isValid = parseInt(end) > parseInt(nowString);
+        if(!isValid) {
+          if($('.event_end').length <= 0) {
+            $('.event_badges').append('<span class="event_end">開催終了</span>');
+          }
+        }
+      });
+      </script>
+      <!--// getFullYear JS -->
       <?php 
       echo '<span class="event_meta">';
       echo '<span class="event_date">開催日：'.$overview['cf_date'].'</span>';
-      echo '<span class="event_badges">';
-      if(intval(get_field('cf_event_target')) === 1)echo '<span class="event_target">Musubiユーザ向け</span>';
-      if($date_end && $date_now >= $date_end)echo '<span class="event_end">開催終了</span>';
-      echo '</span>';
       ?>
+      <span class="event_badges">
+          <?php if(intval(get_field('cf_event_target')) === 1){ ?><span class="event_target">Musubiユーザ向け</span><?php } ?>
+          <?php if($date_now >= $date_end){ ?><span class="event_end">開催終了</span><?php } ?>
+      </span>
       <?php
       $tax = 'event_category';
       $terms = get_the_terms( $post->ID, $tax );
@@ -159,11 +179,11 @@ $first_args = array(
       <?php 
       echo '<span class="event_meta">';
       echo '<span class="event_date">開催日：'.$overview['cf_date'].'</span>';
-    echo '<span class="event_badges">';
-      if(intval(get_field('cf_event_target')) === 1)echo '<span class="event_target">Musubiユーザ向け</span>';
-      if($date_end && $date_now >= $date_end)echo '<span class="event_end">開催終了</span>';
-    echo '</span>';
       ?>
+      <span class="event_badges">
+          <?php if(intval(get_field('cf_event_target')) === 1){ ?><span class="event_target">Musubiユーザ向け</span><?php } ?>
+          <?php if($date_now >= $date_end){ ?><span class="event_end">開催終了</span><?php } ?>
+      </span>
       <?php
       $tax = 'event_category';
       $terms = get_the_terms( $post->ID, $tax );
