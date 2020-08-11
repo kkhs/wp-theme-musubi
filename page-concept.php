@@ -26,15 +26,15 @@
               <div class="sub_box A display-sp">
                 <div class="sub A">
                   <span></span>
-                  <p>⼀⼈ひとりの患者さんに<br>不安なく投薬できるようになる</p>
+                  <p>一人ひとりの患者さんに<br>不安なく投薬できるようになる</p>
                 </div>
                 <div class="sub B">
                   <span></span>
-                  本当にやるべきことができる<br>（対⼈業務の充実）
+                  本当にやるべきことができる<br>（対人業務の充実）
                 </div>
                 <div class="sub C">
                   <span></span>
-                  ⽇常業務がはかどる<br>（対物業務の効率化）
+                  日常業務がはかどる<br>（対物業務の効率化）
                 </div>
               </div>
             </div>
@@ -49,11 +49,11 @@
                 </div>
                 <div class="sub B">
                   <span></span>
-                  <p>薬局の外でもフォローが続き<br>安⼼を感じる</p>
+                  <p>薬局の外でもフォローが続き<br>安心を感じる</p>
                 </div>
                 <div class="sub C">
                   <span></span>
-                  <p>⼀⼈ひとりに適した指導で<br>他の薬局との違いを感じる</p>
+                  <p>一人ひとりに適した指導で<br>他の薬局との違いを感じる</p>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@
           <div class="content_box setElm">
             <div class="box first">
               <div class="title_area">
-                <h4>店舗の現状が⾒える</h4>
+                <h4>店舗の現状が見える</h4>
               </div>
               <div class="colum_wh">
                 <div class="titie_area">経営課題の<br class="display-pc">明確化</div>
@@ -198,7 +198,7 @@
                       GE比率、再来率などの現状把握
                     </li>
                     <li>
-                      データに基づく施策の⽴案・改善
+                      データに基づく施策の立案・改善
                     </li>
                     <li>
                       現場の理解度や納得度の向上
@@ -222,7 +222,7 @@
                       定着率向上
                     </li>
                     <li>
-                      労働⽣産性の最⼤化
+                      労働生産性の最大化
                     </li>
                   </ul>
                 </div>
@@ -244,7 +244,7 @@
                     </li>
                     <li>
                       患者一人ひとりの<br>
-                      ライフタイムバリュー最⼤化
+                      ライフタイムバリュー最大化
                     </li>
                   </ul>
                 </div>
