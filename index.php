@@ -204,7 +204,7 @@
               <div class="flex_box">
                 <div class="img-area">
                   <div class="img-box">
-                    <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/movie_ui.gif" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/clipboard02.png" alt="">
                   </div>
                 </div>
                 <div class="txt-area">
@@ -270,14 +270,6 @@
                       スムーズにMusubiを使いこなせるようになりました。
                     </span>
                     </li>
-                    <!--
-                    <li>
-                    <span class="icon"></span>
-                    <span class="txt">
-                    カケハシスタッフの質が高く、基本的には満足しています。
-                    </span>
-                    </li>
-                    -->
                   </ul>
                 </div>
                 <p class="teacher-heading">一部講師のご紹介</p>
