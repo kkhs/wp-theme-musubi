@@ -381,10 +381,11 @@ body{
               display: none;
               position: absolute;
               margin: 0;
-              width: auto;
+              width: max-content;
               list-style: none;
               padding: 0;
-              background-color: rgba(255,255,255,0.95);
+              //background-color: rgba(255,255,255,0.95);
+              background-color: rgba(78,205,196,0.95);
               z-index: 99;
               text-align: left;
               margin-top: 2em;
@@ -399,7 +400,8 @@ body{
                   border-bottom: none;
                 }
                 a {
-                  color: #333;
+                  //color: #333;
+                  color: #fff;
                   @media(hover:hover){
                     &:hover{
                       opacity: .7;

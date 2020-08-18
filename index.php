@@ -521,7 +521,7 @@
                     <?php endif; ?>
                   </span>
                   <div class="inner">
-                    <p class="title"><?php the_title(); ?></p>
+                    <p class="tit"><?php the_title(); ?></p>
                     <div class="date">
                       <?php
                         $before = array('年', '月', '日');

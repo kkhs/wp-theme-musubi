@@ -182,7 +182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="header_btm">
           <ul class="header_menu">
-            <li class="sub_A">
+            <li>
             <a href="/concept"<?php if(is_page('concept')): ?>class="current"<?php endif; ?>>薬局体験とは</a>
             </li>
             <li class="sub_B">
@@ -201,7 +201,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li><a href="/case"<?php if(is_post_type_archive('case')|is_singular('case'))echo 'class="current"'; ?>>導入事例</a></li>
             <li><a href="/faq"<?php if(is_page('faq'))echo 'class="current"'; ?>>よくある質問</a></li>
             <li><a href="/wp-download"<?php if(is_post_type_archive('wp-download')|is_singular('wp-download'))echo 'class="current"'; ?>>お役立ち資料</a></li>
-            <li><a href="/event"<?php if(is_post_type_archive('event')|is_singular('event'))echo 'class="current"'; ?>>イベント</a></li>
+            <li class="sub_A">
+              <a href="/event"<?php if(is_post_type_archive('event')|is_singular('event'))echo 'class="current"'; ?>>
+              <!-- <span class="sub"></span> -->イベント</a>
+              <!-- 
+              <div class="arrow A"></div>
+              <ul class="sub_menu">
+                <li><a href="/blog/report"<?php if(is_post_type_archive('blog')|is_singular('blog'))echo 'class="current"'; ?>>イベントレポート</a></li>
+              </ul>
+               -->
+            </li>
             <li><a href="/blog"<?php if(is_post_type_archive('blog')|is_singular('blog'))echo 'class="current"'; ?>>ブログ</a></li>
           </ul>
         </div>

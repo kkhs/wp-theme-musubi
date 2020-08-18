@@ -1175,6 +1175,8 @@ $fs: 16;
         margin-top: (18/$fs)*1rem;
         &.inview{
           .free{
+            opacity: 1;
+            transform: translate(0, 0);
             .shine{
               opacity: 1;
               transform: scale(1);
@@ -1216,6 +1218,12 @@ $fs: 16;
           justify-content: center;
           align-items: center;
           color: #fff;
+          z-index: 2;
+          background-color: #ff6e6e;
+          opacity: 0;
+          transform: translate(-3em, 0);
+          transition: all .4s ease .2s;
+          /*
           &:before{
             content: "";
             display: block;
@@ -1226,6 +1234,19 @@ $fs: 16;
             bottom: 0;
             left: 0;
             z-index: 0;
+          }
+          */
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -2em;
+            border-left: 2em solid #ff6e6e;
+            border-top: 7em solid transparent;
+            border-bottom: 7em solid transparent;
+            z-index: 2;
           }
           .shine{
             display: block;
@@ -1486,7 +1507,7 @@ $fs: 16;
           justify-content: center;
           align-items: center;
           position: absolute;
-          top: (75 / $fs) * 2.3rem;
+          top: (35 / $fs) * 2.3rem;
           left: auto;
           right: auto;
           z-index: 50;
@@ -1525,9 +1546,9 @@ $fs: 16;
           width: (360/1260) * 100%;
           //width: 20%;
           margin: 0 (30 / $fs) * 1rem (20 / $fs) * 1rem;
-          border: 2px solid #4ecdc4;
-          border-radius: 4px;
-          min-height: 25em;
+          //border: 2px solid #4ecdc4;
+          //border-radius: 4px;
+          //min-height: 25em;
           a {
             display: block;
             text-align: left;
@@ -1538,23 +1559,23 @@ $fs: 16;
               display: block;
               overflow: hidden;
               height: 180px;
-              //border-radius: (7 / $fs) * 1rem;
+              border-radius: (7 / $fs) * 1rem;
               //box-shadow: 0 0 (20/$fs)*1rem (10/$fs)*1rem rgba(92,95,101,.15);
-              //box-shadow: 0 0 1rem 0.5rem rgba(92, 95, 101, 0.15);
+              box-shadow: 0 0 1rem 0.5rem rgba(92, 95, 101, 0.15);
             }
             .title {
-              color: #4ecdc4;
+              color: #1bbaaf;
               font-size: 1.18rem;
               font-weight: 400;
               line-height: 1.6;
               margin-bottom: .8em;
             }
             .date {
-              margin-bottom: .4em;
+              margin: .6em auto;
             }
             .category {
-              border: 1px solid #4ecdc4;
-              color: #4ecdc4;
+              border: 1px solid #1bbaaf;
+              color: #1bbaaf;
               font-size: .9rem;
               padding: .3em .8em;
             }
@@ -2319,7 +2340,7 @@ $fs: 16;
           justify-content: center;
           align-items: center;
           position: absolute;
-          top: (75 / $fs) * 1rem;
+          top: (90 / $fs) * 1rem;
           left: auto;
           right: auto;
           z-index: 50;
@@ -2647,6 +2668,27 @@ $vw: 750;
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+
+    #price {
+      .section_inner {
+        .price_free {
+          &.inview{
+            .free {
+              opacity: 1;
+              transform: translate(0, 0);
+            }
+          }
+          .free {
+            &:after {
+              right: -2em;
+              border-left: 2em solid #ff6e6e;
+              border-top: 9.8em solid transparent;
+              border-bottom: 9.8em solid transparent;
             }
           }
         }
