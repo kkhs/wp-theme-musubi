@@ -2133,7 +2133,7 @@ $fs: 16;
       /*
       padding-top: (80 / $fs) * 1rem;
       */
-      padding: 4em 0 0em;
+      padding: 3.5em 0;
       width: 100%;
       max-width: 1420px;
       margin: 0 auto;
@@ -2167,7 +2167,7 @@ $fs: 16;
           justify-content: center;
           align-items: center;
           position: absolute;
-          top: (75 / $fs) * 1rem;
+          top: (90 / $fs) * 1rem;
           left: auto;
           right: auto;
           z-index: 50;
@@ -2240,20 +2240,22 @@ $fs: 16;
       }
       .btn_area {
         text-align: center;
-        padding: 2em 0;
+        padding: 2em 0 1em;
         a.btn {
           margin: 0 auto;
         }
       }
     }
+    .bg {
+      background-color: #ebf9f7;
+    }
   }
-
   #event_custom {
     .section_inner {
       /*
       padding-top: (80 / $fs) * 1rem;
       */
-      padding: 4em 0 5em;
+      padding: 3.5em 0;
       width: 100%;
       max-width: 1420px;
       margin: 0 auto;
@@ -2265,7 +2267,7 @@ $fs: 16;
         font-weight: 400;
       }
       .cases {
-        margin: 2.5em auto 0;
+        margin: 2.5em auto 1em;
         display: flex;
         //justify-content: center;
         //flex-wrap: wrap;
@@ -2282,7 +2284,7 @@ $fs: 16;
           justify-content: center;
           align-items: center;
           position: absolute;
-          top: (75 / $fs) * 2.3rem;
+          top: (35 / $fs) * 2.3rem;
           left: auto;
           right: auto;
           z-index: 50;
@@ -2321,36 +2323,36 @@ $fs: 16;
           width: (360/1260) * 100%;
           //width: 20%;
           margin: 0 (30 / $fs) * 1rem (20 / $fs) * 1rem;
-          border: 2px solid #4ecdc4;
-          border-radius: 4px;
-          min-height: 25em;
+          //border: 2px solid #4ecdc4;
+          //border-radius: 4px;
+          //min-height: 25em;
           a {
             display: block;
             text-align: left;
             .inner {
-              padding: 1em;
+              padding: 1.8em 0 0;
             }
             .img {
               display: block;
               overflow: hidden;
               height: 180px;
-              //border-radius: (7 / $fs) * 1rem;
+              border-radius: (7 / $fs) * 1rem;
               //box-shadow: 0 0 (20/$fs)*1rem (10/$fs)*1rem rgba(92,95,101,.15);
-              //box-shadow: 0 0 1rem 0.5rem rgba(92, 95, 101, 0.15);
+              box-shadow: 0 0 1rem 0.5rem rgba(92, 95, 101, 0.15);
             }
             .title {
-              color: #4ecdc4;
+              color: #1bbaaf;
               font-size: 1.18rem;
               font-weight: 400;
               line-height: 1.6;
               margin-bottom: .8em;
             }
             .date {
-              margin-bottom: .4em;
+              margin: .6em auto;
             }
             .category {
-              border: 1px solid #4ecdc4;
-              color: #4ecdc4;
+              border: 1px solid #1bbaaf;
+              color: #1bbaaf;
               font-size: .9rem;
               padding: .3em .8em;
             }
@@ -2376,29 +2378,30 @@ $fs: 16;
       }
       .btn_area {
         text-align: center;
-        padding: 3em 0 0;
+        padding: 2em 0 1em;
         a.btn {
           margin: 0 auto;
         }
       }
     }
+    .bg {
+      background-color: #ebf9f7;
+    }
   }
-
   #doc_custom {
     .bg {
       background-color: #ebf9f7;
-      padding: 3em 0 1em;
-      h2 {
-        font-size: 2.4rem;
-        //margin-bottom: .8em;
-        text-align: center;
-      }
+    }
+    h2 {
+      font-size: 2.4rem;
+      //margin-bottom: .8em;
+      text-align: center;
     }
     .section_inner {
       /*
       padding-top: (80 / $fs) * 1rem;
       */
-      padding: 2em 0 5em;
+      padding: 3.5em 0;
       width: 100%;
       max-width: 1420px;
       margin: 0 auto;
@@ -2411,7 +2414,7 @@ $fs: 16;
       }
       .cases {
         //margin: (60 / $fs) * 1rem auto 0;
-        margin: 0 auto;
+        margin: 2.5em auto 0;
         display: flex;
         //justify-content: center;
         //flex-wrap: wrap;
@@ -2502,7 +2505,7 @@ $fs: 16;
       }
       .btn_area {
         text-align: center;
-        padding: 2em 0 0;
+        padding: 2em 0 1em;
         a.btn {
           margin: 0 auto;
         }
@@ -2528,7 +2531,7 @@ $fs: 16;
         .doc-area {
           display: flex;
           justify-content: space-evenly;
-          margin: 1em auto;
+          margin: 1em auto 2em;
           width: 100%;
           figure {
             background-color: #fff;
@@ -2542,7 +2545,7 @@ $fs: 16;
     }
     .btn_area {
       text-align: center;
-      padding: 3em 0;
+      padding: 3em 0 2em;
       a.btn {
         margin: 0 auto;
       }
@@ -4013,6 +4016,19 @@ $vw: 750;
     }
   }   
   #content.productcustom, #content.concept {
+    #event_custom {
+      .section_inner {
+        .cases {
+          .case {
+            a {
+              .tit {
+                margin-top: 1.2em;
+              }
+            }
+          }
+        }
+      }
+    }
     #docarea_custom {
       .bg {
         background-color: #4ecdc4;
