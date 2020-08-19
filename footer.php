@@ -2,7 +2,7 @@
 
 <?php if(!is_post_type_archive('wp-download')&& !is_singular('wp-download') && !$isLp){ include(TEMPLATEPATH .'/mod/mod-download.php');} ?>
 <?php // if(!$isLp) { include(TEMPLATEPATH .'/mod/mod-vision.php'); }?>
-<?php if(!$isLp) { include(TEMPLATEPATH .'/mod/mod-commonunder.php'); }?>
+<?php if(!$isLp && !is_home() || !is_front_page()) { include(TEMPLATEPATH .'/mod/mod-commonunder.php'); }?>
 <?php if($isLp) { include(TEMPLATEPATH .'/mod/mod-inquiry.php'); }?>
 
 <footer id="footer">

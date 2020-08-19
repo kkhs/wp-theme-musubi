@@ -59,7 +59,7 @@
           });
         </script>
         <div class="btn_area">
-          <a href="/case/" class="btn cta">導入事例をもっと見る</a>
+          <a href="/case" class="btn cta">導入事例をもっと見る</a>
         </div>
       <?php
       endif;
@@ -148,7 +148,7 @@
           });
         </script>
         <div class="btn_area">
-          <a href="/event/" class="btn cta">イベント・セミナー情報をもっと見る</a>
+          <a href="/event" class="btn cta">イベント・セミナー情報をもっと見る</a>
         </div>
       <?php
       endif;
@@ -219,7 +219,7 @@
             });
           </script>
           <div class="btn_area">
-            <a href="/wp-download/" class="btn cta">お役立ち資料をもっと見る</a>
+            <a href="/wp-download" class="btn cta">お役立ち資料をもっと見る</a>
           </div>
         <?php
         endif;
@@ -250,7 +250,7 @@
         </div>
       </div>
       <div class="btn_area">
-          <a href="/contact/" class="btn cta">資料をダウンロードする</a>
+          <a href="/contact" class="btn cta">資料をダウンロードする</a>
       </div>
     </div>
   </section>  
