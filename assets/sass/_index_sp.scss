@@ -780,12 +780,20 @@
         margin-top: (35/$fs)*1rem;
         .free{
           width: (98/670)*100%;
+          /*
           &:before{
             content: "";
             display: block;
             position: absolute;
             background-image: url("../images/product/index/price_free_base_sp_red.png");
             width: (143/98)*100%;
+          }
+          */
+          &:after {
+            right: -1.77em;
+            border-left: 1.8em solid #ff6e6e;
+            border-top: 9.5em solid transparent;
+            border-bottom: 9.5em solid transparent;
           }
           .shine{
             font-size: (40/$fs)*1rem;
@@ -896,7 +904,7 @@
         .slick-arrow {
           width: (70 / $fs) * 1rem;
           height: (150 / $fs) * 1rem;
-          top: (110 / $fs) * 2rem;
+          top: (60 / $fs) * 2rem;
           svg {
             width: (25/70) * 100%;
           }
@@ -930,11 +938,15 @@
               padding: .8em;
             }
             .img {
+              height: auto;
+              box-shadow: 0 (10 / $fs) * 1rem (20 / $fs) * 1rem
+                rgba(92, 95, 101, 0.15);
             }
             .desc {
               padding: (30 / $fs) * 1rem (30 / $fs) * 1rem 0;
             }
-            .tit {
+            .tit { 
+              margin-top: .6em;
             }
             .user {
             }

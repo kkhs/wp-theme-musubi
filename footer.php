@@ -1,10 +1,9 @@
 <?php $isLp = get_field('cf_isLp'); ?>
 
-<?php if(!is_home() && !is_front_page() && !is_page( array('product','concept') )) : ?>
 <?php if(!is_post_type_archive('wp-download')&& !is_singular('wp-download') && !$isLp){ include(TEMPLATEPATH .'/mod/mod-download.php');} ?>
-<?php if(!$isLp) { include(TEMPLATEPATH .'/mod/mod-vision.php'); }?>
-<?php include(TEMPLATEPATH .'/mod/mod-inquiry.php');?>
-<?php endif; ?>
+<?php // if(!$isLp) { include(TEMPLATEPATH .'/mod/mod-vision.php'); }?>
+<?php if(!$isLp) { include(TEMPLATEPATH .'/mod/mod-commonunder.php'); }?>
+<?php if($isLp) { include(TEMPLATEPATH .'/mod/mod-inquiry.php'); }?>
 
 <footer id="footer">
   <div class="ft_btm">
