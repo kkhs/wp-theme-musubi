@@ -211,6 +211,14 @@ $fs: 16;
         img {
           width: 100%;
         }
+        .movie {
+          background-color: #ccc;
+          width: 100%;
+          iframe{
+            height: 480px;
+            width: 100%;
+          }
+        }
       }
       .post_summary {
         margin-top: (10/$fs)*1rem;
@@ -365,7 +373,11 @@ $fs: 16;
           }
         }
       }
-            
+      
+      .form_area {
+        margin-top: 4.5em;
+      }
+
       .post_button {
         margin: (60/$fs)*1rem auto 0;
         display: flex;
@@ -753,8 +765,78 @@ $fs: 16;
           }
         }
       }
-    }    
+    } 
   }//#relative
+  &.movie {
+    #entry {
+      .post {
+        .post_summary {
+          .post_meta {
+            ul.category {
+              color: $accent;
+            }
+            ul.tags {
+              color: #777;
+            }
+          }
+        } 
+      } 
+    } 
+    #relative {
+      ul.posts {
+        li.post {
+          a {
+            .img {
+              max-height: 240px;
+              &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                font-family: "Font Awesome 5 Free";
+                content: '\f144';
+                font-size: 4rem;
+                font-weight: 900;
+                color: #fff;
+                background-color: rgba(0,0,0,0.38);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+            .desc {
+              .meta {
+                display: block;
+              }
+              ul.category {
+                margin: .4em auto .6em;
+                display: inline-block;
+                padding: 0 .4rem;
+                line-height: (19/12);
+                color: $accent;
+                background: #fff;
+                letter-spacing: .04em;
+                text-align: center;
+                border: $green solid 1px;
+                font-size: (12/$fs)*1rem;
+              }
+              ul.tags {
+                margin-bottom: 0;
+              }
+              .movie_meta {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #777;
+                font-size: (14/$fs)*1rem;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }   
   &.wp-download {
     & > article {
       display: flex;

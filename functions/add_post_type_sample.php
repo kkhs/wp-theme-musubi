@@ -93,6 +93,54 @@ function create_post_type() {
       'show_in_rest' => true,
     )
   );
+
+  /* ムービー */
+  register_post_type(
+    'movie',
+    array(
+      'label' => '動画ギャラリー',
+      'labels' => array(
+        'menu_name' => 'ムービー',
+        'name' => '投稿',
+      ),
+      'public' => true,
+			'publicly_queryable' => true,
+			'has_archive' => true,
+      'supports' => array(
+        'title',
+        'editor',
+        'thumbnail',
+        'revisions',
+      ),
+      'taxonomies' => array( 'movie_category', 'movie_tag'),
+      'menu_position' => 5,
+      'show_in_rest' => true,
+    )
+  );
+  register_taxonomy(
+    'movie_category',
+    'movie',
+    array(
+      'hierarchical' => true,
+      'update_count_callback' => '_update_post_term_count',
+      'label' => 'カテゴリー',
+      'query_var' => true,
+      'rewrite' => array('slug' => 'movie'),
+      'show_in_rest' => true,
+    )
+  );  
+  register_taxonomy(
+    'movie_tag',
+    'movie',
+    array(
+      'hierarchical' => false,
+      'update_count_callback' => '_update_post_term_count',
+      'label' => 'タグ',
+      'query_var' => true,
+      'rewrite' => array('slug' => 'movie'),
+      'show_in_rest' => true,
+    )
+  );
   
   /* ブログ */	
   register_post_type(
@@ -160,7 +208,7 @@ add_filter('term_link', 'my_custom_post_type_permalinks_set',11,3);
 //投稿のスラッグの初期値を日付(YYYYMMDD形式)にする
 function set_slug_date() {
     // 投稿以外(固定ページなど)の場合は適用しない
-    if ( 'post' == get_post_type() || 'case' == get_post_type() || 'event' == get_post_type() || 'blog' == get_post_type() ) {
+    if ( 'post' == get_post_type() || 'case' == get_post_type() || 'event' == get_post_type() || 'blog' == get_post_type() || 'movie' == get_post_type() ) {
 ?>
     <script>
         jQuery(function($){ $('#post_name').val("<?php echo date_i18n('Ymd-His'); ?>"); });
@@ -244,6 +292,10 @@ function wp_insertMyRewriteRules($rules)
         $newrules['event/'.$taxonomy.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type=event&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
         $newrules['event/'.$v->category_nicename.'/?$'] = 'index.php?post_type=event&taxonomy='.$taxonomy.'&term='.$v->category_nicename;
         $newrules['event/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type=event&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
+
+        $newrules['movie/'.$taxonomy.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type=movie&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
+        $newrules['movie/'.$v->category_nicename.'/?$'] = 'index.php?post_type=movie&taxonomy='.$taxonomy.'&term='.$v->category_nicename;
+        $newrules['movie/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type=movie&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
       
         $newrules['blog/'.$taxonomy.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type=blog&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
         $newrules['blog/'.$v->category_nicename.'/?$'] = 'index.php?post_type=blog&taxonomy='.$taxonomy.'&term='.$v->category_nicename;

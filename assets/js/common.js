@@ -47,20 +47,15 @@ $(document).ready(function() {
     $(this).toggleClass('open');
   });
 
-  $(".header_btm ul.header_menu li .arrow").click(function(){
-    var sub = $(this).siblings('ul.header_menu ul.sub_menu');
-    sub.slideToggle(250);
-  });
-
+  // サブメニュー（SP）
   $(".header_btm ul.header_menu li .arrow.A").click(function(){
     $('.header_btm ul.header_menu li.sub_A').toggleClass('sub--menuOpen');
-  });
-  $(".header_btm ul.header_menu li .arrow.B").click(function(){
-    $('.header_btm ul.header_menu li.sub_B').toggleClass('sub--menuOpen');
+    var sub = $(this).siblings('ul.header_menu li ul.sub_menu');
+    sub.slideToggle(250);
   });
   
-  // サブメニュー
-  if (window.matchMedia('(min-width:768px)').matches) {
+  // サブメニュー（PC）
+  if (window.matchMedia('(min-width:960px)').matches) {
     //PC処理
     // ▼マウスが載ったらサブメニューを表示
       $("ul.header_menu li").mouseenter(function(){
