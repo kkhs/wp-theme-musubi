@@ -2,6 +2,52 @@
   padding-bottom: (100/$fs)*1rem;
   &.case{
   }
+  &.movie{
+    #entries {
+      &>.tit {
+        &:before{
+          content: "";
+          display: block;
+          width: (36/30)*1em;
+          height: (35/30)*1em;
+          background-image: url("../images/icons/icon_event.svg");
+        }
+      }
+      ul.posts {
+        margin-top: (12/$fs)*1rem;
+        li.post {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          .post_box {
+            .img {
+              max-height: 180px;
+              &::before {
+              }
+            }
+            .desc {
+              .tit {
+              }
+              .overview {
+              }
+              ul.category {
+              }
+              ul.tag {
+                margin-bottom: .3em;
+              }
+              .movie_meta {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #777;
+                font-size: (14/$fs)*1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   #entries {
       margin: (50/$fs)*1rem auto 0;
      &>.tit{

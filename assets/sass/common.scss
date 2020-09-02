@@ -391,7 +391,7 @@ body{
               margin-top: 2em;
               li {
                 height: 3.8rem;
-                display: inline-flex;
+                display: flex;
                 align-items: center;
                 padding: 0 1em;
                 border-bottom: 1px solid rgba(238,238,238,1);
@@ -1059,7 +1059,7 @@ $fs: 28;
         justify-content: flex-start;
         align-items: center;
         font-size: (28/$fs)*1rem;
-        padding: (70/$fs)*1rem 0 (65/$fs)*1rem;
+        padding: (30/$fs)*1rem 0 (35/$fs)*1rem;
         .btn.cta{
           font-size: (34/$fs)*1rem;
           font-weight: 500;
@@ -1071,7 +1071,7 @@ $fs: 28;
           padding: 0;
         }
         .usersite{
-          margin-top: (60/$fs)*1rem;
+          margin-top: (35/$fs)*1rem;
         }
       }
       .header_btm{
@@ -1107,7 +1107,7 @@ $fs: 28;
                 height: auto;
                 display: block;
                 align-items: left;
-                padding: .8em 0;
+                padding: .4em 0;
                 border-bottom: 1px solid rgba(255,255,255,1);
                 margin-right: unset;
                 &:last-child {
@@ -1393,7 +1393,25 @@ footer{
 @media (min-width:601px) and ( max-width:960px) {//*600px～タブレット
 	html{
 		font-size: ($fs/960)*100vw;
-	}
+  }
+  #header {
+    .header_inner {
+      .header_navi {
+        .header_btm {
+          .header_menu {
+            li {
+              .arrow {
+                top: 28px;
+                border-left: 20px solid #4ecdc4;
+                border-top: 19px solid transparent;
+                border-bottom: 19px solid transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media ( max-width:600px) {//*480px～：SP横
 	html{
