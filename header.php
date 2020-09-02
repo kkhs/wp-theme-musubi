@@ -200,18 +200,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li><a href="/#price">価格</a></li>
             <li><a href="/case"<?php if(is_post_type_archive('case')|is_singular('case'))echo 'class="current"'; ?>>導入事例</a></li>
             <li><a href="/faq"<?php if(is_page('faq'))echo 'class="current"'; ?>>よくある質問</a></li>
-            <li><a href="/wp-download"<?php if(is_post_type_archive('wp-download')|is_singular('wp-download'))echo 'class="current"'; ?>>お役立ち資料</a></li>
+            <li><a href="/event"<?php if(is_post_type_archive('event')|is_singular('event'))echo 'class="current"'; ?>>イベント</a></li>
             <li class="sub_A">
-              <a href="/event"<?php if(is_post_type_archive('event')|is_singular('event'))echo 'class="current"'; ?>>
-              <!-- <span class="sub"></span> -->イベント</a>
-              <!-- 
+              <a href="#"<?php if(is_post_type_archive(array('blog','wp-download','movie'))|is_singular(array('blog','wp-download','movie')))echo 'class="current"'; ?>>
+              <span class="sub">お役立ちコンテンツ</span></a>
               <div class="arrow A"></div>
               <ul class="sub_menu">
-                <li><a href="/blog/report"<?php if(is_post_type_archive('blog')|is_singular('blog'))echo 'class="current"'; ?>>イベントレポート</a></li>
+                <li><a href="/wp-download">お役立ち資料</a></li>
+                <li><a href="/movie">動画ギャラリー</a></li>
+                <li><a href="/blog">ブログ</a></li>
               </ul>
-               -->
             </li>
-            <li><a href="/blog"<?php if(is_post_type_archive('blog')|is_singular('blog'))echo 'class="current"'; ?>>ブログ</a></li>
           </ul>
         </div>
       </div>

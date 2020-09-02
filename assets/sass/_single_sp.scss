@@ -86,6 +86,11 @@
       }
       .post_img {
         margin-top: (30 / $fs) * 1rem;
+        .movie {
+          iframe{
+            height: 240px;
+          }
+        }
       }
       .post_summary {
         margin-top: (40 / $fs) * 1rem;

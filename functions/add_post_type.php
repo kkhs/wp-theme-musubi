@@ -16,6 +16,9 @@ function change_posts_per_page( $query ) {
   if ( $query->is_archive( 'blog' ) ) {
     $query->set( 'posts_per_page', 1 );
   }
+  if ( $query->is_archive( 'movie' ) ) {
+    $query->set( 'posts_per_page', 1 );
+  }
 }
 add_action( 'pre_get_posts', 'change_posts_per_page' );
 
@@ -177,6 +180,56 @@ function create_post_type() {
       'show_in_rest' => true,
     )
   );
+
+  /* ムービー */
+  register_post_type(
+    'movie',
+    array(
+      'label' => '動画ギャラリー',
+      'labels' => array(
+        'menu_name' => 'ムービー',
+        //'name' => '投稿',
+      ),
+      'public' => true,
+			'publicly_queryable' => true,
+			'has_archive' => true,
+      'hierarchical' => true,
+      'supports' => array(
+        'title',
+        'editor',
+        'thumbnail',
+        'revisions',
+        'page-attributes',
+      ),
+      'taxonomies' => array( 'movie_category', 'movie_tag'),
+      'menu_position' => 5,
+      'show_in_rest' => true,
+    )
+  );
+  register_taxonomy(
+    'movie_category',
+    'movie',
+    array(
+      'hierarchical' => true,
+      'update_count_callback' => '_update_post_term_count',
+      'label' => 'カテゴリー',
+      'query_var' => true,
+      'rewrite' => array('slug' => 'movie'),
+      'show_in_rest' => true,
+    )
+  );  
+  register_taxonomy(
+    'movie_tag',
+    'movie',
+    array(
+      'hierarchical' => false,
+      'update_count_callback' => '_update_post_term_count',
+      'label' => 'タグ',
+      'query_var' => true,
+      'rewrite' => array('slug' => 'movie'),
+      'show_in_rest' => true,
+    )
+  );
   
   /* ブログ */	
   register_post_type(
@@ -304,6 +357,14 @@ function wp_insertMyRewriteRules($rules)
         $newrules[$post_type.'/date/([0-9]{4})([0-9]{1,2})([0-9]{1,2})/?$'] = 'index.php?post_type='.$post_type.'&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]';
       
         $post_type = 'event';
+        $newrules[$post_type.'/'.$taxonomy.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
+        $newrules[$post_type.'/'.$v->category_nicename.'/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename;
+        $newrules[$post_type.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
+        $newrules[$post_type.'/date/([0-9]{4})/?$'] = 'index.php?post_type='.$post_type.'&year=$matches[1]';
+        $newrules[$post_type.'/date/([0-9]{4})([0-9]{1,2})/?$'] = 'index.php?post_type='.$post_type.'&year=$matches[1]&monthnum=$matches[2]';
+        $newrules[$post_type.'/date/([0-9]{4})([0-9]{1,2})([0-9]{1,2})/?$'] = 'index.php?post_type='.$post_type.'&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]';
+
+        $post_type = 'movie';
         $newrules[$post_type.'/'.$taxonomy.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
         $newrules[$post_type.'/'.$v->category_nicename.'/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename;
         $newrules[$post_type.'/'.$v->category_nicename.'/page/([0-9]{1,})/?$'] = 'index.php?post_type='.$post_type.'&taxonomy='.$taxonomy.'&term='.$v->category_nicename.'&paged=$matches[1]';
