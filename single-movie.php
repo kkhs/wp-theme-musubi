@@ -127,6 +127,7 @@ get_header();
           <?php else: ?>
           <img src="<?php echo_assets_root_url(); ?>assets/images/common/noimg.jpg" alt="">
           <?php endif; ?>
+          <span class="seconds"><?php echo $seconds; ?></span>
         </span>
         <span class="desc">
           <h2 class="tit"><?php the_title(); ?></h2>
@@ -161,7 +162,6 @@ get_header();
             
             <div class="movie_meta">
               <span class="date"><?php the_time('Y/n/j'); ?></span>
-              <span class="seconds"><?php echo $seconds; ?></span>
             </div>   
           </span>
         </span>

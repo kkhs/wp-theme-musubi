@@ -212,7 +212,7 @@ $fs: 16;
           width: 100%;
         }
         .movie {
-          background-color: #ccc;
+          //background-color: #ccc;
           width: 100%;
           iframe{
             height: 480px;
@@ -788,21 +788,33 @@ $fs: 16;
           a {
             .img {
               max-height: 240px;
+              position: relative;
+              z-index: 0;
               &::before {
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                font-family: "Font Awesome 5 Free";
-                content: '\f144';
-                font-size: 4rem;
-                font-weight: 900;
-                color: #fff;
+                content: '';
+                background-image: url(../images/icons/icon_movie_play.png);
+                background-position: 50% 50%;
+                background-size: 60px;
                 background-color: rgba(0,0,0,0.38);
+                background-repeat: no-repeat;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                z-index: 0;
+              }
+              span.seconds {
+                position: absolute;
+                bottom: 2%;
+                right: 1%;
+                background-color: #212121;
+                color: #fff;
+                padding: 0 .6em;
+                z-index: 1;
               }
             }
             .desc {
@@ -827,7 +839,7 @@ $fs: 16;
               .movie_meta {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: flex-start;
                 color: #777;
                 font-size: (14/$fs)*1rem;
               }
