@@ -17,6 +17,12 @@ $fs: 16;
 
 #content.single{
   padding-bottom: (120/$fs)*1rem;
+  .display-pc {
+    display: block;
+  }
+  .display-sp {
+    display: none;
+  }
   &.case{
   }
   #entry {
@@ -869,6 +875,203 @@ $fs: 16;
       }
     }
   }
+  &.blog {
+    &.news {
+      #entry {
+        .post_outer {
+          .sidebar_outer {
+            display: none;
+          }
+        }
+      }
+    }
+    #entry {
+      width: (670/750)*100%;
+      max-width: 1200px;
+      margin: (30/$fs)*1rem auto;
+      display: block;
+      &.post_entry{
+        //max-width: 840px;
+      }
+      .post_outer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        &.news {
+          justify-content: center;
+          max-width: 740px;
+          .post {
+            width: 100%;
+          }
+        }
+        .post {
+          width: 68%;
+        }
+        .sidebar_outer {
+          width: 27%;
+          #relative{
+            width: auto;
+            max-width: 360px;
+            margin: 0 auto;
+            .area {
+              margin-bottom: 2.1em;
+              &>.tit {
+                //padding-left: (20/$fs)*1rem;
+                font-size: (16/$fs)*1rem;
+                line-height: (40/22);
+                font-weight: 500;
+                letter-spacing: .06em;
+                //border-left: $green solid 5px;
+                //background-color: $green;
+                padding: .4em .8em;
+                border-left: #4ecdc4 solid 4px;
+              }
+              a.bnr {
+                display: block;
+                margin: .6em auto;
+                &:hover {
+                  opacity: .7;
+                }
+                img {
+                  width: 100%;
+                }
+              }
+            }
+            ul.posts {
+              width: 100%;
+              margin-top: .8em;
+              //display: flex;
+              //justify-content: space-between;
+              //flex-wrap: wrap;
+              display: block;
+              &:before,&:after{
+                content: '';
+                display: block;
+                width: (360/1200)*100%;
+                order: 2;
+              }
+              li.post {
+                //margin-top: (60/$fs)*1rem;
+                width: 100%;
+                border-bottom: 1px solid #eee;
+                padding: 1em 0;
+                a {
+                  display: block;
+                  .img {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    overflow: hidden;
+                    border-radius: (7/$fs)*1rem;
+                    box-shadow: 0 10px 20px rgba(92,95,101,.15);
+                    &.new{
+                      &:after{
+                        content: 'NEW';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: (22/16)*1em;
+                        font-size: (12/$fs)*1rem;
+                        font-weight: 500;
+                        letter-spacing: .06em;
+                        color: #fff;
+                        text-align: center;
+                        background: $dark;
+                        line-height: (30/16);
+                        width: (88/16)*1em;
+                      }
+                    }
+                    img {
+                      width: 100%;
+                    }
+                  }
+                  .desc {
+                    display: block;
+                    margin-top: 0;
+                    .tit {
+                      display: block;
+                      font-size: (16/$fs)*1rem;
+                      line-height: (28/18);
+                      letter-spacing: .02em;
+                      font-weight: 400;
+                      color: #333;
+                    }
+                    .meta {
+                      display: flex;
+                      flex-wrap: wrap;
+                      margin-top: (5/$fs)*1rem;
+                      font-size: (12/$fs)*1rem;
+                      //line-height: (38/12);
+                      letter-spacing: .08em;
+                      color: #777;
+                    }
+                    ul.category{
+                      margin-right: .5em;
+                    }
+                  }
+                }
+              }
+              li.category {
+                //margin-top: (60/$fs)*1rem;
+                width: 100%;
+                border-bottom: 1px solid #eee;
+                font-size: .9rem;
+                padding: .6em 0;
+                a {
+                  display: block;
+                }
+              }
+            } 
+          }//#relative
+        }
+      }
+    }
+  }
+}
+#content.lp {
+  #entry {
+    .post {
+      &>h1.post_tit {
+        font-size: (30/$fs)*1rem;
+        font-weight: 500;
+        line-height: (50/30);
+        letter-spacing: .02em;
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: (30/$fs)*1rem auto;
+        &.center{
+          text-align: center;
+          justify-content: center;
+        }
+      }
+      .section_inner {
+        width: (670/750)*100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        .flex_box {
+          display: flex;
+          justify-content: space-between;
+          .box {
+            width: 49.5%;
+            &.large {
+              width: 65%;
+            }
+            &.small {
+              width: 34%;
+            }
+            iframe {
+              width: 100%;
+              height: 480px;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width:1501px) {//*1280px～大型PC
@@ -888,6 +1091,48 @@ $vw: 750;
 @import 'single_sp';  
 }
 @media (min-width:601px) and ( max-width:960px) {//*600px～タブレット
+  #content.single {
+    &.blog {
+      #entry {
+        .post_outer {
+          .sidebar_outer {
+            #relative {
+              width: 100%;
+              max-width: unset;
+              margin: 2em auto 0;
+              .area {
+                .bnr_box {
+                  display: flex;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+                  a.bnr {
+                    width: 49%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #content.lp {
+    #entry {
+      .post {
+        .section_inner {
+          .flex_box {
+            .box {
+              iframe {
+                width: 100%;
+                height: 480px;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (min-width:481px) and ( max-width:600px) {//*480px～：SP横
 }
