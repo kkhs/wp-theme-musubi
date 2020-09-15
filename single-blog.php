@@ -79,7 +79,7 @@ get_header();
               <?php endif; ?>      
             </div>
           </div>
-          <?php }else{
+          <?php } else {
             $tax = 'blog_tag';
             $terms = get_the_terms( $post->ID, $tax );
             if ( $terms && ! is_wp_error( $terms ) || get_field('cf_summary') ) :
@@ -105,11 +105,11 @@ get_header();
           </div>
           
           <?php if(get_field('cf_exlink')){ ?>
-          <div class="post_button"><a href="<?php echo get_field('cf_exlink'); ?>" class="btn cta" target="_blank">掲載ページを見る</a></div>
+            <div class="post_button"><a href="<?php echo get_field('cf_exlink'); ?>" class="btn cta" target="_blank">掲載ページを見る</a></div>
           <?php } ?>
           
           <?php if(get_field('cf_pdf')){ ?>
-          <div class="post_button"><a href="<?php echo get_field('cf_pdf'); ?>" class="btn cta" target="_blank">PDFダウンロードはこちら</a></div>
+            <div class="post_button"><a href="<?php echo get_field('cf_pdf'); ?>" class="btn cta" target="_blank">PDFダウンロードはこちら</a></div>
           <?php } ?>
           
           <?php } // end while ?>
@@ -126,7 +126,7 @@ get_header();
         ?>
         <!-- sidebar（PC） -->
         <div class="sidebar_outer display-pc">
-        <?php include('sidebar.php'); ?>
+          <?php include('sidebar.php'); ?>
         </div>
         <!--// sidebar（PC） -->
       </div><!--// post_outer -->
@@ -199,7 +199,7 @@ get_header();
       <section id="entry">
         <div class="post_outer">
             <div class="sidebar_outer">
-            <?php include('sidebar.php'); ?>
+              <?php include('sidebar.php'); ?>
             </div>
         </div>
       </section>

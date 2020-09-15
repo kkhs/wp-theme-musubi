@@ -224,7 +224,6 @@
               .name {
                 font-size: (38 / $fs) * 1rem;
                 font-weight: 500;
-                //line-height: 1;
                 text-align: center;
               }
               .prof {
@@ -392,6 +391,7 @@
       width: (670/750)*100%;
       margin: (30 / $fs) * 1rem auto 0;
       &.post_entry{
+        //max-widthを解除。問題なければ9/29PRで削除
         //max-width: 840px;
       }
       .post_outer {

@@ -106,7 +106,6 @@ $fs: 16;
           .category{
             &+.tags{
               padding-left: 1em;
-              //margin-left: 1em;
               border-left: #888 solid 1px;
             }
           }
@@ -218,7 +217,6 @@ $fs: 16;
           width: 100%;
         }
         .movie {
-          //background-color: #ccc;
           width: 100%;
           iframe{
             height: 480px;
@@ -891,6 +889,7 @@ $fs: 16;
       margin: (30/$fs)*1rem auto;
       display: block;
       &.post_entry{
+        //max-widthを解除。問題なければ9/29PRで削除
         //max-width: 840px;
       }
       .post_outer {
@@ -917,13 +916,10 @@ $fs: 16;
             .area {
               margin-bottom: 2.1em;
               &>.tit {
-                //padding-left: (20/$fs)*1rem;
                 font-size: (16/$fs)*1rem;
                 line-height: (40/22);
                 font-weight: 500;
                 letter-spacing: .06em;
-                //border-left: $green solid 5px;
-                //background-color: $green;
                 padding: .4em .8em;
                 border-left: #4ecdc4 solid 4px;
               }
@@ -941,9 +937,6 @@ $fs: 16;
             ul.posts {
               width: 100%;
               margin-top: .8em;
-              //display: flex;
-              //justify-content: space-between;
-              //flex-wrap: wrap;
               display: block;
               &:before,&:after{
                 content: '';
@@ -952,7 +945,6 @@ $fs: 16;
                 order: 2;
               }
               li.post {
-                //margin-top: (60/$fs)*1rem;
                 width: 100%;
                 border-bottom: 1px solid #eee;
                 padding: 1em 0;
@@ -993,7 +985,7 @@ $fs: 16;
                       display: block;
                       font-size: (16/$fs)*1rem;
                       line-height: (28/18);
-                      letter-spacing: .02em;
+                      letter-spacing: .2em;
                       font-weight: 400;
                       color: #333;
                     }
@@ -1002,7 +994,6 @@ $fs: 16;
                       flex-wrap: wrap;
                       margin-top: (5/$fs)*1rem;
                       font-size: (12/$fs)*1rem;
-                      //line-height: (38/12);
                       letter-spacing: .08em;
                       color: #777;
                     }
@@ -1013,7 +1004,6 @@ $fs: 16;
                 }
               }
               li.category {
-                //margin-top: (60/$fs)*1rem;
                 width: 100%;
                 border-bottom: 1px solid #eee;
                 font-size: .9rem;
