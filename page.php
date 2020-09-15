@@ -4,7 +4,7 @@ $isLp = get_field('cf_isLp');
 get_header();
 ?>
 
-<div id="content" class="<?php echo $post_type; ?><?php if(!$isLp) { echo ' single'; } ?>">
+<div id="content" class="<?php echo $post_type; ?><?php if(!$isLp) { echo 'single'; } ?> <?php echo $post_type; ?><?php if($isLp) { echo 'lp'; } ?>">
   <article class="article_main">
     <section id="entry">
       <?php if ( have_posts() ): ?>
@@ -15,8 +15,9 @@ get_header();
 	the_post();
 ?>
 
-<?php if (!$isLp) { ?>
-<h1 class="post_tit center"><?php the_title(); ?></h1>
+<!-- 料金プランのみ　非表示 -->
+<?php if (!is_page(array('plan-hajimete','plan-starter'))) { ?>
+    <h1 class="post_tit center"><?php the_title(); ?></h1>
 <?php } ?>
   
 
