@@ -3,7 +3,7 @@ $upload_dir = wp_upload_dir();
 get_header();
 ?>
 
-<div id="content" class="<?php echo $post_type; ?> single <?php if(is_object_in_term($post->ID, 'blog_category','news'))echo 'news' ;?>">
+<div id="content" class="<?php echo $post_type; ?> single <?php if ( is_object_in_term( $post->ID, 'blog_category','news' )) echo 'news' ;?>">
   <article class="article_main">
     <section id="entry">
       <?php
@@ -21,12 +21,12 @@ get_header();
       endif;
       ?>
       
-      <div class="post_outer <?php if(is_object_in_term($post->ID, 'blog_category','news'))echo 'news' ;?>">
+      <div class="post_outer <?php if ( is_object_in_term( $post->ID, 'blog_category','news' )) echo 'news' ;?>">
         <div class="post">
           <div class="badges">
-            <?php if(is_object_in_term($post->ID, 'blog_category','news')){ ?>
+            <?php if ( is_object_in_term( $post->ID, 'blog_category','news' )){ ?>
               <div class="post_badge"><?php echo $term_name; ?></div><div class="date"><?php the_time('Y/n/j'); ?></div>
-            <?php }else{ ?>
+            <?php } else { ?>
               <div class="post_badge"><?php echo 'Musubiブログ'; ?></div>
             <?php } ?>
           </div>
@@ -40,6 +40,7 @@ get_header();
             <?php if ( has_post_thumbnail() ) : ?>
             <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>">
             <?php /*else: ?>
+            //以前から存在しているコード。9/29のPRまでに確認
             <img src="/assets/images/common/noimg.jpg" alt="">
             <?php */endif; ?>
           </div>
@@ -49,8 +50,8 @@ get_header();
             <?php if(get_field('cf_summary'))echo '<p class="summary">'.get_field('cf_summary').'</p>'; ?>
             <div class="post_meta">
               <?php
-              $terms = get_the_terms( $post->ID, 'blog_category' );
-              if ( $terms && ! is_wp_error( $terms ) ) :
+                $terms = get_the_terms( $post->ID, 'blog_category' );
+                if ( $terms && ! is_wp_error( $terms ) ) :
               ?>
               <ul class="category">
                 <?php
@@ -65,9 +66,9 @@ get_header();
                 <?php if ( $terms && ! is_wp_error( $terms ) )echo '| ';
                 the_time('Y/n/j'); ?></div>
               <?php
-              $tax = 'blog_tag';
-              $terms = get_the_terms( $post->ID, $tax );
-              if ( $terms && ! is_wp_error( $terms ) ) :
+                $tax = 'blog_tag';
+                $terms = get_the_terms( $post->ID, $tax );
+                if ( $terms && ! is_wp_error( $terms ) ) :
               ?>
               <ul class="tags">
                 <?php

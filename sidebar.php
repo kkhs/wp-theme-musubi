@@ -8,7 +8,7 @@
 		);
 		$args = array(
 			'post_type' => $post_type,
-			'posts_per_page'=>5,
+			'posts_per_page'=> 5,
 			'post__not_in' => array($post__not_in),
 			'post_status' => 'publish',
 			'order' => 'DESC',
@@ -42,14 +42,12 @@
 							<h2 class="tit"><?php the_title(); ?></h2>
 							<span class="meta">
 								<?php
-								$terms = get_the_terms( $post->ID, 'blog_category' );
-								if ( $terms && ! is_wp_error( $terms ) ) :
+									$terms = get_the_terms( $post->ID, 'blog_category' );
+									if ( $terms && ! is_wp_error( $terms ) ) :
 								?>
 								<ul class="category">
-									<?php
-										foreach ( $terms as $term ) {
-									?>
-									<li class="tag"><span class="label"><?php echo $term->name; ?></span></li>
+									<?php foreach ( $terms as $term ) { ?>
+										<li class="tag"><span class="label"><?php echo $term->name; ?></span></li>
 									<?php } ?>
 								</ul>
 								<span class="date">| <?php the_time('Y/n/j'); ?></span>
@@ -58,8 +56,7 @@
 						</span>
 					</a>
 				</li>
-				<?php } // end while
-				?>
+				<?php } // end while ?>
 			</ul>
 		</div>
 		<div class="area">
