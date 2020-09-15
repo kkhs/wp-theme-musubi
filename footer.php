@@ -1,9 +1,11 @@
 <?php $isLp = get_field('cf_isLp'); ?>
 
 <?php if(!is_post_type_archive('wp-download')&& !is_singular('wp-download') && !$isLp){ include(TEMPLATEPATH .'/mod/mod-download.php');} ?>
+<!-- ページ下部共通部分　非表示 -->
 <?php // if(!$isLp) { include(TEMPLATEPATH .'/mod/mod-vision.php'); }?>
 <?php if(!$isLp && !is_home() || !is_front_page()) { include(TEMPLATEPATH .'/mod/mod-commonunder.php'); }?>
-<?php if($isLp) { include(TEMPLATEPATH .'/mod/mod-inquiry.php'); }?>
+<!-- LP用フッター　非表示 -->
+<?php //if($isLp) { include(TEMPLATEPATH .'/mod/mod-inquiry.php'); }?>
 
 <footer id="footer">
   <div class="ft_btm">
