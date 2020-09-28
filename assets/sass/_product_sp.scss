@@ -169,7 +169,7 @@
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 1.6;
-        margin-top: -2em;
+        margin-top: -1em;
         span {
           display: none;
         }
@@ -181,52 +181,68 @@
     .bg {
       background-color: #4ecdc4;
       padding: 2em 0 4em;
+      &.wh {
+        padding: 2em 0 4em;
+        &:before {
+          border: 480px solid transparent;
+          border-top: 75px solid #4ecdc4;
+          border-bottom: none;
+        }
+      }
       .section_inner{
-        width: (670/750)*100%;
+        width: (700/750)*100%;
         max-width: 1200px;
         margin: 0 auto;
         .colum_wh_outer {
           position: relative;
+          .title_area {
+            background-color: #fff;
+            border-radius: 36px;
+            justify-content: center;
+            padding: .4em 1em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1.8em;
+            width: 85%;
+            z-index: 3;
+            &.B {
+              margin-top: 1.8em;
+            }
+            .icon {
+              width: 50px;
+              height: 50px;
+              border: none;
+              background-color: transparent;
+              margin-right: .6em;
+              img {
+                width: 40px;
+              }
+            }
+            p {
+              color: #4ecdc4;
+              font-size: 1.5rem;
+              font-weight: 500;
+            }
+          }
           .colum_wh {
             background-color: #fff;
             border-radius: 4px;
             box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
-            padding: 2em 1em 0;
-            margin-bottom: .8em;
+            padding: 1.4em;
+            margin: 1em auto;
             position: relative;
+            width: 100%;
             z-index: 3;
-            .title_sp {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-bottom: .8em;
-              .icon {
-                width: 40px;
-                height: 40px;
-                border: 2px solid #4ecdc4;
-                background-color: #fff;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                margin-right: .8em;
-                img {
-                  width: 85%;
-                }
-              }
-              p {
-                color: #4ecdc4;
-                font-weight: bold;
-                font-size: 1.2rem;
-              }
+            &:before {
+              display: none;
             }
             .box {
-              flex-direction: column;
+              flex-direction: column-reverse;
               justify-content: flex-start;
-              margin-bottom: 1em;
+              margin-bottom: 0;
+              //border-bottom: 1px solid #4ecdc4;
+              //padding-bottom: 2em;
               width: 100%;
-              border-bottom: 1px solid #4ecdc4;
-              padding-bottom: 2em;
               .icon_area {
                 width: 8%;
                 display: none;
@@ -243,22 +259,32 @@
                   font-size: 1.6rem;
                   font-weight: 500;
                   line-height: 1.5;
-                  margin: .8em 0;
+                  margin: .4em 0 1.4em;
+                  text-align: center;
                 }
                 p.task {
                   font-size: 1.1rem;
                   font-weight: 500;
+                  line-height: 1.9;
                   margin-top: .6em;
                   margin-bottom: 1em;
-                  width: 90%;
-                }
-                .text {
                   width: 100%;
+                }
+                p.text {
+                  line-height: 1.95;
                   margin: 0 auto 1.4em 0;
+                  width: 100%;
                 }
-                .img_area, .video_area  {
-                  display: none;
+                .img_area, .video_area {
+                  //display: none;
+                  margin: 1.4em auto 1.8em;
+                  .title {
+                    padding: .4em 0;
+                  }
                 }
+              }
+              .caption_box.img {
+                display: none;
               }
               .popup_outer {
                 display: block;
@@ -269,6 +295,9 @@
               padding: 0;
               flex-direction: column;
               align-items: flex-start;
+              &.first {
+                padding: 0;
+              }
               a.txt_btn {
                 color: #ff6e6e;
                 margin-right: 0;
@@ -297,29 +326,69 @@
               height: 58%;
             }
           }
-          .colum_wh.first {
-            margin-top: -7em;
-          }
           .border {
             position: absolute;
-            border-left: 6px solid #fff;
+            border-left: 4px dotted #fff;
             top: 0;
             left: 50%;
-            transform: translateXY(-50%);
-            -webkit-transform: translateXY(-50%);
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
             height: 80%;
             z-index: 1;
           }
         }
       }
+      .remind_area {
+        padding: 2em 0 .4em;
+        position: relative;
+        margin-bottom: -6.5em;
+        z-index: 3;
+        .img_box {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          margin: 1.2em auto 2.4em;
+          position: relative;
+          .box {
+            width: 33.3%;
+            text-align: center;
+            .icon {
+              width: 70px;
+              height: 70px;
+              border: 2px solid #4ecdc4;
+              background-color: #fff;
+              border-radius: 50%;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 1em;
+              position: relative;
+              z-index: 3;
+              img {
+                width: 50px;
+              }
+            }
+            p {
+              font-size: 1.2rem;
+              font-weight: 400;
+              line-height: 1.6;
+            }
+          }
+          .border {
+            border-top: 3px dotted #fff;
+          }
+        }
+        h3.title {
+          font-size: 1.6rem;
+        }
+      }
       .cta_area {
-        padding: 2em 0 2em;
+        padding: 6em 0 2em;
         h2 {
-          color: #fff;
           font-size: 2.1rem;
           font-weight: 500;
           line-height: 1.4;
-          margin-bottom: 1.4em;
+          margin-bottom: 1em;
           text-align: center;
         }
         .cta_box {
@@ -335,7 +404,6 @@
               margin: 0 auto;
             }
             h3 {
-              color: #fff;
               font-size: 1.6rem;
               font-weight: 500;
               line-height: 1.4;
@@ -343,7 +411,6 @@
               margin: 1em 0 .6em;
             }
             p {
-              color: #fff;
               text-align: left;
             }
           }
@@ -1982,317 +2049,7 @@
       }
     }
   }
-}
-
-#content.productcustom, #content.concept {
-  #case {
-    .section_inner {
-      padding-top: (75 / $fs) * 1rem;
-      & > .tit {
-        font-size: (42 / $fs) * 1rem;
-        line-height: (60/42);
-      }
-      .title {
-        font-size: 1.5rem;
-      }
-      .cases {
-        margin: (65 / $fs) * 1rem auto 0;
-        .slick-list {
-          width: 100%;
-          padding-top: (20 / $fs) * 1rem;
-        }
-        .slick-arrow {
-          width: (70 / $fs) * 1rem;
-          height: (150 / $fs) * 1rem;
-          top: (110 / $fs) * 1rem;
-          svg {
-            width: (25/70) * 100%;
-          }
-          &.slick-prev {
-            left: (0 / $fs) * 1rem;
-          }
-          &.slick-next {
-            right: (0 / $fs) * 1rem;
-          }
-        }
-        .slick-dots {
-          display: flex;
-          justify-content: center;
-          li {
-            width: (20 / $fs) * 1rem;
-            height: (20 / $fs) * 1rem;
-            border-radius: 100%;
-            margin: (8 / $fs) * 1rem;
-            background: $pale;
-            transition: all 0.3s ease;
-            &.slick-active {
-              background: $green;
-            }
-          }
-        }
-        .case {
-          width: (610/750) * 100%;
-          margin: 0 (70 / $fs) * 1rem (30 / $fs) * 1rem;
-          a {
-            .img {
-              box-shadow: 0 (10 / $fs) * 1rem (20 / $fs) * 1rem
-                rgba(92, 95, 101, 0.15);
-            }
-            .desc {
-              padding: (30 / $fs) * 1rem (30 / $fs) * 1rem 0;
-            }
-            .tit {
-              margin-top: -.2em;
-            }
-            .user {
-            }
-          }
-        }
-      }
-      .btn_area {
-        a.btn {
-          margin: 0 auto;
-          width: 85%;
-        }
-      }
-    }
-    .bg {
-      .section_inner {
-        .cases {
-          .slick-dots {
-            li {
-              background: #fff;
-              &.slick-active {
-                background: $green;
-              }
-            }
-          }
-        }
-      } 
-    }
-  }
-
-  #event_custom {
-    .section_inner {
-      padding-top: (80 / $fs) * 1rem;
-      & > .tit {
-        font-size: (42 / $fs) * 1rem;
-        line-height: (60/42);
-      }
-      .cases {
-        margin: (65 / $fs) * 1rem auto 0;
-        .slick-list {
-          width: 100%;
-          padding-top: (20 / $fs) * 1rem;
-        }
-        .slick-arrow {
-          width: (70 / $fs) * 1rem;
-          height: (150 / $fs) * 1rem;
-          top: (60 / $fs) * 2rem;
-          svg {
-            width: (25/70) * 100%;
-          }
-          &.slick-prev {
-            left: (0 / $fs) * 1rem;
-          }
-          &.slick-next {
-            right: (0 / $fs) * 1rem;
-          }
-        }
-        .slick-dots {
-          display: flex;
-          justify-content: center;
-          li {
-            width: (20 / $fs) * 1rem;
-            height: (20 / $fs) * 1rem;
-            border-radius: 100%;
-            margin: (8 / $fs) * 1rem;
-            background: $pale;
-            transition: all 0.3s ease;
-            &.slick-active {
-              background: $green;
-            }
-          }
-        }
-        .case {
-          width: (610/750) * 100%;
-          margin: 0 (70 / $fs) * 1rem (30 / $fs) * 1rem;
-          a {
-            .inner {
-              padding: .8em 0;
-            }
-            .img {
-              height: unset;
-              box-shadow: 0 (10 / $fs) * 1rem (20 / $fs) * 1rem
-                rgba(92, 95, 101, 0.15);
-            }
-            .desc {
-              padding: (30 / $fs) * 1rem (30 / $fs) * 1rem 0;
-            }
-            .tit {
-              margin-top: .6em;
-            }
-            .user {
-            }
-            .title {
-              font-size: 1.15rem;
-            }
-          }
-        }
-      }
-      .btn_area {
-        margin-top: 1em;
-        a.btn.cta {
-          margin: 0 auto;
-          font-size: .9rem;
-          padding: .6em;
-          width: 85%;
-        }
-      }  
-    }
-    .bg {
-      .section_inner {
-        .cases {
-          .slick-dots {
-            li {
-              background: #fff;
-              &.slick-active {
-                background: $green;
-              }
-            }
-          }
-        }
-      } 
-    }
-  }
-
-  #doc_custom {
-    h2 {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-    .section_inner {
-      padding: 3em 0; 
-      & > .tit {
-        font-size: (42 / $fs) * 1rem;
-        line-height: (60/42);
-      }
-      .cases {
-        margin: (65 / $fs) * 1rem auto 0;
-        .slick-list {
-          width: 100%;
-          padding-top: 0;
-        }
-        .slick-arrow {
-          width: (70 / $fs) * 1rem;
-          height: (150 / $fs) * 1rem;
-          top: (110 / $fs) * 2rem;
-          svg {
-            width: (25/70) * 100%;
-          }
-          &.slick-prev {
-            left: (0 / $fs) * 1rem;
-          }
-          &.slick-next {
-            right: (0 / $fs) * 1rem;
-          }
-        }
-        .slick-dots {
-          margin-bottom: auto;
-          li {
-            width: (20 / $fs) * 1rem;
-            height: (20 / $fs) * 1rem;
-            border-radius: 100%;
-            margin: (8 / $fs) * 1rem;
-            background: $pale;
-            transition: all 0.3s ease;
-            &.slick-active {
-              background: $green;
-            }
-          }
-        }
-        .case {
-          width: (610/750) * 100%;
-          margin: 0 (70 / $fs) * 1rem (30 / $fs) * 1rem;
-          a {
-            .img {
-            }
-            .desc {
-              padding: (30 / $fs) * 1rem (30 / $fs) * 1rem 0;
-            }
-            .tit {
-            }
-            .user {
-            }
-          }
-        }
-      }
-      .btn_area {
-        margin-top: 2em;
-        a.btn.cta {
-          margin: 0 auto;
-          width: 85%;
-        }
-      } 
-    }
-    .bg {
-      background-color: #ebf9f7;
-      .section_inner {
-        .cases {
-          .slick-dots {
-            li {
-              background: #fff;
-              &.slick-active {
-                background: $green;
-              }
-            }
-          }
-        }
-      } 
-    }
-  }
-
-  #docarea_custom {
-    .bg {
-      background-color: #4ecdc4;
-      padding: 3em 0 3em;
-      h2 {
-        color: #fff;;
-        font-size: 1.8rem;
-        margin-bottom: 1.2em;
-        text-align: center;
-      }
-      .section_inner {
-        padding: 0;
-        width: 96%;
-        max-width: unset;
-        margin: 0 auto;
-        .doc-area {
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          margin: 1em auto;
-          width: 100%;
-          figure {
-            background-color: #fff;
-            border-radius: 2px;
-            box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
-            width: 45%;
-            height: 120px;
-            margin-bottom: 1em;
-          }
-        }
-      }
-    }
-    .btn_area {
-      text-align: center;
-      padding: 3em 0;
-      a.btn {
-        margin: 0 auto;
-        width: 85%;
-      }
-    }
-  }
-}
+}//#content.concept
 
 #content.product{
   #top{

@@ -338,6 +338,9 @@ body{
         justify-content: space-between;
         align-items: center;
         font-size: (14/$fs)*1rem;
+        &.display-sp {
+          display: none;
+        }
         .btn.cta{
           font-size: (14/$fs)*1rem;
           font-weight: 400;
@@ -865,6 +868,401 @@ footer{
   }
 }
 
+#mod-cu {
+  #case {
+    .section_inner {
+      padding: 3.5em 0;
+      width: 100%;
+      max-width: 1420px;
+      margin: 0 auto;
+      .title {
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-align: center;
+      }
+      & > .tit {
+        font-size: (32 / $fs) * 1rem;
+        line-height: (60/32);
+        letter-spacing: 0.08em;
+        text-align: center;
+        font-weight: 400;
+      }
+      .cases {
+        margin: 2.5rem auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .slick-list {
+          width: (1260/1420) * 100%;
+          padding-top: (20 / $fs) * 1rem;
+        }
+        .slick-arrow {
+          width: (35 / $fs) * 1rem;
+          height: (65 / $fs) * 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: (90 / $fs) * 1rem;
+          left: auto;
+          right: auto;
+          z-index: 50;
+          svg {
+            width: (15/35) * 100%;
+          }
+          &.slick-prev {
+            left: (60 / $fs) * 1rem;
+            transform: rotate(180deg);
+          }
+          &.slick-next {
+            right: (60 / $fs) * 1rem;
+          }
+        }
+        .slick-dots {
+          display: flex;
+          margin-bottom: 1em;
+          li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #c1c1c1;
+            margin-left: .3em;
+            margin-right: .3em;
+            button {
+              &:before {
+                content: '•';
+              }
+            }
+          }
+          li.slick-active {
+            background-color: #4ecdc4;
+          }
+        }
+        .case {
+          width: (360/1260) * 100%;
+          margin: 0 (30 / $fs) * 1rem (20 / $fs) * 1rem;
+          a {
+            display: block;
+            text-align: left;
+            .img {
+              display: block;
+              border-radius: (7 / $fs) * 1rem;
+              overflow: hidden;
+              box-shadow: 0 0 1rem 0.5rem rgba(92, 95, 101, 0.15);
+            }
+            .desc {
+              padding: (30 / $fs) * 1rem (20 / $fs) * 1rem 0;
+            }
+            .tit {
+              color: $accent;
+              font-size: (18 / $fs) * 1rem;
+              font-weight: 500;
+              line-height: (30/18);
+              letter-spacing: 0.05em;
+            }
+            .user {
+              font-size: (14 / $fs) * 1rem;
+              line-height: (38/14);
+              letter-spacing: 0.08em;
+              margin-top: 0.5em;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .btn_area {
+        text-align: center;
+        padding: 2em 0 1em;
+        a.btn {
+          margin: 0 auto;
+        }
+      }
+    }
+    .bg {
+      background-color: #ebf9f7;
+    }
+  }
+  #event_custom {
+    .section_inner {
+      padding: 3.5em 0;
+      width: 100%;
+      max-width: 1420px;
+      margin: 0 auto;
+      & > .tit {
+        font-size: 2.4rem;
+        line-height: (60/32);
+        letter-spacing: 0.08em;
+        text-align: center;
+        font-weight: 400;
+      }
+      .cases {
+        margin: 2.5em auto 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .slick-list {
+          width: (1260/1420) * 100%;
+          padding-top: (20 / $fs) * 1rem;
+        }
+        .slick-arrow {
+          width: (35 / $fs) * 1rem;
+          height: (65 / $fs) * 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: (35 / $fs) * 2.3rem;
+          left: auto;
+          right: auto;
+          z-index: 50;
+          svg {
+            width: (15/35) * 100%;
+          }
+          &.slick-prev {
+            left: (60 / $fs) * 1rem;
+            transform: rotate(180deg);
+          }
+          &.slick-next {
+            right: (60 / $fs) * 1rem;
+          }
+        }
+        .slick-dots {
+          display: flex;
+          margin-top: 2.5em;
+          li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #c1c1c1;
+            margin-left: .3em;
+            margin-right: .3em;
+            button {
+              &:before {
+                content: '•';
+              }
+            }
+          }
+          li.slick-active {
+            background-color: #4ecdc4;
+          }
+        }
+        .case {
+          width: (360/1260) * 100%;
+          margin: 0 (30 / $fs) * 1rem (20 / $fs) * 1rem;
+          a {
+            display: block;
+            text-align: left;
+            .inner {
+              padding: 1.8em 0 0;
+            }
+            .img {
+              display: block;
+              overflow: hidden;
+              height: 180px;
+              border-radius: (7 / $fs) * 1rem;
+              box-shadow: 0 0 1rem 0.5rem rgba(92, 95, 101, 0.15);
+            }
+            .title {
+              color: #1bbaaf;
+              font-size: 1.18rem;
+              font-weight: 400;
+              line-height: 1.6;
+              margin-bottom: .8em;
+            }
+            .date {
+              margin: .6em auto;
+            }
+            .category {
+              border: 1px solid #1bbaaf;
+              color: #1bbaaf;
+              font-size: .9rem;
+              padding: .3em .8em;
+            }
+            .desc {
+              padding: (30 / $fs) * 1rem (20 / $fs) * 1rem 0;
+            }
+            .tit {
+              color: $accent;
+              font-size: (18 / $fs) * 1rem;
+              font-weight: 500;
+              line-height: (30/18);
+              letter-spacing: 0.05em;
+            }
+            .user {
+              font-size: (14 / $fs) * 1rem;
+              line-height: (38/14);
+              letter-spacing: 0.08em;
+              margin-top: 0.5em;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .btn_area {
+        text-align: center;
+        padding: 2em 0 1em;
+        a.btn {
+          margin: 0 auto;
+        }
+      }
+    }
+    .bg {
+      background-color: #ebf9f7;
+    }
+  }
+  #doc_custom {
+    .bg {
+      background-color: #ebf9f7;
+    }
+    h2 {
+      font-size: 2.4rem;
+      text-align: center;
+    }
+    .section_inner {
+      padding: 3.5em 0;
+      width: 100%;
+      max-width: 1420px;
+      margin: 0 auto;
+      & > .tit {
+        font-size: (32 / $fs) * 1rem;
+        line-height: (60/32);
+        letter-spacing: 0.08em;
+        text-align: center;
+        font-weight: 400;
+      }
+      .cases {
+        margin: 2.5em auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .slick-list {
+          width: (1260/1420) * 100%;
+          padding-top: (20 / $fs) * 1rem;
+        }
+        .slick-arrow {
+          width: (35 / $fs) * 1rem;
+          height: (65 / $fs) * 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: (75 / $fs) * 2.3rem;
+          left: auto;
+          right: auto;
+          z-index: 50;
+          svg {
+            width: (15/35) * 100%;
+          }
+          &.slick-prev {
+            left: (60 / $fs) * 1rem;
+            transform: rotate(180deg);
+          }
+          &.slick-next {
+            right: (60 / $fs) * 1rem;
+          }
+        }
+        .slick-dots {
+          display: flex;
+          margin-bottom: 1em;
+          li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #c1c1c1;
+            margin-left: .3em;
+            margin-right: .3em;
+            button {
+              &:before {
+                content: '•';
+              }
+            }
+          }
+          li.slick-active {
+            background-color: #4ecdc4;
+          }
+        }
+        .case {
+          width: (360/1260) * 100%;
+          margin: 0 (30 / $fs) * 1rem (20 / $fs) * 1rem;
+          a {
+            display: block;
+            text-align: left;
+            .img {
+              display: block;
+              border-radius: (7 / $fs) * 1rem;
+              overflow: hidden;
+            }
+            .desc {
+              padding: (30 / $fs) * 1rem (20 / $fs) * 1rem 0;
+            }
+            .tit {
+              color: $accent;
+              font-size: (18 / $fs) * 1rem;
+              font-weight: 500;
+              line-height: (30/18);
+              letter-spacing: 0.05em;
+              text-align: left;
+            }
+            .user {
+              font-size: (14 / $fs) * 1rem;
+              line-height: (38/14);
+              letter-spacing: 0.08em;
+              margin-top: 0.5em;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .btn_area {
+        text-align: center;
+        padding: 2em 0 1em;
+        a.btn {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  #docarea_custom {
+    .bg {
+      background-color: #4ecdc4;
+      padding: 4em 0 3em;
+      h2 {
+        color: #fff;;
+        font-size: 2.4rem;
+        margin-bottom: 1.2em;
+        text-align: center;
+      }
+      .section_inner {
+        padding: 0;
+        width: (670/750) * 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        .doc-area {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 1em auto 2em;
+          width: 100%;
+          figure {
+            background-color: #fff;
+            border-radius: 2px;
+            box-shadow: 1px 9px 3px 1px rgba(0,0,0,0.15);
+            width: 270px;
+            height: 180px;
+          }
+        }
+      }
+    }
+    .btn_area {
+      text-align: center;
+      padding: 3em 0 2em;
+      a.btn {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
 
 
 @media (min-width:1501px) {//*1280px～大型PC
@@ -893,7 +1291,7 @@ footer{
 }
   
 }
-@media (min-width:961px){//PC layout
+@media (min-width:961px) {//PC layout
 	.forSP{
 		display: none;
 	}
@@ -901,12 +1299,13 @@ footer{
 
 
 $fs: 28;
-@media (max-width:960px){//SP layout
+@media (max-width:960px) {//SP layout
 	.forPC{
 		display: none;
 	}
   body{
     &.body--menuOpen{
+      //既存コード　調査の上1012に削除予定
 //      .contents_wrap{
 //        position: absolute;
 //        width: 100%;
@@ -1046,32 +1445,41 @@ $fs: 28;
     .header_navi{
       margin-left: 0;
       display: none;
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      top: (98/$fs)*1rem;
       left: 0;
       right: 0;
       background: #fff;
       height: 100vh;
       z-index: 100;
+      overflow-y: scroll;
       .header_top{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         font-size: (28/$fs)*1rem;
-        padding: (30/$fs)*1rem 0 (35/$fs)*1rem;
-        .btn.cta{
-          font-size: (34/$fs)*1rem;
+        padding: (55/$fs)*1rem 0 (55/$fs)*1rem;
+        .btn.cta {
+          font-size: 1rem;
           font-weight: 500;
           letter-spacing: .02em;
           margin-left: 0;
-          width: (610/750)*100vw;
+          width: (540/750)*100vw;
           border-width: 0;
           line-height: (100/34);
           padding: 0;
         }
         .usersite{
-          margin-top: (35/$fs)*1rem;
+          display: none;
+        }
+        &.display-sp {
+          display: flex;
+          padding: (45/$fs)*1rem 0 (305/$fs)*1rem;
+          .usersite{
+            display: block;
+            margin: (35/$fs)*1rem auto 0;
+          }
         }
       }
       .header_btm{
@@ -1086,6 +1494,10 @@ $fs: 28;
               .arrow {
                 transform: translateY(0) rotate(90deg);
                 top: 16px;
+              }
+              > .sub_menu {
+                display: block;
+                margin-top: 0;
               }
             }
             margin-right: 0;
@@ -1102,7 +1514,6 @@ $fs: 28;
               z-index: unset;
               text-align: left;
               margin-top: 0;
-              transition: unset;
               li {
                 height: auto;
                 display: block;
@@ -1227,8 +1638,8 @@ footer{
   }
 }
   
-#mod-download{
-  .download_inner{
+#mod-download {
+  .download_inner {
     padding: (70/$fs)*1rem 0 (80/$fs)*1rem;
     &>.tit{
       font-size: (36/$fs)*1rem;
@@ -1274,7 +1685,7 @@ footer{
   }
 }
   
-#mod-vision{
+#mod-vision {
   background: none;
   .vision_inner{
     width: 100%;
@@ -1301,7 +1712,7 @@ footer{
   }
 }
 
-#mod-inquiry{
+#mod-inquiry {
   .inquiry_inner{
     padding: (80/$fs)*1rem 0 (90/$fs)*1rem;
     &>.tit{
@@ -1320,7 +1731,7 @@ footer{
   }
 }
   
-#mod-expansion{
+#mod-expansion {
   background-image: url("../images/index/expansion_bg_sp.jpg");
   height: (463/$fs)*1rem;
   .section_inner{
@@ -1388,6 +1799,316 @@ footer{
     }
   }
 }
+
+#mod-cu {
+  #case {
+    .section_inner {
+      padding-top: (75 / $fs) * 1rem;
+      & > .tit {
+        font-size: (42 / $fs) * 1rem;
+        line-height: (60/42);
+      }
+      .title {
+        font-size: 1.5rem;
+      }
+      .cases {
+        margin: (65 / $fs) * 1rem auto 0;
+        .slick-list {
+          width: 100%;
+          padding-top: (20 / $fs) * 1rem;
+        }
+        .slick-arrow {
+          width: (70 / $fs) * 1rem;
+          height: (150 / $fs) * 1rem;
+          top: (110 / $fs) * 1rem;
+          svg {
+            width: (25/70) * 100%;
+          }
+          &.slick-prev {
+            left: (0 / $fs) * 1rem;
+          }
+          &.slick-next {
+            right: (0 / $fs) * 1rem;
+          }
+        }
+        .slick-dots {
+          display: flex;
+          justify-content: center;
+          li {
+            width: (20 / $fs) * 1rem;
+            height: (20 / $fs) * 1rem;
+            border-radius: 100%;
+            margin: (8 / $fs) * 1rem;
+            background: $pale;
+            transition: all 0.3s ease;
+            &.slick-active {
+              background: $green;
+            }
+          }
+        }
+        .case {
+          width: (610/750) * 100%;
+          margin: 0 (70 / $fs) * 1rem (30 / $fs) * 1rem;
+          a {
+            .img {
+              box-shadow: 0 (10 / $fs) * 1rem (20 / $fs) * 1rem
+                rgba(92, 95, 101, 0.15);
+            }
+            .desc {
+              padding: (30 / $fs) * 1rem (30 / $fs) * 1rem 0;
+            }
+            .tit {
+              margin-top: -.2em;
+            }
+            .user {
+            }
+          }
+        }
+      }
+      .btn_area {
+        a.btn {
+          margin: 0 auto;
+          width: 85%;
+        }
+      }
+    }
+    .bg {
+      .section_inner {
+        .cases {
+          .slick-dots {
+            li {
+              background: #fff;
+              &.slick-active {
+                background: $green;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+
+  #event_custom {
+    .section_inner {
+      padding-top: (80 / $fs) * 1rem;
+      & > .tit {
+        font-size: (42 / $fs) * 1rem;
+        line-height: (60/42);
+      }
+      .cases {
+        margin: (65 / $fs) * 1rem auto 0;
+        .slick-list {
+          width: 100%;
+          padding-top: (20 / $fs) * 1rem;
+        }
+        .slick-arrow {
+          width: (70 / $fs) * 1rem;
+          height: (150 / $fs) * 1rem;
+          top: (60 / $fs) * 2rem;
+          svg {
+            width: (25/70) * 100%;
+          }
+          &.slick-prev {
+            left: (0 / $fs) * 1rem;
+          }
+          &.slick-next {
+            right: (0 / $fs) * 1rem;
+          }
+        }
+        .slick-dots {
+          display: flex;
+          justify-content: center;
+          li {
+            width: (20 / $fs) * 1rem;
+            height: (20 / $fs) * 1rem;
+            border-radius: 100%;
+            margin: (8 / $fs) * 1rem;
+            background: $pale;
+            transition: all 0.3s ease;
+            &.slick-active {
+              background: $green;
+            }
+          }
+        }
+        .case {
+          width: (610/750) * 100%;
+          margin: 0 (70 / $fs) * 1rem (30 / $fs) * 1rem;
+          a {
+            .inner {
+              padding: .8em 0;
+            }
+            .img {
+              height: unset;
+              box-shadow: 0 (10 / $fs) * 1rem (20 / $fs) * 1rem
+                rgba(92, 95, 101, 0.15);
+            }
+            .desc {
+              padding: (30 / $fs) * 1rem (30 / $fs) * 1rem 0;
+            }
+            .tit {
+              margin-top: .6em;
+            }
+            .user {
+            }
+            .title {
+              font-size: 1.15rem;
+            }
+          }
+        }
+      }
+      .btn_area {
+        margin-top: 1em;
+        a.btn.cta {
+          margin: 0 auto;
+          font-size: .9rem;
+          padding: .6em;
+          width: 85%;
+        }
+      }  
+    }
+    .bg {
+      .section_inner {
+        .cases {
+          .slick-dots {
+            li {
+              background: #fff;
+              &.slick-active {
+                background: $green;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+
+  #doc_custom {
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .section_inner {
+      padding: 3em 0; 
+      & > .tit {
+        font-size: (42 / $fs) * 1rem;
+        line-height: (60/42);
+      }
+      .cases {
+        margin: (65 / $fs) * 1rem auto 0;
+        .slick-list {
+          width: 100%;
+          padding-top: 0;
+        }
+        .slick-arrow {
+          width: (70 / $fs) * 1rem;
+          height: (150 / $fs) * 1rem;
+          top: (110 / $fs) * 2rem;
+          svg {
+            width: (25/70) * 100%;
+          }
+          &.slick-prev {
+            left: (0 / $fs) * 1rem;
+          }
+          &.slick-next {
+            right: (0 / $fs) * 1rem;
+          }
+        }
+        .slick-dots {
+          margin-bottom: auto;
+          li {
+            width: (20 / $fs) * 1rem;
+            height: (20 / $fs) * 1rem;
+            border-radius: 100%;
+            margin: (8 / $fs) * 1rem;
+            background: $pale;
+            transition: all 0.3s ease;
+            &.slick-active {
+              background: $green;
+            }
+          }
+        }
+        .case {
+          width: (610/750) * 100%;
+          margin: 0 (70 / $fs) * 1rem (30 / $fs) * 1rem;
+          a {
+            .img {
+            }
+            .desc {
+              padding: (30 / $fs) * 1rem (30 / $fs) * 1rem 0;
+            }
+            .tit {
+            }
+            .user {
+            }
+          }
+        }
+      }
+      .btn_area {
+        margin-top: 2em;
+        a.btn.cta {
+          margin: 0 auto;
+          width: 85%;
+        }
+      } 
+    }
+    .bg {
+      background-color: #ebf9f7;
+      .section_inner {
+        .cases {
+          .slick-dots {
+            li {
+              background: #fff;
+              &.slick-active {
+                background: $green;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+
+  #docarea_custom {
+    .bg {
+      background-color: #4ecdc4;
+      padding: 3em 0 3em;
+      h2 {
+        color: #fff;;
+        font-size: 1.8rem;
+        margin-bottom: 1.2em;
+        text-align: center;
+      }
+      .section_inner {
+        padding: 0;
+        width: 96%;
+        max-width: unset;
+        margin: 0 auto;
+        .doc-area {
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin: 1em auto;
+          width: 100%;
+          figure {
+            background-color: #fff;
+            border-radius: 2px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+            width: 45%;
+            height: 120px;
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+    .btn_area {
+      text-align: center;
+      padding: 3em 0;
+      a.btn {
+        margin: 0 auto;
+        width: 85%;
+      }
+    }
+  }
+}
   
 }
 @media (min-width:601px) and ( max-width:960px) {//*600px～タブレット
@@ -1408,6 +2129,59 @@ footer{
               }
             }
           }
+        }
+      }
+    }
+  }
+  #mod-cu {
+    #event_custom {
+      .section_inner {
+        .cases {
+          .case {
+            a {
+              .tit {
+                margin-top: 1.2em;
+              }
+            }
+          }
+        }
+      }
+    }
+    #docarea_custom {
+      .bg {
+        background-color: #4ecdc4;
+        padding: 4em 0 3em;
+        h2 {
+          color: #fff;;
+          font-size: 1.8rem;
+          margin-bottom: 1.2em;
+          text-align: center;
+        }
+        .section_inner {
+          padding: 0;
+          width: (670/750) * 100%;
+          max-width: 1280px;
+          margin: 0 auto;
+          .doc-area {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1em auto;
+            width: 100%;
+            figure {
+              background-color: #fff;
+              border-radius: 2px;
+              box-shadow: 1px 9px 3px 1px rgba(0,0,0,0.15);
+              width: 270px;
+              height: 180px;
+            }
+          }
+        }
+      }
+      .btn_area {
+        text-align: center;
+        padding: 3em 0;
+        a.btn {
+          margin: 0 auto;
         }
       }
     }
