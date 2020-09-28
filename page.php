@@ -31,7 +31,7 @@ get_header();
               <?php the_content(); ?>
             </div>
             
-            <?php if(get_field('cf_btn_contact')){ ?>
+            <?php if( get_field('cf_btn_contact') ){ ?>
               <div class="post_button"><a href="/contact" class="btn cta contact" target="_blank">詳細を問い合わせる</a></div>
             <?php } ?>
 
