@@ -376,6 +376,11 @@ $fs: 16;
             }
           }
         }
+        .wp-block-image {
+          img {
+            height: auto;
+          }
+        }
       }
       
       .form_area {
@@ -888,10 +893,6 @@ $fs: 16;
       max-width: 1200px;
       margin: (30/$fs)*1rem auto;
       display: block;
-      &.post_entry{
-        //max-widthを解除。問題なければ9/29PRで削除
-        //max-width: 840px;
-      }
       .post_outer {
         width: 100%;
         display: flex;
@@ -1020,6 +1021,13 @@ $fs: 16;
   }
 }
 #content.lp {
+  &.lh {
+    #entry {
+      .plan_starter {
+        line-height: 2;
+      }
+    }
+  }
   #entry {
     .post {
       &>h1.post_tit {

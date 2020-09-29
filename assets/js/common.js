@@ -48,10 +48,11 @@ $(document).ready(function() {
   });
 
   // サブメニュー（SP）
-  $(".header_btm ul.header_menu li .arrow.A").click(function(){
+  $(".header_btm ul.header_menu li.sub_A").click(function(){
     $('.header_btm ul.header_menu li.sub_A').toggleClass('sub--menuOpen');
-    var sub = $(this).siblings('ul.header_menu li ul.sub_menu');
-    sub.slideToggle(250);
+    //スライドアニメーション　一旦保留
+    //var sub = $(this).siblings('ul.sub_menu');
+    //sub.slideToggle(250);
   });
   
   // サブメニュー（PC）

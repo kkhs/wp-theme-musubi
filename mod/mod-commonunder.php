@@ -1,7 +1,7 @@
-<div id="content" class="concept">
-  <?php if(!is_post_type_archive('case')&& !is_singular('case')) : ?>
+<div id="mod-cu">
+  <?php if( !is_post_type_archive('case') && !is_singular('case') ) : ?>
   <section id="case">
-  <?php if(!is_page( array('product','concept') )) {echo '<div class="bg">';} ?>
+  <?php if( !is_page('concept') ) { echo '<div class="bg">'; } ?>
     <div class="section_inner">
       <h2 class="title">導入事例</h2>
       <?php
@@ -66,13 +66,13 @@
       wp_reset_query();
       ?>
     </div>
-    <?php if(!is_page( array('product','concept') )) {echo '</div>';} ?>
+    <?php if( !is_page('concept') ) { echo '</div>'; } ?>
   </section>
   <?php endif; ?>
 
-  <?php if(!is_post_type_archive('event')&& !is_singular('event')) : ?>
+  <?php if( !is_post_type_archive('event') && !is_singular('event') ) : ?>
   <section id="event_custom">
-    <?php if(!is_page( array('product','concept') )) {echo '<div class="bg">';} ?>
+    <?php if( !is_page('concept') ) { echo '<div class="bg">'; } ?>
     <div class="section_inner">
       <h2 class="tit">イベント・セミナー情報</h2>
       <?php
@@ -155,13 +155,13 @@
       wp_reset_query();
       ?>
     </div>
-    <?php if(!is_page( array('product','concept') )) {echo '</div>';} ?>
+    <?php if( !is_page('concept') ) {echo '</div>';} ?>
   </section>
   <?php endif; ?>
 
-  <?php if(!is_post_type_archive('wp-download')&& !is_singular('wp-download')) : ?>
+  <?php if( !is_post_type_archive('wp-download') && !is_singular('wp-download') ) : ?>
   <section id="doc_custom">
-    <?php if(is_page( array('product','concept') )) {echo '<div class="bg">';} ?>
+    <?php if( is_page('concept') ) { echo '<div class="bg">'; } ?>
       <div class="section_inner">
       <h2>お役立ち資料</h2>
         <?php
@@ -226,7 +226,7 @@
         wp_reset_query();
         ?>
       </div>
-    <?php if(is_page( array('product','concept') )) {echo '</div>';} ?>
+    <?php if( is_page('concept') ) { echo '</div>'; } ?>
   </section>
   <?php endif; ?>
 

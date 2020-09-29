@@ -213,6 +213,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
           </ul>
         </div>
+        <div class="header_top display-sp">
+          <a href="https://support.kakehashi.life" target="_blank" class="usersite">ユーザーサイト</a>
+        </div>
       </div>
       <a href="javascript:void(0);" class="btn_menu"><span></span></a>
     </div>
