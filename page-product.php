@@ -1,73 +1,5 @@
 <?php get_header(); ?>
 
-<style>
-.popup_outer {
-  margin-top: 0;
-  margin-bottom: 1.4em;
-}
-.popup_outer p.link {
-  color: #4ecdc4;
-}
-.popup_outer p.link:before {
-  display: inline-block;
-  content: '';
-  width: 25px;
-  height: 25px;
-  background-image: url(<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_image@2x.png);
-  background-size: contain;
-  vertical-align: bottom;
-  margin-right: .6em;
-}
-#inline-popup,
-#inline-popup_2,
-#inline-popup_3,
-#inline-popup_4,
-#inline-popup_5,
-#inline-popup_6 {
-  margin: 0 auto;
-  width: 96%;
-  min-height: 300px;
-  background: #f1f1f1;
-  padding: 3em 1em 3em;
-  border-radius: 2px;
-  text-align: center;
-  font-size: 90%;
-  position: relative;
-  box-shadow: 1px 6px 8px 3px rgba(0,0,0,.25);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#inline-popup .img_area,
-#inline-popup_2 .img_area,
-#inline-popup_3 .img_area,
-#inline-popup_4 .img_area,
-#inline-popup_5 .img_area,
-#inline-popup_6 .video_area {
-  border: 1px solid #eee;
-  width: 100%;
-  margin: 0 auto;
-}
-#inline-popup_6 .video_area video {
-  width: 95%;
-  margin: 0 auto;
-}
-.mfp-container {
-  background: rgba(0,0,0,.35);
-}
-.mfp-close-btn-in .mfp-close::before {
-    position: absolute;
-    top: 5%;
-    right: 2%;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 75%;
-    content: "\f00d";
-    padding-right: 1em;
-    color: #4ecdc4;
-}
-</style>
-
 <div id="content" class="productcustom">
   <article class="article_main">
     <section id="top">
@@ -83,11 +15,11 @@
               <div class="circle">
                 <div class="icon_area">
                   <figure>
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_1@2x.png" alt="">
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_1@2x.png" alt="店舗の状況把握">
                   </figure>
                 </div>
                 <div class="txt_area">
-                  <h3>店舗の状況把握<!--<br>経営改善--></h3>
+                  <h3>店舗の状況把握</h3>
                 </div>
               </div>
               <div class="btn_area">
@@ -95,7 +27,7 @@
                   <a href="#function_1">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_1.png" alt="">
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_1.png" alt="業務状況や収益の見える化">
                       </span>
                     </div>
                     <p class="txt">
@@ -108,7 +40,7 @@
                   <a href="#function_2">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_2.png" alt="">
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_2.png" alt="複数店舗間の患者情報連携">
                       </span>
                     </div>
                     <p class="txt">
@@ -123,7 +55,7 @@
               <div class="circle">
                 <div class="icon_area">
                   <figure>
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_2@2x.png" alt="">
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_2@2x.png" alt="働き方改革">
                   </figure>
                 </div>
                 <div class="txt_area">
@@ -135,7 +67,7 @@
                   <a href="#function_3">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_3.png" alt="">
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_3.png" alt="薬歴業務の効率化">
                       </span>
                     </div>
                     <p class="txt">
@@ -148,7 +80,7 @@
                   <a href="#function_4">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_4.png" alt="">
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_4.png" alt="在宅業務の効率化">
                       </span>
                     </div>
                     <p class="txt">
@@ -163,7 +95,7 @@
               <div class="circle">
                 <div class="icon_area">
                   <figure>
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_3@2x.png" alt="">
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_3@2x.png" alt="患者満足">
                   </figure>
                 </div>
                 <div class="txt_area">
@@ -175,7 +107,7 @@
                   <a href="#function_5">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_5.png" alt="">
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_5.png" alt="服薬指導・患者コミュニケーション">
                       </span>
                     </div>
                     <p class="txt">
@@ -188,7 +120,7 @@
                   <a href="#function_6">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_6b.png" alt="">
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_6b.png" alt="服薬期間中のフォロー">
                       </span>
                     </div>
                     <p class="txt">
@@ -213,85 +145,49 @@
 
     <section id="functinon_area">
       <div class="bg">
-        <div class="section_inner setElm">
+        <div class="section_inner">
           <div class="colum_wh_outer">
-
             <!-- colum_1 -->
-            <div class="colum_wh first">
-              <div class="title_sp">
-                <div class="icon">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_1@2x.png" alt="">
-                </div>
-                <p>店舗の状況把握</p>
+            <div class="title_area setElm">
+              <div class="icon">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_1@2x.png" alt="店舗の状況把握">
               </div>
+              <p>店舗の状況把握</p>
+            </div>
+            <div class="colum_wh first setElm">
               <div class="box" id="function_1">
-                <div class="icon_area">
-                  <div class="icon">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_1@2x.png" alt="">
-                  </div>
-                </div>
                 <div class="caption_box">
-                  <p class="category display-pc">店舗の状況把握</p>
                   <h3>業務状況や収益の見える化</h3>
+                  <div class="img_area display-sp">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_1c_sp@2x.png" alt="Musubiが自動的に見える化">
+                  </div>
                   <p class="task">自局の服薬指導や薬歴業務の現状を、どう把握するか？</p>
                   <p class="text">
                     薬歴完了率やSOAPそれぞれの平均記載時間といった薬剤師の業務状況を表すデータから、調剤事業の売上や後発品比率をはじめとする店舗経営データ、
                     処方箋数や再来率・新患率など患者さんとの関係性を表すデータまで、Musubiが自動的に“見える化”。
                     書けるだけの電子薬歴とは異なり、解決すべき課題の発見・把握をも効率化します。
                   </p>
-                  <div class="popup_outer">
-                    <div class="inline-link" data-mfp-src="#inline-popup">
-                      <p class="link">イメージを見る</p>
-                    </div>
-                    <div id="inline-popup" class="mfp-hide">
-                      <div class="pd-colum">
-                        <div class="img_area">
-                          <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_1.png" alt="">
-                        </div>
-                      </div>
-                      <div class="mfp-close"></div>
-                    </div>
-                  </div>
-                  <!--
-                  <div class="btn_area">
-                    <a href="" class="txt_btn"><span>Musubi Insite</span></a>
-                  </div>
-                  -->
                 </div>
-                <div class="caption_box">
+                <div class="caption_box img">
                   <div class="img_area">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_1.png" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_1c@2x.png" alt="Musubiが自動的に見える化">
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="colum_wh first setElm">
               <div class="box" id="function_2">
-                <div class="icon_area">
-                  <div class="icon">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_1@2x.png" alt="">
-                  </div>
-                </div>
                 <div class="caption_box">
-                  <p class="category display-pc">店舗の状況把握</p>
                   <h3>複数店舗間の患者情報連携</h3>
+                  <div class="img_area display-sp">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_2c_sp@2x.png" alt="複数店舗間の患者情報連携">
+                  </div>
                   <p class="task">店舗をまたいだ情報管理を、もっと効率化できないか？</p>
                   <p class="text">
                     同一法人の店舗間で、患者情報を自動連携。過去の処方履歴や薬歴をMusubiを利用するすべての店舗で確認できるため、
                     正確な情報に基づく適切な服薬指導が可能になります。もちろん複数店舗を利用する患者さんにとっては「何度も同じことを尋ねられるわずらわしさ」がなくなるとともに、
                     安心感につながり、薬局の継続利用意識を高める効果も。オンプレミス（店舗据え置き型）のレセコン・電子薬歴と異なる、クラウド型サービスならではの特徴です。
                   </p>
-                  <div class="popup_outer">
-                    <div class="inline-link" data-mfp-src="#inline-popup_2">
-                      <p class="link">イメージを見る</p>
-                    </div>
-                    <div id="inline-popup_2" class="mfp-hide">
-                      <div class="pd-colum">
-                        <div class="img_area">
-                          <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_2b@2x.png" alt="">
-                        </div>
-                      </div>
-                      <div class="mfp-close"></div>
-                    </div>
-                  </div>
                   <div class="btn_area first">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-linkage/" class="txt_btn"><span>患者情報連携機能</span></a>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-security/" class="txt_btn"><span>クラウドとは？</span></a>
@@ -299,51 +195,34 @@
                 </div>
                 <div class="caption_box img">
                   <div class="img_area">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_2b@2x.png" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_2c@2x.png" alt="複数店舗間の患者情報連携">
                   </div>
                 </div>
               </div>
-              <div class="border first"></div>
             </div>
             <!--// colum_1 -->
-
             <!-- colum_2 -->
-            <div class="colum_wh sec">
-              <div class="title_sp">
-                <div class="icon">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_2@2x.png" alt="">
-                </div>
-                <p>働き方改革</p>
+            <div class="title_area B setElm">
+              <div class="icon">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_2@2x.png" alt="働き方改革">
               </div>
+              <p>働き方改革</p>
+            </div>
+            <div class="colum_wh sec setElm">
               <div class="box" id="function_3">
-                <div class="icon_area">
-                  <div class="icon">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_2@2x.png" alt="">
-                  </div>
-                </div>
                 <div class="caption_box">
-                  <p class="category display-pc">働き方改革</p>
                   <h3>薬歴業務の効率化</h3>
+                  <div class="img_area display-sp">
+                    <div class="title"><span>操作画面</span></div>
+                    <img id="animation" src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="薬歴業務の効率化">
+                  </div>
                   <p class="task">薬歴に追われる状況を脱し、いかに余裕を生み出すか？</p>
                   <p class="text">
-                  Musubiなら、薬歴作成が患者さんへの服薬指導中にほぼ完了。
-                  服薬指導の際、タブレットPCの画面をタッチするだけで、患者さんにご説明した内容が薬歴用に最適化されたテキストに置き換えられて、SOAP形式に自動反映されます。
-                  一件あたり10分以上かかっていた薬歴作成が、従来の電子薬歴より内容充実した上で、わずか2〜3分に効率化した実例も。
-                  もちろん、服薬情報提供書（トレーシングレポート）も、Musubiで作成可能です。
+                    Musubiなら、薬歴作成が患者さんへの服薬指導中にほぼ完了。
+                    服薬指導の際、タブレットPCの画面をタッチするだけで、患者さんにご説明した内容が薬歴用に最適化されたテキストに置き換えられて、SOAP形式に自動反映されます。
+                    一件あたり10分以上かかっていた薬歴作成が、従来の電子薬歴より内容充実した上で、わずか2〜3分に効率化した実例も。
+                    もちろん、服薬情報提供書（トレーシングレポート）も、Musubiで作成可能です。
                   </p>
-                  <div class="popup_outer">
-                    <div class="inline-link" data-mfp-src="#inline-popup_3">
-                      <p class="link">イメージを見る</p>
-                    </div>
-                    <div id="inline-popup_3" class="mfp-hide">
-                      <div class="pd-colum">
-                        <div class="img_area">
-                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="" id="animation">
-                        </div>
-                      </div>
-                      <div class="mfp-close"></div>
-                    </div>
-                  </div>
                   <div class="btn_area first">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-shunkanyakureki/" class="txt_btn"><span>服薬指導中にタッチで薬歴下書き完成</span></a>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-report/" class="txt_btn"><span>トレーシングレポート作成機能</span></a>
@@ -351,39 +230,27 @@
                 </div>
                 <div class="caption_box img">
                   <div class="img_area">
-                  <img id="animation" src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="">
+                    <div class="title"><span>操作画面</span></div>
+                    <img id="animation" src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_3b.gif" alt="薬歴業務の効率化">
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="colum_wh sec setElm">
               <div class="box" id="function_4">
-                <div class="icon_area">
-                  <div class="icon">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_2@2x.png" alt="">
-                  </div>
-                </div>
                 <div class="caption_box">
-                  <p class="category display-pc">働き方改革</p>
                   <h3>在宅業務の効率化</h3>
+                  <div class="img_area display-sp">
+                    <div class="title"><span>操作画面</span></div>
+                    <img id="animation_b" src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_4.gif" alt="在宅業務の効率化">
+                  </div>
                   <p class="task">需要の増える在宅対応、効率的な業務フローを<br class="display-pc">どう組み立てるか？</p>
                   <p class="text">
-                  施設・居宅訪問など、在宅業務おいて必要となる計画書・報告書をMusubi上で簡単に作成することができます。
-                  クラウド型サービスだから、インターネット環境さえあれば外出先でも作業が可能。店舗内で電子薬歴を使うのと同じように、
-                  出先での薬歴作成も問題なし。各書類の内容は、すでに記載されている患者情報・薬歴から自動的に転記されるので、
-                  あっという間に作成できます。必要な情報が伝わりやすい報告書のデザインも好評です。
+                    施設・居宅訪問など、在宅業務おいて必要となる計画書・報告書をMusubi上で簡単に作成することができます。
+                    クラウド型サービスだから、インターネット環境さえあれば外出先でも作業が可能。店舗内で電子薬歴を使うのと同じように、
+                    出先での薬歴作成も問題なし。各書類の内容は、すでに記載されている患者情報・薬歴から自動的に転記されるので、
+                    あっという間に作成できます。必要な情報が伝わりやすい報告書のデザインも好評です。
                   </p>
-                  <div class="popup_outer">
-                    <div class="inline-link" data-mfp-src="#inline-popup_4">
-                      <p class="link">イメージを見る</p>
-                    </div>
-                    <div id="inline-popup_4" class="mfp-hide">
-                      <div class="pd-colum">
-                        <div class="img_area">
-                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_4.gif" alt="" id="animation_b">
-                        </div>
-                      </div>
-                      <div class="mfp-close"></div>
-                    </div>
-                  </div>
                   <div class="btn_area first">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-zaitaku/" class="txt_btn"><span>在宅計画書・報告書作成機能</span></a>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-security/" class="txt_btn"><span>クラウドのメリット</span></a>
@@ -391,31 +258,27 @@
                 </div>
                 <div class="caption_box img">
                   <div class="img_area">
-                  <img id="animation_b" src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_4.gif" alt="">
+                    <div class="title"><span>操作画面</span></div>
+                    <img id="animation_b" src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_4.gif" alt="在宅業務の効率化">
                   </div>
                 </div>
               </div>
-              <div class="border"></div>
             </div>
             <!--// colum_2 -->
-
             <!-- colum_3 -->
-            <div class="colum_wh thi">
-              <div class="title_sp">
-                <div class="icon">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_3@2x.png" alt="">
-                </div>
-                <p>患者満足</p>
+            <div class="title_area B setElm">
+              <div class="icon">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_3@2x.png" alt="患者満足">
               </div>
+              <p>患者満足</p>
+            </div>
+            <div class="colum_wh thi setElm">
               <div class="box" id="function_5">
-                <div class="icon_area">
-                  <div class="icon">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_3@2x.png" alt="">
-                  </div>
-                </div>
                 <div class="caption_box">
-                  <p class="category display-pc">患者満足</p>
                   <h3 class="function_5">服薬指導・患者<br class="display-sp">コミュニケーション</h3>
+                  <div class="img_area display-sp">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_5.jpg" alt="患者満足">
+                  </div>
                   <p class="task">患者さんとの価値あるコミュニケーションを、<br class="display-pc">いかに実践していくか？</p>
                   <p class="text">
                     Musubiは、患者さんに画面をお見せしながら服薬指導できます。
@@ -424,24 +287,6 @@
                     より深い状況把握ができるなど、患者さんとの関係構築にも効果的。
                     画面を共有しながらのビジュアルコミュニケーションは、オンライン服薬指導にも最適です。
                   </p>
-                  <div class="popup_outer">
-                    <div class="inline-link" data-mfp-src="#inline-popup_5">
-                      <p class="link">イメージを見る</p>
-                    </div>
-                    <div id="inline-popup_5" class="mfp-hide">
-                      <div class="pd-colum">
-                        <div class="img_area">
-                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_5.jpg" alt="">
-                        </div>
-                      </div>
-                      <div class="mfp-close"></div>
-                    </div>
-                  </div>
-                  <!--
-                  <div class="btn_area">
-                    <p class="txt_btn">ビジュアルコミュニケーション</p>
-                  </div><br class="display-sp">
-                  -->
                   <div class="btn_area first">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/continuous/" class="txt_btn"><span>継続的な薬学管理</span></a>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>product/product-dsu/" class="txt_btn"><span>ハイリスク薬のDSUに対応</span></a>
@@ -457,19 +302,19 @@
                 </div>
                 <div class="caption_box img">
                   <div class="img_area">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_5.jpg" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_5.jpg" alt="患者満足">
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="colum_wh thi setElm">
               <div class="box" id="function_6">
-                <div class="icon_area">
-                  <div class="icon">
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_3@2x.png" alt="">
-                  </div>
-                </div>
                 <div class="caption_box">
-                  <p class="category display-pc">患者満足</p>
                   <h3>服薬期間中のフォロー</h3>
+                  <div class="video_area display-sp">
+                    <div class="title"><span>服薬期間中フォロー　システムの流れ</span></div>
+                    <video controls autoplay muted playsinline src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_6_v2.mp4"></video>
+                  </div>
                   <p class="task">患者満足を実現しながら、<br class="display-pc">現実的で継続可能な業務フローをどう構築するか？</p>
                   <p class="text">
                     新たに義務化されることとなった、服薬期間中のフォローアップ。これからの時代において、
@@ -477,51 +322,68 @@
                     Musubiは、連動する患者さん向け“おくすり連絡帳アプリ”を通じて、服薬期間中フォローを軸とした患者さんとの関係づくりをサポート。
                     患者さんとの過剰なやり取りや極端な連絡不足を防ぎ、「必要な患者さんに」「適切な労力で」コミュニケーションを図るための業務フロー構築をアシストします。
                   </p>
-                  <div class="popup_outer">
-                    <div class="inline-link" data-mfp-src="#inline-popup_6">
-                      <p class="link">イメージを見る</p>
-                    </div>
-                    <div id="inline-popup_6" class="mfp-hide">
-                      <div class="pd-colum">
-                        <div class="video_area">
-                          <video controls autoplay muted playsinline src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_6_v2.mp4"></video>
-                        </div>
-                      </div>
-                      <div class="mfp-close"></div>
-                    </div>
-                  </div>
                 </div>
                 <div class="caption_box img">
                   <div class="video_area">
+                    <div class="title"><span>服薬期間中フォロー　システムの流れ</span></div>
                     <video controls autoplay muted playsinline src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_6_v2.mp4"></video>
                   </div>
                 </div>
               </div>
-              <div class="border last"></div>
             </div>
             <!--// colum_3 -->
             <div class="border"></div>
+          </div><!--// colum_wh_outer -->
+          <div class="remind_area setElm">
+            <div class="img_box">
+              <div class="box first">
+                <div class="icon">
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_1@2x.png" alt="店舗の状況把握">
+                </div>
+                <p>店舗の<br class="display-sp">状況把握</p>
+              </div>
+              <div class="box sec">
+                <div class="icon">
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_2@2x.png" alt="働き方改革">
+                </div>
+                <p>働き方<br class="display-sp">改革</p>
+              </div>
+              <div class="box thi">
+                <div class="icon">
+                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_3@2x.png" alt="患者満足">
+                </div>
+                <p>患者<br class="display-sp">満足</p>
+              </div>
+              <div class="border"></div>
+            </div>
+            <h3 class="title">Musubiは、３つを連携させて<br>薬局変革を導きます</h3>
           </div>
+        </div>
+      </div>
+
+      <div class="bg wh">
+        <div class="section_inner">
           <div class="cta_area setElm">
             <h2>さあ、選ばれる薬局へ</h2>
+            <p class="point">Musubiが選ばれる理由</p>
             <div class="cta_box">
               <div class="box first">
                 <figure>
-                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_1_l.png" alt="">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_1_l.png" alt="質を伴った業務効率化">
                 </figure>
                 <h3>質を伴った<br class="display-pc">業務効率化</h3>
                 <p>服薬指導の内容が、自動で薬歴へ。外来でも在宅でも、より深く患者さんに向き合うことができます。</p>
               </div>
               <div class="box sec">
                 <figure>
-                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_2_l.png" alt="">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_2_l.png" alt="シンプルな画面操作方法">
                 </figure>
                 <h3>シンプルな画面<br class="display-pc">操作方法</h3>
                 <p>従来のレセコンや電子薬歴とは一線を画すシンプルな画面に、画面タッチ中心の操作。使う人を選びません。</p>
               </div>
               <div class="box thi">
                 <figure>
-                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_3_l.png" alt="">
+                <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/img_cta_3_l.png" alt="マンツーマンサポート">
                 </figure>
                 <h3>マンツーマン<br class="display-pc">サポート</h3>
                 <p>満足度90％以上。継続的なMusubiの活用サポートで、PC操作やITシステムが苦手な薬剤師さんも安心です。</p>

@@ -94,16 +94,10 @@ $fs: 16;
                 right: 0;
                 bottom: 0;
                 content: '';
-                /*
-                font-family: "Font Awesome 5 Free";
-                font-size: 4rem;
-                font-weight: 900;
-                color: #fff;
-                */
                 background-image: url("../images/icons/icon_movie_play.png");
                 background-position: 50% 50%;
                 background-size: 60px;
-                background-color: rgba(0,0,0,.38);
+                background-color: rgba(0,0,0,.28);
                 background-repeat: no-repeat;
                 display: flex;
                 justify-content: center;
