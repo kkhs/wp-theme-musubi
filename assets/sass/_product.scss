@@ -1,5 +1,10 @@
 @charset "utf-8"; //日本語を記述する場合は先頭に必須
 $fs: 16;
+@mixin pStyle {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
 #content.productcustom {
   .display-pc {
@@ -252,7 +257,6 @@ $fs: 16;
           border-top: 150px solid #4ecdc4;
           border-bottom: none;
           transform: translateX(-50%);
-          -webkit-transform: translateX(-50%);
           z-index: 1;
         }
       }
@@ -294,9 +298,7 @@ $fs: 16;
               }
             }
             p {
-              color: #fff;
-              font-size: 1.5rem;
-              font-weight: 500;
+              @include pStyle;
             }
           }
           .colum_wh {
@@ -321,7 +323,6 @@ $fs: 16;
               top: 50%;
               left: -7%;
               transform: translateY(-50%);
-              -webkit-transform: translateY(-50%);
               background-color: #fff;
               width: 40px;
               height: 40px;
@@ -387,7 +388,7 @@ $fs: 16;
             }
             .btn_area {
               margin: 0;
-              padding: .2em 0 .2em;
+              padding: .2em 0;
               text-align: left;
               display: inline-flex;
               align-items: center;
@@ -499,9 +500,7 @@ $fs: 16;
               }
             }
             p {
-              color: #fff;
-              font-size: 1.5rem;
-              font-weight: 500;
+              @include pStyle;
             }
           }
           .box.first {
@@ -519,7 +518,6 @@ $fs: 16;
             left: 50%;
             border-top: 2px dotted #fff;
             transform: translateX(-50%);
-            -webkit-transform: translateX(-50%);
             width: 70%;
             z-index: 1;
             opacity: 0;
@@ -551,7 +549,6 @@ $fs: 16;
           }
         }
         h2 {
-          //color: #fff;
           font-size: 3rem;
           font-weight: 500;
           line-height: 1.4;
