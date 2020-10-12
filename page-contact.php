@@ -16,7 +16,7 @@ get_header();
           </div>
         <?php endif; } ?>
       </div>
-      <?php	else:?>
+      <?php else:?>
       <div id="nopost">
         該当する投稿がありません。
       </div>
