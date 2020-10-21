@@ -1036,8 +1036,14 @@ $fs: 16;
             .text_area {
               width: 60%;
               margin-left: 8%;
+              p.colum {
+                margin-bottom: 1em;
+              }
+              b {
+                font-weight: 500;
+              }
               .btn_area {
-                margin: 1em auto;
+                margin: 0 auto 1em;
                 padding: 0;
                 text-align: left;
                 a.txt_link {
@@ -1061,6 +1067,10 @@ $fs: 16;
             }
             .img_area {
               width: 30%;
+              &.center {
+                display: flex;
+                align-items: center;
+              }
             }
           }
         }

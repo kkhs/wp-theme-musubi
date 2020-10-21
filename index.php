@@ -375,7 +375,7 @@
           <div class="faq_base">
             <div class="q_area">
               <div class="icon">Q</div>
-              <p>今使っているレセコンと連携できますか？</p>
+              <p>いま使っているレセコンと連携できますか？</p>
             </div>
             <div class="a_area">
               <div class="icon">A</div>
@@ -400,20 +400,28 @@
           <div class="faq_base">
             <div class="q_area">
               <div class="icon">Q</div>
-              <p>いま使っている電子薬歴から、データの引継ぎは可能ですか？</p>
+              <p>いま使っている電子薬歴からの切り替えの手間が大変そうですが…</p>
             </div>
             <div class="a_area">
               <div class="icon">A</div>
               <div class="text_area">
+                <p class="colum">
+                  切り替えの手間を軽減するための仕組みを用意しております。
+                </p>
                 <p>
-                  Musubiは「電子薬歴データ交換仕様に関する連絡協議会」（exPD）に加盟しています。
+                  <b>① exPDによるデータ移行</b><br>
+                  Musubiは「電子薬歴データ交換仕様に関する連絡協議会」（exPD）に加盟しています。<br>
                   exPDに加盟している電子薬歴からのデータ移行が可能です。 詳しくはお問い合わせください。
                 </p>
                 <div class="btn_area">
                   <a href="/contact/" class="txt_link">お問い合わせはこちらから</a>
                 </div>
+                <p class="colum">
+                  <b>② 問診票OCRサービス</b><br>
+                  問診票のデータをOCRで読み込むことで、Musubiに患者様情報を手打ち入力する作業負荷を軽減できます。
+                </p>
               </div>
-              <div class="img_area">
+              <div class="img_area center">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_faq_2@2x.png" alt="">
               </div>
             </div>
