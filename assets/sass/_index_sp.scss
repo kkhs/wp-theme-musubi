@@ -719,9 +719,10 @@
               }
             }
             .img_area {
-              //width: auto;
-              //margin-left: 55px;
               display: none;
+              &.center {
+                display: none;
+              }
             }
           }
         }
