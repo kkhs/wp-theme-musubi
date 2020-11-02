@@ -6,18 +6,21 @@
     <section id="top">
       <div class="title_area setElm">
         <p class="focus">Musubi コンセプト</p>
-        <h1>薬局体験アシスタント</h1>
+        <h1>薬局体験とは？</h1>
+        <p class="text">
+          Musubiで変わる薬局体験をムービーでご覧ください。
+        </p>
       </div>
     </section>
-    <section id="about">
-      <div class="bg setElm">
-        <h2>薬局体験とは？</h2>
-        <p>薬局サービスに関わる、<br class="display-sp">薬剤師と患者“双方”の体験のことです。</p>
+    <section id="movie_area">
+      <div class="movie_base setElm">
+        <iframe src="https://www.youtube.com/embed/QnuTgT4BW8o?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
     <section id="illust_area">
       <div class="illust_base">
         <div class="section_inner">
+          <p class="chach setElm">薬剤師・患者の双方の薬局体験が変化する事で</p>
           <div class="text_box setElm">
             <div class="box A">
               <div class="title_area">

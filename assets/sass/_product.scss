@@ -16,7 +16,7 @@ $fs: 16;
   #top {
     .title_area {
       background-color: #4ecdc4;
-      padding: 2em 0 3em;
+      padding: 1.1em 0 2.6em;
       text-align: center;
       &.inview { 
         h1 {
@@ -30,8 +30,8 @@ $fs: 16;
       }
       h1 {
         color: #fff;
-        font-size: 1.4rem;
-        margin-bottom: .8em;
+        font-size: 1.2rem;
+        margin-bottom: .4em;
         opacity: 0;
         transition: all .4s ease-in .15s;
         &:before {
@@ -1797,18 +1797,14 @@ $fs: 16;
       padding: 1.1em 0;
       text-align: center;
       &.inview{ 
-        h1 {
-          opacity: 1;
-          transform: translateY(0);
-        }
-        p.sub, p.focus {
+        h1, p.sub, p.focus, p.text {
           opacity: 1;
           transform: translateY(0);
         }
       }
       p.focus {
         color: #fff;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         opacity: 0;
         transition: all .4s ease-in .15s;
         &:before {
@@ -1832,12 +1828,19 @@ $fs: 16;
       }
       h1 {
         color: #fff;
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         line-height: 1.4;
-        margin-bottom: .2em;
+        margin-bottom: .15em;
         opacity: 0;
         transform: translateY(2rem);
         transition: all .4s ease-in .45s;
+      }
+      p.text {
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(2rem);
+        transition: all .4s ease-in .6s;
       }
     }
   }
@@ -1864,6 +1867,24 @@ $fs: 16;
       }
     }
   }
+  #movie_area {
+    .movie_base {
+      &.inview{ 
+        opacity: 1;
+      }
+      background-color: #f1f1f1;
+      opacity: 0;
+      transition: all .4s ease-in 1.05s;
+      iframe {
+        height: 520px;
+        background-color: #333333;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+        width: 700px;
+        margin: 0 auto;
+      }
+    }
+  }
   #illust_area {
     .illust_base {
       background-color: #fff;
@@ -1872,6 +1893,18 @@ $fs: 16;
         width: (720/750)*100%;
         max-width: 1200px;
         margin: 0 auto;
+        p.chach {
+          &.inview { 
+            opacity: 1;
+            transform: translateY(0);
+          }
+          font-size: 1.6rem;
+          margin: 1em auto;
+          text-align: center;
+          opacity: 0;
+          transition: all .6s ease-in .3s;
+          transform: translateY(2rem);
+        }
         .text_box {
           display: flex;
           &.inview { 
@@ -1898,7 +1931,7 @@ $fs: 16;
             text-align: left;
             h2 {
               opacity: 0;
-              transition: all .6s ease-in 1.5s;
+              transition: all .6s ease-in 1s;
               transform: translateY(2rem);
             }
           }
@@ -1908,7 +1941,7 @@ $fs: 16;
             text-align: right;
             h2 {
               opacity: 0;
-              transition: all .6s ease-in 1.8s;
+              transition: all .6s ease-in 1.3s;
               transform: translateY(2rem);
             }
           }
@@ -1956,7 +1989,7 @@ $fs: 16;
               width: 100%;
               height: 33%;
               opacity: 0;
-              transition: all .6s ease-in 6.6s;
+              transition: all .6s ease-in 6s;
               display: inline-flex;
               align-items: flex-start;
               justify-content: flex-end;
@@ -1964,7 +1997,7 @@ $fs: 16;
             .sub.B {
               height: 33%;
               opacity: 0;
-              transition: all .6s ease-in 5.2s;
+              transition: all .6s ease-in 4.7s;
               display: inline-flex;
               align-items: center;
               justify-content: center;
@@ -1972,7 +2005,7 @@ $fs: 16;
             .sub.C {
               height: 33%;
               opacity: 0;
-              transition: all .6s ease-in 3.8s;
+              transition: all .6s ease-in 3.3s;
               display: inline-flex;
               align-items: flex-end;
               justify-content: flex-end;
@@ -2015,45 +2048,45 @@ $fs: 16;
               }
               .img_1_dot {
                 opacity: 0;
-                transition: all .6s ease-in 2.4s;
+                transition: all .6s ease-in 1.9s;
               }
               .img_1 {
                 opacity: 0;
-                transition: all .6s ease-in 3s;
+                transition: all .6s ease-in 2.5s;
               }
               .img_2_dot {
                 opacity: 0;
-                transition: all .6s ease-in 3.8s;
+                transition: all .6s ease-in 3.3s;
               }
               .img_2 {
                 opacity: 0;
-                transition: all .6s ease-in 4.4s;
+                transition: all .6s ease-in 3.9s;
               }
               .img_3_dot {
                 opacity: 0;
-                transition: all .6s ease-in 5.2s;
+                transition: all .6s ease-in 4.7s;
               }
               .img_3 {
                 opacity: 0;
-                transition: all .6s ease-in 5.8s;
+                transition: all .6s ease-in 5.3s;
               }
               .img_4_dot {
                 opacity: 0;
-                transition: all .6s ease-in 6.6s;
+                transition: all .6s ease-in 6.1s;
               }
               .img_4 {
                 opacity: 0;
-                transition: all .6s ease-in 7.2s;
+                transition: all .6s ease-in 6.7s;
               }
               .img_5 {
                 opacity: 0;
                 transform: scale(0.9);
-                transition: all 1s ease-out 8.2s;
+                transition: all 1s ease-out 7.7s;
               }
             }
             .txt_area {
               opacity: 0;
-              transition: all 1s ease-out 9.4s;
+              transition: all 1s ease-out 8.9s;
               position: absolute;
               bottom: -7em;
               left: 50%;
@@ -2086,6 +2119,7 @@ $fs: 16;
       }
     }
   }
+
   #focus_area {
     .bg {
       background-color: #ebf9f7;
@@ -2283,6 +2317,13 @@ $vw: 750;
   }//#content.productcustom
   
   #content.concept {
+    #movie_area {
+      .movie_base {
+        iframe {
+          height: 560px;
+        }
+      }
+    }
     #illust_area{
       .illust_base {
         .section_inner {

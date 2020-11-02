@@ -15,7 +15,7 @@
               <div class="circle">
                 <div class="icon_area">
                   <figure>
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_1@2x.png" alt="店舗の状況把握">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_1@2x.png" alt="店舗の状況把握">
                   </figure>
                 </div>
                 <div class="txt_area">
@@ -40,7 +40,7 @@
                   <a href="#function_2">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_2.png" alt="複数店舗間の患者情報連携">
+                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_2.png" alt="複数店舗間の患者情報連携">
                       </span>
                     </div>
                     <p class="txt">
@@ -67,7 +67,7 @@
                   <a href="#function_3">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_3.png" alt="薬歴業務の効率化">
+                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_3.png" alt="薬歴業務の効率化">
                       </span>
                     </div>
                     <p class="txt">
@@ -80,7 +80,7 @@
                   <a href="#function_4">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_4.png" alt="在宅業務の効率化">
+                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_4.png" alt="在宅業務の効率化">
                       </span>
                     </div>
                     <p class="txt">
@@ -95,7 +95,7 @@
               <div class="circle">
                 <div class="icon_area">
                   <figure>
-                  <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_3@2x.png" alt="患者満足">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_point_3@2x.png" alt="患者満足">
                   </figure>
                 </div>
                 <div class="txt_area">
@@ -107,7 +107,7 @@
                   <a href="#function_5">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_5.png" alt="服薬指導・患者コミュニケーション">
+                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_5.png" alt="服薬指導・患者コミュニケーション">
                       </span>
                     </div>
                     <p class="txt">
@@ -120,7 +120,7 @@
                   <a href="#function_6">
                     <div class="icon">
                       <span class="icon">
-                      <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_6b.png" alt="服薬期間中のフォロー">
+                        <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/icon_3point_6b.png" alt="服薬期間中のフォロー">
                       </span>
                     </div>
                     <p class="txt">
@@ -311,9 +311,8 @@
               <div class="box" id="function_6">
                 <div class="caption_box">
                   <h3>服薬期間中のフォロー</h3>
-                  <div class="video_area display-sp">
-                    <div class="title"><span>服薬期間中フォロー　システムの流れ</span></div>
-                    <video controls autoplay muted playsinline src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_6_v2.mp4"></video>
+                  <div class="img_area display-sp">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/pm_line.jpg" alt="服薬期間中のフォロー">
                   </div>
                   <p class="task">患者満足を実現しながら、<br class="display-pc">現実的で継続可能な業務フローをどう構築するか？</p>
                   <p class="text">
@@ -324,9 +323,8 @@
                   </p>
                 </div>
                 <div class="caption_box img">
-                  <div class="video_area">
-                    <div class="title"><span>服薬期間中フォロー　システムの流れ</span></div>
-                    <video controls autoplay muted playsinline src="<?php echo_assets_root_url(); ?>assets/images/product/custom/product_6_v2.mp4"></video>
+                  <div class="img_area">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/product/custom/pm_line.jpg" alt="服薬期間中のフォロー">
                   </div>
                 </div>
               </div>
