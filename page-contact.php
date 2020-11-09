@@ -8,7 +8,7 @@ get_header();
     <section id="entry" class="contact_entry">
       <?php if ( have_posts() ):?>
         <div class="post">
-          <?php	while ( have_posts() ) { the_post();?>
+          <?php while ( have_posts() ) { the_post();?>
             <h1 class="post_tit center">資料請求・お問い合わせ</h1>
           <?php if ( get_the_content() ):?>
             <div class="post_content">
