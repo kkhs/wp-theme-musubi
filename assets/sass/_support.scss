@@ -1,0 +1,122 @@
+@charset "utf-8"; //日本語を記述する場合は先頭に必須
+@mixin sInner {
+  width: (670/750)*100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+$gray: #e5e5e5;
+$pale: #f0f7f8;
+$green: #4ecdc4;
+$Lgreen: #ebf9f7;
+$dark: #1a535c;
+$accent: #1bbaaf;
+$fs: 16;
+
+#content.support {
+  .display-pc {
+    display: block;
+  }
+  .display-sp {
+    display: none;
+  }
+  #top {
+    .title_area {
+      background-color: $green;
+      padding: 1.1em 0;
+      text-align: center;
+      h1 {
+        color: #fff;
+        font-size: 1.2rem;
+      }
+      p.sub {
+        color: #fff;
+        font-size: 1.7rem;
+      }
+    }
+    .caption_area {
+      background-color: $Lgreen;
+      padding: 1.1em 0;
+      .section_inner {
+        @include sInner;
+        p.text {
+          text-align: center;
+        }
+      }
+    }
+    .img_area {
+      padding: 2.4em 0;
+      width: (670/750)*100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .box {
+        p.check {
+          font-size: 1.2rem;
+          line-height: 3;
+        }
+        figure {
+          width: 360px;
+          height: 240px;
+          background-color: #818181;
+        }
+      }
+    }
+  }
+  #flow {
+    background-color: $green;
+    padding: 2em 0;
+    .section_inner {
+      @include sInner;
+      h2 {
+        color: #fff;
+        font-size: 1.9rem;
+        line-height: 1.6;
+        margin-bottom: 1.2em;
+        text-align: center;
+      }
+      .flow_area {
+        display: flex;
+        justify-content: space-between;
+        .box {
+          background-color: #fff;
+          border-radius: 4px;
+          box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+          padding: 1em;
+          width: 23%;
+          h3 {
+            font-size: 1.3rem;
+            text-align: center;
+          }
+          p {
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+}//#content.support
+
+
+@media (min-width:1501px) {//*1280px～大型PC
+}
+@media (min-width:1281px) and (max-width:1500px) {//*1280px～大型PC
+}
+
+@media (min-width:961px) and ( max-width:1280px) {//*960px～小型PC
+}
+@media (min-width:961px){//PC layout
+}
+
+
+$fs: 28;
+$vw: 750;
+@media (max-width:960px) {//SP layout
+@import 'support_sp';
+}
+@media (min-width:601px) and ( max-width:960px) {//*600px～タブレット
+}
+@media (min-width:481px) and ( max-width:600px) {//*480px～：SP横
+}

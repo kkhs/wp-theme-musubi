@@ -1,0 +1,24 @@
+#content.support {
+  .display-pc {
+    display: none;
+  }
+  .display-sp {
+    display: block;
+  }
+  #top {
+    .title_area {
+      background-color: #4ecdc4;
+      padding: 1.1em 0 2.6em;
+      text-align: center;
+      h1 {
+        color: #fff;
+        font-size: 1rem;
+      }
+      p.sub {
+        color: #fff;
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+}//#content.support
