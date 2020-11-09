@@ -1173,6 +1173,24 @@ $vw: 750;
 }
 @media (min-width:601px) and ( max-width:960px) {//*600px～タブレット
   #content.single {
+    #entry {
+      &.contact_entry {
+        .post {
+          .post_content {
+            .flow_area {
+              .flow {
+                .box {
+                  span.num {
+                    height: 36px;
+                    width: 36px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     &.blog {
       #entry {
         .post_outer {
