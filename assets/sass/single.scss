@@ -1175,40 +1175,24 @@ $vw: 750;
   #content.single {
     #entry {
       &.contact_entry {
-        .post {
-          .post_content {
-            .flow_area {
-              .flow {
-                .box {
-                  span.num {
-                    height: 36px;
-                    width: 36px;
-                  }
-                }
-              }
-            }
-          }
+        .post .post_content .flow_area .flow .box span.num {
+          height: 36px;
+          width: 36px;
         }
       }
     }
     &.blog {
       #entry {
-        .post_outer {
-          .sidebar_outer {
-            #relative {
-              width: 100%;
-              max-width: unset;
-              margin: 2em auto 0;
-              .area {
-                .bnr_box {
-                  display: flex;
-                  justify-content: space-between;
-                  flex-wrap: wrap;
-                  a.bnr {
-                    width: 49%;
-                  }
-                }
-              }
+        .post_outer .sidebar_outer #relative {
+          width: 100%;
+          max-width: unset;
+          margin: 2em auto 0;
+          .area .bnr_box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            a.bnr {
+              width: 49%;
             }
           }
         }
