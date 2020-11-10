@@ -44,6 +44,7 @@ if ( have_posts() ):
 
 </div>
 
-<div class="copyright">Copyright &copy; KAKEHASHI Inc. All Rights Reserved.</div>
+<div class="copyright">Copyright &copy; 2017 KAKEHASHI Inc. All Rights Reserved.</div>
+<script type="text/javascript" src="<?php echo_revisioned_assets_file_url('assets/js/navi.js'); ?>"></script>
 </body>
 </html>
