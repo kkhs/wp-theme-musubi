@@ -6,10 +6,41 @@
   .display-sp {
     display: block;
   }
-  &.case {
-  }
   #entry {
     margin: (30 / $fs) * 1rem auto 0;
+    &.contact_entry {
+      .post {
+        .post_content {
+          .flow_area {
+            padding: 1.4em 1em 0;
+            p {
+              &.caption {
+                margin-bottom: 1.6em;
+              }
+            }
+            .flow {
+              flex-wrap: wrap;
+              .box {
+                width: 47.5%;
+                margin-bottom: 1.8em;
+                &:after {
+                  display: none;
+                }
+                span.num {
+                  margin: 0 auto .4em;
+                }
+                h3 {
+                  margin: 0 auto .4em;
+                }
+                figure {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .post {
       .post_wp_head {
         display: block;

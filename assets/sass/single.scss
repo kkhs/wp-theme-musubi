@@ -15,15 +15,13 @@ $dark: #1a535c;
 $accent: #1bbaaf;
 $fs: 16;
 
-#content.single{
+#content.single {
   padding-bottom: (120/$fs)*1rem;
   .display-pc {
     display: block;
   }
   .display-sp {
     display: none;
-  }
-  &.case{
   }
   #entry {
     width: (670/750)*100%;
@@ -32,10 +30,10 @@ $fs: 16;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &.post_entry{
+    &.post_entry {
       max-width: 840px;
     }
-    &.faq_entry{
+    &.faq_entry {
       max-width: 1000px;
       .post >.post_tit {
         &:before{
@@ -46,6 +44,91 @@ $fs: 16;
           width: (52/30)*1em;
           height: (37/30)*1em;
           background-image: url("../images/icons/icon_faq.svg");
+        }
+      }
+    }
+    &.contact_entry {
+      .post {
+        .post_content {
+          .flow_area {
+            background-color: #fafafa;
+            border-radius: 4px;
+            margin-top: 2em;
+            padding: 1.4em 1em;
+            h2 {
+              border-left: none;
+              font-size: 1.3rem;
+              font-weight: 500;
+              text-align: center;
+              padding-left: 0;
+              margin: 0 auto .4em;
+            }
+            p {
+              font-size: .8rem;
+              line-height: 1.7;
+              margin: 0;
+              &.caption {
+                font-size: .9rem;
+                text-align: center;
+                margin-bottom: 1.4em;
+              }
+            }
+            .flow {
+              display: flex;
+              justify-content: space-between;
+              .box {
+                width: 22.5%;
+                position: relative;
+                &:after {
+                  position: absolute;
+                  content: "";
+                  border-left: 12px solid $green;
+                  border-top: 12px solid transparent;
+                  border-bottom: 12px solid transparent;
+                  border-radius: 4px;
+                  top: 50%;
+                  right: -9%;
+                  transform: translateY(-50%);
+                }
+                &:last-child {
+                  &:after {
+                    display: none;
+                  }
+                }
+                span.num {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-color: $green;
+                  border-radius: 50%;
+                  color: #fff;
+                  font-size: 1rem;
+                  font-weight: 500;
+                  height: 27px;
+                  width: 27px;
+                  padding: .4em;
+                  margin: 0 auto .8em;
+                }
+                h3 {
+                  font-size: 1rem;
+                  font-weight: 500;
+                  letter-spacing: 0;
+                  text-align: center;
+                  margin: 0 auto 1em;
+                }
+                figure {
+                  text-align: center;
+                  img {
+                    width: 110px;
+                    height: auto;
+                  }
+                }
+              }
+            }
+          }
+          .hbspt-form {
+            margin: 2rem auto 0;
+          }
         }
       }
     }
@@ -1090,24 +1173,26 @@ $vw: 750;
 }
 @media (min-width:601px) and ( max-width:960px) {//*600px～タブレット
   #content.single {
+    #entry {
+      &.contact_entry {
+        .post .post_content .flow_area .flow .box span.num {
+          height: 36px;
+          width: 36px;
+        }
+      }
+    }
     &.blog {
       #entry {
-        .post_outer {
-          .sidebar_outer {
-            #relative {
-              width: 100%;
-              max-width: unset;
-              margin: 2em auto 0;
-              .area {
-                .bnr_box {
-                  display: flex;
-                  justify-content: space-between;
-                  flex-wrap: wrap;
-                  a.bnr {
-                    width: 49%;
-                  }
-                }
-              }
+        .post_outer .sidebar_outer #relative {
+          width: 100%;
+          max-width: unset;
+          margin: 2em auto 0;
+          .area .bnr_box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            a.bnr {
+              width: 49%;
             }
           }
         }
