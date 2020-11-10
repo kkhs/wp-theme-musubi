@@ -26,7 +26,7 @@
         </div>
         <div class="box img">
           <figure>
-            <img src="" alt="">
+            <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_mv@2x.png" alt="">
           </figure>
         </div>
       </div>
@@ -37,41 +37,73 @@
         </p>
       </div>
       <div class="chach_area">
-        <p>そんな当たり前の不安を解消するために</p>
-        <h2>
-          Musubiはサポート体制に<br>
-          徹底的にこだわりました
-        </h2>
-        <p class="sub">
-          ※2020年2月～Manabi終了後　実施アンケート結果より（5段階評価にて計算）
-        </p>
+        <div class="section_inner">
+          <p>そんな当たり前の不安を解消するために</p>
+          <h2>
+            Musubiはサポート体制に<br>
+            徹底的にこだわりました
+          </h2>
+          <p class="sub">
+            ※2020年2月～Manabi終了後　実施アンケート結果より（5段階評価にて計算）
+          </p>
+          <figure class="focus">
+            <img src="<?php echo_assets_root_url(); ?>assets/images/support/icon_mv@2x.png" alt="">
+          </figure>
+        </div>
       </div>
     </section>  
 
     <section id="flow">
       <div class="section_inner">
+
         <h2>
           Musubiは契約後から導入支援の専門スタッフが<br>
           各フェーズに応じて、不安解消のために寄り添い続けます。
         </h2>
         <div class="flow_area">
           <div class="box">
-            <h3>契約後のヒアリング</h3>
+            <h3><span>1</span>契約後のヒアリング</h3>
+            <figure>
+              <img src="<?php echo_assets_root_url(); ?>assets/images/support/icon_flow_1@2x.png" alt="">
+            </figure>
             <p>今後のスケジュールや、導入に向けた必要事項の再確認で不安な点を解消。</p>
           </div>
           <div class="box">
-            <h3>契約後のヒアリング</h3>
-            <p>今後のスケジュールや、導入に向けた必要事項の再確認で不安な点を解消。</p>
+            <h3><span>2</span>システム設置時</h3>
+            <figure>
+              <img src="<?php echo_assets_root_url(); ?>assets/images/support/icon_flow_2@2x.png" alt="">
+            </figure>
+            <p>専門スタッフが店舗へ訪問し、ネットワークの構築や機器設置をサポート。</p>
           </div>
           <div class="box">
-            <h3>契約後のヒアリング</h3>
-            <p>今後のスケジュールや、導入に向けた必要事項の再確認で不安な点を解消。</p>
+            <h3><span>3</span>導入前後</h3>
+            <figure>
+              <img src="<?php echo_assets_root_url(); ?>assets/images/support/icon_flow_3@2x.png" alt="">
+            </figure>
+            <p>Musubiを使いこなせるように、マンツーマンで操作習得を支援。</p>
           </div>
           <div class="box">
-            <h3>契約後のヒアリング</h3>
-            <p>今後のスケジュールや、導入に向けた必要事項の再確認で不安な点を解消。</p>
+            <h3><span>4</span>使用開始以降</h3>
+            <figure>
+              <img src="<?php echo_assets_root_url(); ?>assets/images/support/icon_flow_4@2x.png" alt="">
+            </figure>
+            <p>日々のお困りごとや疑問点はサポートデスク、ユーザー専用サイトで解消。</p>
           </div>
         </div>
+        <p class="plus">さらに・・</p>
+        <div class="box_plus">
+          <figure>
+            <img src="<?php echo_assets_root_url(); ?>assets/images/support/icon_flow_5@2x.png" alt="">
+          </figure>
+          <div class="txt_area">
+            <h3>ユーザー専用イベント・コミュニティも充実</h3>
+            <p>
+              定期的なユーザー専用イベント、ユーザー交流会等を通じて<br>
+              情報交換やスキルアップにつながる機会を準備。
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -90,11 +122,13 @@
             <div class="detail">
               <div class="focus_area">
                 <div class="title">こんな悩み・不安を解決！</div>
-                <div class="detail">Musubiを使えるようになるまで、どんなスケジュールで進むの?</div>
+                <div class="detail">
+                  <span>Musubiを使えるようになるまで、どんなスケジュールで進むの?</span>
+                </div>
               </div>
               <div class="flex_area">
                 <div class="box">
-                  <h3>適切な導入方法のご提案</h3>
+                  <h3 class="red">適切な導入方法のご提案</h3>
                   <p class="text">
                     今後のスケジュールや、導入に際して<br>
                     必要となる確認事項をヒアリングし、<br>
@@ -103,7 +137,7 @@
                 </div>
                 <div class="box">
                   <figure>
-                    <img src="" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_1@2x.png" alt="">
                   </figure>
                 </div>
               </div>
@@ -124,7 +158,8 @@
               <div class="focus_area">
                 <div class="title">こんな悩み・不安を解決！</div>
                 <div class="detail">
-                  今使っているレセコンでも大丈夫？  今使っている電子薬歴からの切り替えが大変そう・・
+                  <span>今使っているレセコンでも大丈夫？</span>
+                  <span>今使っている電子薬歴からの切り替えが大変そう・・</span>
                 </div>
               </div>
               <div class="caption_area">
@@ -134,6 +169,7 @@
                 </p>
               </div>
               <div class="flex_area colum_wh">
+                <div class="colum_title">Point.1</div>
                 <div class="box">
                   <h3>お使いのレセコンと連携が可能</h3>
                   <p class="caption">
@@ -149,11 +185,12 @@
                 </div>
                 <div class="box img">
                   <figure>
-                    <img src="" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_2_1@2x.png" alt="">
                   </figure>
                 </div>
               </div>
               <div class="flex_area colum_wh">
+              <div class="colum_title">Point.2</div>
                 <div class="box">
                   <h3>
                     過去データの移行や、新規患者の<br>
@@ -171,10 +208,10 @@
                 </div>
                 <div class="box img flex_end">
                   <figure class="mb">
-                    <img src="" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_2_2@2x.png" alt="">
                   </figure>
                   <figure>
-                    <img src="" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_2_3@2x.png" alt="">
                   </figure>
                 </div>
               </div>
@@ -195,7 +232,7 @@
             <div class="detail">
               <div class="focus_area">
                 <div class="title">こんな悩み・不安を解決！</div>
-                <div class="detail">スタッフ全員が使いこなせる？ パソコン操作に自信がないけれど大丈夫…？</div>
+                <div class="detail"><span>スタッフ全員が使いこなせる？ パソコン操作に自信がないけれど大丈夫…？</span></div>
               </div>
               <div class="flex_area">
                 <div class="box">
@@ -207,7 +244,7 @@
                 </div>
                 <div class="box">
                   <figure>
-                    <img src="" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_3_1@2x.png" alt="">
                   </figure>
                 </div>
               </div>
@@ -216,7 +253,7 @@
                 <p class="title">具体的な習得へのステップ</p>
                 <div class="flow">
                   <div class="box txt">
-                    <h4>キックオフ</h4>
+                    <h4><span>1</span>キックオフ</h4>
                     <div class="caption_area">
                       <div class="arrow_area">
                         <span class="arrow"></span>
@@ -227,12 +264,14 @@
                     </div>
                   </div>
                   <div class="box img">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_3_2@2x.png" alt="">
+                    </figure>
                   </div>
                 </div><!--// flow_1 -->
                 <div class="flow">
                   <div class="box txt">
-                    <h4>Musubiご利用開始前</h4>
+                    <h4><span>2</span>Musubiご利用開始前</h4>
                     <div class="caption_area">
                       <div class="arrow_area">
                         <span class="arrow"></span>
@@ -247,12 +286,14 @@
                     </div>
                   </div>
                   <div class="box img">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_3_3@2x.png" alt="">
+                    </figure>
                   </div>
                 </div><!--// flow_2 -->
                 <div class="flow">
                   <div class="box txt">
-                    <h4>Musubiご利用開始後</h4>
+                    <h4><span>3</span>Musubiご利用開始後</h4>
                     <div class="caption_area">
                       <div class="arrow_area">
                         <span class="arrow"></span>
@@ -267,12 +308,14 @@
                     </div>
                   </div>
                   <div class="box img">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_3_4@2x.png" alt="">
+                    </figure>
                   </div>
                 </div><!--// flow_3 -->
                 <div class="flow">
                   <div class="box txt">
-                    <h4>ご卒業</h4>
+                    <h4><span>4</span>ご卒業</h4>
                     <div class="caption_area">
                       <div class="colum_wh last">
                         <p>
@@ -283,7 +326,9 @@
                     </div>
                   </div>
                   <div class="box img">
-                    <figure></figure>
+                    <figure class="small">
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_3_5@2x.png" alt="">
+                    </figure>
                   </div>
                 </div><!--// flow_4 -->
               </div><!--// flow_area -->
@@ -292,26 +337,32 @@
                 <h3>お客様の声</h3>
                 <div class="voice_base">
                   <div class="icon">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_voice_colum_3_1@2x.png" alt="">
+                    </figure>
                   </div>
                   <div class="voice">
-                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました</p>
+                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました。</p>
                   </div>
                 </div>
                 <div class="voice_base">
                   <div class="icon">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_voice_colum_3_2@2x.png" alt="">
+                    </figure>
                   </div>
                   <div class="voice">
-                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました</p>
+                    <p>段階ごとの疑問や問題点をリアルタイムで解決できるのですごく助かった。</p>
                   </div>
                 </div>
                 <div class="voice_base">
                   <div class="icon">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_voice_colum_3_3@2x.png" alt="">
+                    </figure>
                   </div>
                   <div class="voice">
-                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました</p>
+                    <p>Musubi習得プログラムの講義外の質問にも丁寧に答えて下さってありがたかったです。</p>
                   </div>
                 </div>
               </div>
@@ -333,7 +384,7 @@
               <div class="focus_area">
                 <div class="title">こんな悩み・不安を解決！</div>
                 <div class="detail">
-                  万一トラブルが起きたら？  気づいた時に即疑問を解消したい
+                  <span>万一トラブルが起きたら？  気づいた時に即疑問を解消したい</span>
                 </div>
               </div>
               <div class="caption_area">
@@ -343,8 +394,9 @@
               </div>
 
               <div class="flex_area colum_wh support">
+                <div class="colum_title">サポートデスク</div>
                 <div class="box large">
-                  <h3>万が一のトラブルでも安心！</h3>
+                  <h3 class="desk">万が一のトラブルでも安心！</h3>
                   <ul class="list">
                     <li>不具合等のご相談</li>
                     <li>操作方法のご質問</li>
@@ -360,19 +412,20 @@
                 </div>
                 <div class="box small">
                   <figure>
-                    <img src="" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_4_1@2x.png" alt="">
                   </figure>
                 </div>
               </div>
 
               <div class="flex_area colum_wh support">
+                <div class="colum_title">サポートサイト</div>
                 <div class="box large">
                   <h3>気づいた時に、すぐに疑問を解消できる！</h3>
                   <ul class="list">
-                    <li>よくある質問</li>
-                    <li>Musubi操作マニュアル</li>
-                    <li>リリース情報·メンテナンス情報</li>
-                    <li>ユーザー限定のイベント情報や過去セミナー動画</li>
+                    <li class="circle">よくある質問</li>
+                    <li class="circle">Musubi操作マニュアル</li>
+                    <li class="circle">リリース情報·メンテナンス情報</li>
+                    <li class="circle">ユーザー限定のイベント情報や過去セミナー動画</li>
                   </ul>
                   <p class="caption">
                     充実したサポートサイトで、いつでも使い方の確認が出来ます！
@@ -380,7 +433,7 @@
                 </div>
                 <div class="box small">
                   <figure>
-                    <img src="" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_4_2@2x.png" alt="">
                   </figure>
                 </div>
               </div>
@@ -389,26 +442,32 @@
                 <h3>お客様の声</h3>
                 <div class="voice_base">
                   <div class="icon">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_voice_colum_4_1@2x.png" alt="">
+                    </figure>
                   </div>
                   <div class="voice">
-                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました</p>
+                    <p>本当に初歩的のことでも丁寧に教えていただきありがとうございます。</p>
                   </div>
                 </div>
                 <div class="voice_base">
                   <div class="icon">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_voice_colum_4_2@2x.png" alt="">
+                    </figure>
                   </div>
                   <div class="voice">
-                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました</p>
+                    <p>すみやかにトラブルが解決して安堵しました。</p>
                   </div>
                 </div>
                 <div class="voice_base">
                   <div class="icon">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_voice_colum_4_3@2x.png" alt="">
+                    </figure>
                   </div>
                   <div class="voice">
-                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました</p>
+                    <p>パソコンの苦手な私でしたがとても分かりやすく教えて頂いて助かりました。</p>
                   </div>
                 </div>
               </div>
@@ -430,7 +489,10 @@
             <div class="detail">
               <div class="focus_area">
                 <div class="title">こんな悩み・不安を解決！</div>
-                <div class="detail">スキルアップもしたい...　薬剤師同士で語りたい…</div>
+                <div class="detail">
+                  <span>スキルアップもしたい...</span>
+                  <span>薬剤師同士で語りたい…</span>
+                </div>
               </div>
               <div class="flex_area">
                 <div class="box small">
@@ -450,9 +512,9 @@
                   </div>
                 </div>
                 <div class="box large">
-                  <figure>
-                    <img src="" alt="">
-                  </figure>
+                  <div class="slider_area">
+                    <?php echo do_shortcode('[smartslider3 slider="1"]');?>
+                  </div>
                 </div>
               </div>
 
@@ -460,26 +522,32 @@
                 <h3>参加者の声</h3>
                 <div class="voice_base">
                   <div class="icon">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_voice_colum_5_1@2x.png" alt="">
+                    </figure>
                   </div>
                   <div class="voice">
-                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました</p>
+                    <p>他の薬局の方と情報交換ができて大変勉強になった。</p>
                   </div>
                 </div>
                 <div class="voice_base">
                   <div class="icon">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_voice_colum_5_2@2x.png" alt="">
+                    </figure>
                   </div>
                   <div class="voice">
-                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました</p>
+                    <p>グループトークによって、自店の悩みを解決できた。</p>
                   </div>
                 </div>
                 <div class="voice_base">
                   <div class="icon">
-                    <figure></figure>
+                    <figure>
+                      <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_voice_colum_5_3@2x.png" alt="">
+                    </figure>
                   </div>
                   <div class="voice">
-                    <p>毎回、私のレベルにあった説明や時間配分をしていただいて助かりました</p>
+                    <p>発表者だけでなく、参加者の熱量もすごくて大変刺激になった。</p>
                   </div>
                 </div>
               </div>
@@ -496,6 +564,10 @@
 
           </div>
         </div><!--// colum plus -->
+
+        <div class="btn_area">
+          <a href="/contact" class="btn cta">資料請求・お問い合わせはこちらから</a>
+        </div>
 
       </div>
     </section>
