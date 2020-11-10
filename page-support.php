@@ -20,15 +20,31 @@
       <div class="img_area">
         <div class="box txt">
           <p class="check">今使っている電子薬歴からの切り替えが大変そう…</p>
-          <p class="check">今使っている電子薬歴からの切り替えが大変そう…</p>
-          <p class="check">今使っている電子薬歴からの切り替えが大変そう…</p>
-          <p class="check">今使っている電子薬歴からの切り替えが大変そう…</p>
+          <p class="check">パソコン操作に自信がないけれど大丈夫…？</p>
+          <p class="check">万一トラブルが起きたら？</p>
+          <p class="check">スキルアップもしたい…</p>
         </div>
         <div class="box img">
           <figure>
             <img src="" alt="">
           </figure>
         </div>
+      </div>
+      <div class="focus_area">
+        <p>
+          不安を少しでも軽減するために<br>
+          サポート体制が充実しているパートナーを選ぶのは当たり前
+        </p>
+      </div>
+      <div class="chach_area">
+        <p>そんな当たり前の不安を解消するために</p>
+        <h2>
+          Musubiはサポート体制に<br>
+          徹底的にこだわりました
+        </h2>
+        <p class="sub">
+          ※2020年2月～Manabi終了後　実施アンケート結果より（5段階評価にて計算）
+        </p>
       </div>
     </section>  
 
