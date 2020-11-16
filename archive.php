@@ -203,7 +203,9 @@ $first_args = array(
   //wp_reset_query();
 ?>
       </ul>
+      <!-- 1117スプリント時から非表示　問題なければ次回スプリント時に削除
       <div class="post_button"><a href="/download/" class="btn cta">無料で一括ダウンロードする</a></div>
+      -->
     </section>
   </article>
 
