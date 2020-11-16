@@ -337,6 +337,7 @@ $fs: 16;
             }
           }
           .detail {
+            width: 92%;
             .focus_area {
               display: flex;
               background-color: #fff;
@@ -365,6 +366,7 @@ $fs: 16;
               }
               .detail {
                 padding: .6em .6em .6em 2em;
+                width: auto;
                 span {
                   color: #666;
                   margin-right: .8em;
