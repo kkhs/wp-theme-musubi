@@ -7,6 +7,9 @@ $(document).ready(function() {
   $(".header_btm ul.header_menu li.sub_A").click(function(){
     $('.header_btm ul.header_menu li.sub_A').toggleClass('sub--menuOpen');  // クリックでクラス付与。
   });
+  $(".header_btm ul.header_menu li.sub_B").click(function(){
+    $('.header_btm ul.header_menu li.sub_B').toggleClass('sub--menuOpen');
+  });
   // サブメニュー（PC）
   if (window.matchMedia('(min-width:960px)').matches) {
       $("ul.header_menu li").mouseenter(function(){
