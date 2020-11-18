@@ -234,6 +234,7 @@
                   <p class="caption">
                     exPDで仕様が指定されているデータについて、Musubiへのインポートが可能です。データ移行が出来ないメーカーもございますので、詳細はお問い合わせください。
                   </p>
+                  <!--  1118一旦非表示
                   <figure class="display-sp">
                     <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_2_3@2x.png" alt="">
                   </figure>
@@ -242,14 +243,17 @@
                     システム切り替え時に新規取得する問診票や新規患者さんの問診票を
                     スキャナで自動読み込み。データを手打ち入力する手間を軽減します。
                   </p>
+                  -->
                 </div>
                 <div class="box img flex_end">
                   <figure class="mb">
                     <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_2_2@2x.png" alt="">
                   </figure>
+                  <!--  1118一旦非表示
                   <figure>
                     <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_2_3@2x.png" alt="">
                   </figure>
+                  -->
                 </div>
               </div>
             </div>

@@ -416,10 +416,12 @@
                 <div class="btn_area">
                   <a href="/contact/" class="txt_link">お問い合わせはこちらから</a>
                 </div>
+                <!-- 1118一旦非表示
                 <p class="colum">
                   <b>② 問診票OCRサービス</b><br>
                   問診票のデータをOCRで読み込むことで、Musubiに患者様情報を手打ち入力する作業負荷を軽減できます。
                 </p>
+                -->
               </div>
               <div class="img_area center">
                 <img src="<?php echo_assets_root_url(); ?>assets/images/index/custom/img_faq_2@2x.png" alt="">
