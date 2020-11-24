@@ -733,8 +733,6 @@ $fs: 16;
                 vertical-align: text-bottom;
               }
             }
-            a.txt_link:hover {
-            }
           }
           .flex_box {
             display: flex;
@@ -743,10 +741,27 @@ $fs: 16;
             .txt-area {
               text-align: left;
               width: 48%;
+              a.txt_link {
+                color: #4ecdc4;
+                display: block;
+                margin-top: 1.2em;
+                &:after {
+                    display: inline-block;
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    margin-left: .6em;
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                    background-size: 90%;
+                    @include bullet_right($green);
+                    transform: translateY(-50%);
+                    vertical-align: bottom;
+                    padding-bottom: .2em;
+                }
+              }
             }
             .img-area {
-              //background-color: #818181;
-              //height: 300px;
               width: 48%;
             }
           }
