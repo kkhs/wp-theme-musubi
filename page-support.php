@@ -224,8 +224,7 @@
               <div class="colum_title">Point.2</div>
                 <div class="box">
                   <h3>
-                    過去データの移行や、新規患者の<br>
-                    データ入力の手間を軽減
+                    過去データ移行の手間を軽減
                   </h3>
                   <figure class="display-sp">
                     <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_2_2@2x.png" alt="">
