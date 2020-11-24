@@ -322,17 +322,17 @@ body{
         margin: (25/$fs)*1rem 0;
       }
     }
-    .btn_menu{
+    .btn_menu {
       display: none;
     }
-    .header_navi{
+    .header_navi {
       flex: 1;
       margin-left: (36/$fs)*1rem;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: stretch;
-      .header_top{
+      .header_top {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -341,7 +341,7 @@ body{
         &.display-sp {
           display: none;
         }
-        .btn.cta{
+        .btn.cta {
           font-size: (14/$fs)*1rem;
           font-weight: 400;
           letter-spacing: .03em;
@@ -352,7 +352,30 @@ body{
           line-height: (36/14);
           padding: 0 1.4em;
         }
-        .usersite{
+        .phone {
+          color: $dark;
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: .8;
+          text-align: center;
+          &:before {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("../images/common/icon_phone.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-right: .2em;
+            vertical-align: middle;
+          }
+          span {
+            font-weight: 300;
+            font-size: .7rem;
+            margin-left: 1em;
+          }
+        }
+        .usersite {
           display: block;
           letter-spacing: .08em;
           padding-left: (30/14)*1em;
@@ -578,11 +601,31 @@ footer{
         }
       }
     }
-    .copyright{
-      font-size: (12/$fs)*1rem;
-      color: #bebdbd;
+    .usersite {
+      display: block;
+      font-size: .925rem;
+      letter-spacing: .08em;
+      padding-top: .1em;
+      padding-left: 2.4em;
+      background: url("../images/common/usersite.svg") left 50%/1.37em 1.3em no-repeat;
+      @media(hover:hover){
+        &:hover{
+          color: $accent;
+          opacity: 1;
+        }
+      }
     }
   }
+  .copyright{
+    font-size: (12/$fs)*1rem;
+    color: #bebdbd;
+    padding: 1em 0 3em;
+    text-align: center;
+  }
+}
+
+#floating {
+  display: none;
 }
 
 .svgInline{
@@ -1468,7 +1511,7 @@ $fs: 28;
           line-height: (100/34);
           padding: 0;
         }
-        .usersite{
+        .usersite, .phone {
           display: none;
         }
         &.display-sp {
@@ -1629,13 +1672,56 @@ footer{
         }
       }
     }
-    .copyright{
-      margin-top: (30/$fs)*1rem;
-      font-size: (18/$fs)*1rem;
+    .usersite {
+      margin-top: 1.8rem;
+    }
+  }
+  .copyright{
+    font-size: (18/$fs)*1rem;
+    padding: 1em 0 13em;
+  }
+}
+
+#floating {
+  display: block;
+  .floating_bnr {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 99;
+    padding: 1em;
+    a.btn_tel {
+      display: block;
+      border-radius: 2px;
+      background-color: #fff;
+      color: $dark;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: .9;
+      padding: .7em;
+      text-align: center;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/common/icon_phone.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-right: .3em;
+        margin-bottom: .1em;
+        vertical-align: middle;
+      }
+      span {
+        font-size: .8rem;
+        font-weight: 400;
+        margin-left: 1em;
+      }
     }
   }
 }
-  
+
 #mod-download {
   .download_inner {
     padding: (70/$fs)*1rem 0 (80/$fs)*1rem;
@@ -2180,6 +2266,16 @@ footer{
         padding: 3em 0;
         a.btn {
           margin: 0 auto;
+        }
+      }
+    }
+  }
+  #floating {
+    .floating_bnr {
+      a.btn_tel {
+        &:before {
+          width: 27px;
+          height: 27px;
         }
       }
     }

@@ -115,10 +115,6 @@ $ogimg = $assets_root . 'assets/images/ogp_products.jpg';
   <?php elseif($unique['layout'] === 'single' || is_404()): ?>
   <link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/single.css'); ?>">
   <?php endif; ?>
-  <!-- scroll-hint -->
-  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
-  <!-- magnific-popup-->
-  <link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/css/magnific-popup.css">
     
   <?php if(is_page() || is_singular()): ?>
   <script type="application/ld+json">
@@ -178,7 +174,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="header_navi">
         <div class="header_top">
           <a href="/contact" class="btn cta">資料請求・お問い合わせ</a>
+          <p class="phone">03-4405-1215<br><span class="reception">受付時間　10:00～18:00（平日）</span></p>
+          <!--
           <a href="https://support.kakehashi.life" target="_blank" class="usersite">ユーザーサイト</a>
+          -->
         </div>
         <div class="header_btm">
           <ul class="header_menu">
@@ -195,9 +194,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li><a href="/#price">価格</a></li>
               </ul>
             </li>
-            <!--
-            <li><a href="/#price">価格</a></li>
-            -->
             <li><a href="/case"<?php if(is_post_type_archive('case')|is_singular('case'))echo 'class="current"'; ?>>導入事例</a></li>
             <li><a href="/faq"<?php if(is_page('faq'))echo 'class="current"'; ?>>よくある質問</a></li>
             <li><a href="/event"<?php if(is_post_type_archive('event')|is_singular('event'))echo 'class="current"'; ?>>イベント</a></li>
@@ -213,9 +209,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
           </ul>
         </div>
+        <!-- 非表示　問題なければ1208に削除
         <div class="header_top display-sp">
           <a href="https://support.kakehashi.life" target="_blank" class="usersite">ユーザーサイト</a>
         </div>
+        -->
       </div>
       <a href="javascript:void(0);" class="btn_menu"><span></span></a>
     </div>

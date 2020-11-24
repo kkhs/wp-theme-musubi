@@ -18,17 +18,23 @@
         <dd><a href="https://www.kakehashi.life/inquiry.html" target="_blank">お問い合わせ</a></dd>
       </dl>
     </div>
-    <div class="copyright">Copyright &copy; 2017 KAKEHASHI Inc. All Rights Reserved.</div>
+    <a href="https://support.kakehashi.life" target="_blank" class="usersite">ユーザーサイト</a>
   </div>
+  <div class="copyright">Copyright &copy; 2017 KAKEHASHI Inc. All Rights Reserved.</div>
 </footer>
 </div><!--contents_wrap-->
+<div id="floating">
+  <div class="floating_bnr">
+    <a href="tel:03-4405-1215" class="btn_tel">お電話はこちらから<br><span class="reception">受付時間 10:00～18:00（平日）</span>
+    </a>
+  </div>
+</div>
 <?php wp_footer(); ?>
 <link rel="stylesheet" href="<?php echo_assets_root_url(); ?>assets/js/lib/simpleLightbox/simpleLightbox.min.css">
 <link rel="stylesheet" href="<?php echo_revisioned_assets_file_url('assets/css/slick.css'); ?>">
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.easing.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.inview.min.js"></script>
-<script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/jquery.magnific-popup.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/smooth-scroll.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/simpleLightbox/simpleLightbox.min.js"></script>
 <script type="text/javascript" src="<?php echo_assets_root_url(); ?>assets/js/lib/slick.min.js"></script>
