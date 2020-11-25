@@ -545,6 +545,11 @@
               transform: translateX(0);
               transition: all .6s ease-in .8s;
             }
+            .txt-area {
+              a.txt_link {
+                margin: 1em auto 1.2em;
+              }
+            }
           }
           .fikidashi {
             margin: 2.4em auto 1em;
