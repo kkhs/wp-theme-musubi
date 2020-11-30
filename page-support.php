@@ -300,7 +300,7 @@
                 </div>
                 <div class="box">
                   <figure>
-                    <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_3_1@2x.png" alt="">
+                    <img src="<?php echo_assets_root_url(); ?>assets/images/support/img_colum_3_1_b@2x.png" alt="">
                   </figure>
                 </div>
               </div>
