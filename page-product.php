@@ -200,6 +200,9 @@
                 </div>
               </div>
             </div>
+            <div class="btn_area">
+              <a href="/contact" class="btn cta">資料請求・お問い合わせはこちら</a>
+            </div>
             <!--// colum_1 -->
             <!-- colum_2 -->
             <div class="title_area B setElm">
@@ -263,6 +266,9 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="btn_area">
+              <a href="/contact" class="btn cta">資料請求・お問い合わせはこちら</a>
             </div>
             <!--// colum_2 -->
             <!-- colum_3 -->
@@ -388,7 +394,7 @@
               </div>
             </div>
           </div>
-          <div class="btn_area">
+          <div class="btn_area cta">
             <a href="/contact" class="btn cta">お気軽にお問い合わせください</a>
           </div>
         </div>
