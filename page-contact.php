@@ -63,6 +63,6 @@ get_header();
   </article>
 </div>
 <div class="copyright">Copyright &copy; 2017 KAKEHASHI Inc. All Rights Reserved.</div>
-<script type="text/javascript" src="<?php echo_revisioned_assets_file_url('assets/js/navi.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo_revisioned_assets_file_url('assets/js/common.js'); ?>"></script>
 </body>
 </html>
