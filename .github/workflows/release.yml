@@ -22,7 +22,7 @@ jobs:
 
     # [official action] clone code to workspace
     # https://github.com/actions/checkout
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
 
     # install modules by composer. remove this step it if no needed.
     # - name: composer install
